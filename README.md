@@ -67,7 +67,11 @@ The project timeline is outlined in the Gantt chart below, covering the period f
 ![Timeline](/Media/project-timeline.png)
 
 ---
+## **Project Documentation**
+For detailed information about the project, including the project proposal, plan, risk assessment, and more, please refer to the Project Documentation file:
 
+- [LapStore Project Documentation](Media/LapStoreDocumentation.pdf)
+---
 ## **Key Performance Indicators (KPIs)**
 - **Page load time**: Less than 3 seconds.
 - **Conversion rate**: 5%.
