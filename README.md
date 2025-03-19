@@ -38,6 +38,36 @@ LapStore is an e-commerce platform designed to offer a wide range of laptops at 
 
 ---
 
+## **Database Design**
+### **ERD (Entity-Relationship Diagram)**
+The ERD outlines the relationships between different entities in the database, such as users, products, and orders. Below is the ERD for the LapStore database:
+
+![ERD](/media/image4.png)
+
+### **Logical Schema**
+The logical schema provides a detailed structure of the database tables, including attributes and relationships. Below is the logical schema for the LapStore database:
+
+![Logical Schema](/media/image5.png)
+
+---
+
+## **Use Case Diagram**
+The use case diagram illustrates the interactions between users (customers and merchants) and the system, including searching for products, managing inventory, and completing purchases. Below is the use case diagram for LapStore:
+
+![Use Case Diagram](/media/image2.png)
+
+---
+
+## **Project Timeline**
+The project timeline is outlined in the Gantt chart below, covering the period from **March 9 to May 9**. Key milestones include:
+- Completion of design.
+- Development of frontend and backend.
+- Testing and final delivery.
+
+![Timeline](/media/image3.png)
+
+---
+
 ## **Key Performance Indicators (KPIs)**
 - **Page load time**: Less than 3 seconds.
 - **Conversion rate**: 5%.
