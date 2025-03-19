@@ -24,7 +24,7 @@ LapStore is an e-commerce platform designed to offer a wide range of laptops at 
 ## **Installation & Setup**
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-repo/lapstore.git
+   git clone https://github.com/WaelAlfnan/E-Commerce_LaptopStore/
    ```
 2. **Set up the database**:
    - Run the SQL scripts provided in the `Database` folder to create the necessary tables.
@@ -42,19 +42,19 @@ LapStore is an e-commerce platform designed to offer a wide range of laptops at 
 ### **ERD (Entity-Relationship Diagram)**
 The ERD outlines the relationships between different entities in the database, such as users, products, and orders. Below is the ERD for the LapStore database:
 
-![ERD](/media/image4.png)
+![ERD](/Media/ECommerceERD.png)
 
 ### **Logical Schema**
 The logical schema provides a detailed structure of the database tables, including attributes and relationships. Below is the logical schema for the LapStore database:
 
-![Logical Schema](/media/image5.png)
+![Logical Schema](/Media/LapStoreSchema.png)
 
 ---
 
 ## **Use Case Diagram**
 The use case diagram illustrates the interactions between users (customers and merchants) and the system, including searching for products, managing inventory, and completing purchases. Below is the use case diagram for LapStore:
 
-![Use Case Diagram](/media/image2.png)
+![Use Case Diagram](/Media/UseCaseDiagramForE_CommerceApplication.png)
 
 ---
 
@@ -64,7 +64,7 @@ The project timeline is outlined in the Gantt chart below, covering the period f
 - Development of frontend and backend.
 - Testing and final delivery.
 
-![Timeline](/media/image3.png)
+![Timeline](/Media/project-timeline.png)
 
 ---
 
@@ -88,15 +88,15 @@ The project timeline is outlined in the Gantt chart below, covering the period f
 ---
 
 ## **Team Members**
-- **Wael Bahaa Aldien**: Team Lead & Backend Developer.
-- **Abdelrahman Hassan**: Frontend Developer.
-- **Shehab Eisa**: Database Designer.
-- **Dina Gamal**: Tester.
+- **[Wael B.Alfnan](https://github.com/WaelAlfnan)**: Team Lead & Backend Developer.
+- **[Abdelrahman Hassan](https://github.com/AbdelrahmanHassan)**: Frontend Developer.
+- **[Shehab Eisa](https://github.com/ShehabEisa)**: Database Designer.
+- **[Dina Gamal](https://github.com/DinaGamal)**: Tester.
 
 ---
 
 ## **Contact Information**
-For any questions or support, please contact the development team via email or through the repository's issue tracker.
+For any questions or support, please contact [here](https://github.com/WaelAlfnan/E-Commerce_LaptopStore/issues/new) through the repository's issue tracker.
 
 ---
 
