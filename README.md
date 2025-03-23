@@ -93,9 +93,9 @@ For detailed information about the project, including the project proposal, plan
 
 ## **Team Members**
 - **[Wael B.Alfnan](https://github.com/WaelAlfnan)**: Team Lead & Backend Developer.
-- **[Abdelrahman Hassan](https://github.com/AbdelrahmanHassan)**: Frontend Developer.
+- **[Abdelrahman Hassan](https://github.com/AbdelRahmanHassan01)**: Frontend Developer.
 - **[Shehab Eisa](https://github.com/ShehabEisa)**: Database Designer.
-- **[Dina Gamal](https://github.com/DinaGamal)**: Tester.
+- **[Dina Gamal](https://github.com/Dina-Hawas)**: Tester.
 
 ---
 
