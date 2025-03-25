@@ -1,0 +1,12 @@
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\bin\Debug\net9.0\LapStore.Core.deps.json
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\bin\Debug\net9.0\LapStore.Core.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\bin\Debug\net9.0\LapStore.Core.pdb
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\LapStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\LapStore.Core.AssemblyInfoInputs.cache
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\LapStore.Core.AssemblyInfo.cs
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\LapStore.Core.csproj.CoreCompileInputs.cache
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\LapStore.Core.sourcelink.json
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\LapStore.Core.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\refint\LapStore.Core.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\LapStore.Core.pdb
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\ref\LapStore.Core.dll
