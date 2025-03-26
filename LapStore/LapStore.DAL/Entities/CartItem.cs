@@ -8,5 +8,7 @@ namespace LapStore.DAL.Entities
 {
     internal class CartItem
     {
+        public int ProductId { get; set; }
+        public int CartId { get; set; }
     }
 }

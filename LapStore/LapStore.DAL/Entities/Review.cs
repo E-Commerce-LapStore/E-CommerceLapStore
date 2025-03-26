@@ -8,5 +8,9 @@ namespace LapStore.DAL.Entities
 {
     internal class Review
     {
+        public int UserId { get; set; }
+        public int ProductId { get; set; }
+        public char Rate {  get; set; }
+        public string ReviewText { get; set; }
     }
 }

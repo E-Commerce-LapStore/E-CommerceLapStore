@@ -8,5 +8,7 @@ namespace LapStore.DAL.Entities
 {
     internal class Image
     {
+        public int ProductId {  get; set; }
+        public string _image {  get; set; }
     }
 }
