@@ -1,0 +1,13 @@
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.Web.exe
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\appsettings.Development.json
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\appsettings.json
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.Web.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.Web.deps.json
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.Web.runtimeconfig.json
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.Web.pdb
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.BLL.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.Core.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.DAL.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.BLL.pdb
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.Core.pdb
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Release\net9.0\win-x86\PubTmp\Out\LapStore.DAL.pdb

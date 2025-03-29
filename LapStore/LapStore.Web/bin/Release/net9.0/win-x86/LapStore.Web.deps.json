@@ -1,0 +1,74 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0/win-x86",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {},
+    ".NETCoreApp,Version=v9.0/win-x86": {
+      "LapStore.Web/1.0.0": {
+        "dependencies": {
+          "LapStore.BLL": "1.0.0",
+          "LapStore.Core": "1.0.0"
+        },
+        "runtime": {
+          "LapStore.Web.dll": {}
+        }
+      },
+      "LapStore.BLL/1.0.0": {
+        "dependencies": {
+          "LapStore.Core": "1.0.0",
+          "LapStore.DAL": "1.0.0"
+        },
+        "runtime": {
+          "LapStore.BLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "LapStore.Core/1.0.0": {
+        "runtime": {
+          "LapStore.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "LapStore.DAL/1.0.0": {
+        "dependencies": {
+          "LapStore.Core": "1.0.0"
+        },
+        "runtime": {
+          "LapStore.DAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LapStore.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LapStore.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LapStore.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LapStore.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
