@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace LapStore.DAL.Entities
 {
-    public enum OrderStatus { Pending, Processing, Shipped, Delivered, Cancelled }
+    public enum OrderStatus { None, Pending, Processing, Shipped, Delivered, Cancelled }
     public class Order
     {
         [Key]
         public int Id { get; set; }
 
         [Required]
-        public DateTime OrderDate { get; set; }
+        public DateTime Date { get; set; }
 
-        public OrderStatus orderStatus { get; set; }
+        public OrderStatus Status { get; set; }
 
         [Range(0.01, double.MaxValue)]
         public decimal TotalAmount { get; set; }

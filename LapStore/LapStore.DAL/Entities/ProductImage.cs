@@ -12,12 +12,12 @@ namespace LapStore.DAL.Entities
     {
         [Key]
         public int Id { get; set; }
+        public string URL { get; set; }
+
 
         [ForeignKey("product")]
         [Required]
         public int ProductId {  get; set; }
-
-        public string Url { get; set; }
 
         // Navigation Properties
         public virtual Product product { get; set; }

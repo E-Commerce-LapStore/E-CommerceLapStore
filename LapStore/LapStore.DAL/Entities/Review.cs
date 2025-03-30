@@ -25,9 +25,9 @@ namespace LapStore.DAL.Entities
         [Range(1, 5)]
         public int Rate { get; set; }
 
-        public string? ReviewText { get; set; }
+        public string? Text { get; set; }
 
-        public DateTime ReviewDate { get; set; }
+        public DateTime Date { get; set; }
 
         // Navigation Properties
         public virtual User user { get; set; }

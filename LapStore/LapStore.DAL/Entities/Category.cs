@@ -16,10 +16,9 @@ namespace LapStore.DAL.Entities
         [Required]
         public string Name { get; set; }
 
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
-        //public string ImageUrl { get; set; } // Optional
-        //public int Order { get; set; }      // Optional
+        public string? ImageUrl { get; set; }
 
         [ForeignKey("parentCategory")]
         public int ParentCategoryId { get; set; }
