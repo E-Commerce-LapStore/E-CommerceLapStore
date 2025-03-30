@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace LapStore.DAL.Entities
 {
     public enum UserRole { None, Admin, Customer, Vendor }
-    public enum UserGender { Male, Female }
+    public enum UserGender { None, Male, Female }
 
     public class User
     {
@@ -23,7 +23,6 @@ namespace LapStore.DAL.Entities
 
         public UserRole Role { get; set; }
         public UserGender Gender { get; set; }
-
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
@@ -32,13 +31,13 @@ namespace LapStore.DAL.Entities
         [EmailAddress]
         public string Email { get; set; }
 
-        public string Phone { get; set; }
+        public string PhoneNumber { get; set; }
 
         // Navigation Properties
         public virtual ICollection<Order>? orders { get; set; }
         public virtual Cart? cart { get; set; }
         public virtual Address? address { get; set; }
-        public virtual ICollection<Review>? UserReviews { get; set; }
+        public virtual ICollection<Review>? userReviews { get; set; }
 
     }
 

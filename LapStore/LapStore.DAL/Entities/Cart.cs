@@ -19,6 +19,6 @@ namespace LapStore.DAL.Entities
 
         // Navigation Properties
         public virtual User user { get; set; }
-        public virtual ICollection<CartItem>? CartItems { get; set; }
+        public virtual ICollection<CartItem>? cartItems { get; set; }
     }
 }

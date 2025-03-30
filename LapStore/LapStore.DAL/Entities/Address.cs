@@ -11,7 +11,7 @@ namespace LapStore.DAL.Entities
     public class Address
     {
         [Key]
-        public int AddressId { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public string Street { get; set; }
