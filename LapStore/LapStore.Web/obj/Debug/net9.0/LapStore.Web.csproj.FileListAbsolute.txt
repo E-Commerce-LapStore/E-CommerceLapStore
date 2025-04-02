@@ -104,4 +104,3 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\refint\Lap
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.pdb
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.genruntimeconfig.cache
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\ref\LapStore.Web.dll
-D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

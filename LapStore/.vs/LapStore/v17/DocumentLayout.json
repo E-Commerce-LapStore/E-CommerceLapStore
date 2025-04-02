@@ -70,8 +70,7 @@
               "RelativeToolTip": "LapStore.DAL\\Entities\\ProductImage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:21:58.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T14:21:58.514Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "RelativeToolTip": "LapStore.DAL\\Entities\\Review.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:09:07.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T14:09:07.267Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "RelativeToolTip": "LapStore.DAL\\Entities\\Address.cs",
               "ViewState": "AgIAAAYAAAAAZmZmZmYGwA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:57:01.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T13:57:01.163Z"
             },
             {
               "$type": "Document",
@@ -109,8 +106,7 @@
               "RelativeToolTip": "LapStore.DAL\\Entities\\User.cs",
               "ViewState": "AgIAAAEAAABAMzMzMzMrwCUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:40:10.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T13:40:10.309Z"
             },
             {
               "$type": "Document",
@@ -122,8 +118,7 @@
               "RelativeToolTip": "LapStore.DAL\\Entities\\Order.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwB0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:39:18.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T13:39:18.371Z"
             },
             {
               "$type": "Document",
@@ -135,8 +130,12 @@
               "RelativeToolTip": "LapStore.DAL\\Entities\\Category.cs",
               "ViewState": "AgIAAAQAAAAgMzMzMzMLwBQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2025-03-29T13:38:21.306Z",
               "EditorCaption": ""
+=======
+              "WhenOpened": "2025-03-29T13:38:21.306Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -148,8 +147,7 @@
               "RelativeToolTip": "LapStore.DAL\\Entities\\OrderItem.cs",
               "ViewState": "AgIAAA8AAACQmZmZmZkxwCAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:37:12.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T13:37:12.901Z"
             },
             {
               "$type": "Document",
@@ -161,8 +159,7 @@
               "RelativeToolTip": "LapStore.DAL\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:37:12.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T13:37:12.816Z"
             },
             {
               "$type": "Document",
@@ -174,8 +171,7 @@
               "RelativeToolTip": "LapStore.DAL\\Entities\\CartItem.cs",
               "ViewState": "AgIAAAYAAACAZmZmZmYkwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:37:12.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T13:37:12.723Z"
             },
             {
               "$type": "Document",
@@ -185,7 +181,11 @@
               "RelativeDocumentMoniker": "LapStore.DAL\\Entities\\Cart.cs",
               "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\Cart.cs",
               "RelativeToolTip": "LapStore.DAL\\Entities\\Cart.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABFAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T13:37:07.351Z",
               "EditorCaption": ""
