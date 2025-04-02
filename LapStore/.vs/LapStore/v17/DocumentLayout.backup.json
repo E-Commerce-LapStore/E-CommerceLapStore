@@ -59,6 +59,81 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+<<<<<<< Updated upstream
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\ProductImage.cs",
+              "RelativeDocumentMoniker": "LapStore.DAL\\Entities\\ProductImage.cs",
+              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\ProductImage.cs",
+              "RelativeToolTip": "LapStore.DAL\\Entities\\ProductImage.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:21:58.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\Review.cs",
+              "RelativeDocumentMoniker": "LapStore.DAL\\Entities\\Review.cs",
+              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\Review.cs",
+              "RelativeToolTip": "LapStore.DAL\\Entities\\Review.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wB8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:09:07.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Address.cs",
+              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\Address.cs",
+              "RelativeDocumentMoniker": "LapStore.DAL\\Entities\\Address.cs",
+              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\Address.cs",
+              "RelativeToolTip": "LapStore.DAL\\Entities\\Address.cs",
+              "ViewState": "AgIAAAoAAADAzMzMzMw3wBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:57:01.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "LapStore.DAL\\Entities\\User.cs",
+              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\User.cs",
+              "RelativeToolTip": "LapStore.DAL\\Entities\\User.cs",
+              "ViewState": "AgIAABIAAADAmZmZmZk9wCUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:40:10.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "LapStore.DAL\\Entities\\Order.cs",
+              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\Order.cs",
+              "RelativeToolTip": "LapStore.DAL\\Entities\\Order.cs",
+              "ViewState": "AgIAAA4AAADAzMzMzMwmwBwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:39:18.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "LapStore.DAL\\Entities\\Category.cs",
+              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\Category.cs",
+              "RelativeToolTip": "LapStore.DAL\\Entities\\Category.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:38:21.306Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
