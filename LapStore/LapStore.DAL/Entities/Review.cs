@@ -21,7 +21,6 @@ namespace LapStore.DAL.Entities
         [ForeignKey("product")]
         public int ProductId { get; set; }
 
-        [Required]
         [Range(1, 5)]
         public int Rate { get; set; }
 

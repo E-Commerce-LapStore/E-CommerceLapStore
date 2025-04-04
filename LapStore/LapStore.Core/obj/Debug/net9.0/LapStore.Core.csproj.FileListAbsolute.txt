@@ -10,3 +10,4 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\LapStore.
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\refint\LapStore.Core.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\LapStore.Core.pdb
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\ref\LapStore.Core.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Core\obj\Debug\net9.0\LapStore.Core.csproj.AssemblyReference.cache
