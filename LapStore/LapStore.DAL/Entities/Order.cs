@@ -14,7 +14,6 @@ namespace LapStore.DAL.Entities
         [Key]
         public int Id { get; set; }
 
-        [Required]
         public DateTime Date { get; set; }
 
         public OrderStatus Status { get; set; }

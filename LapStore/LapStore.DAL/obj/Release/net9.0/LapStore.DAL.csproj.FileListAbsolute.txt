@@ -14,3 +14,5 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.DAL\obj\Release\net9.0\LapStore
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.DAL\obj\Release\net9.0\refint\LapStore.DAL.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.DAL\obj\Release\net9.0\LapStore.DAL.pdb
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.DAL\obj\Release\net9.0\ref\LapStore.DAL.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.DAL\bin\Release\net9.0\LapStore.DAL.runtimeconfig.json
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.DAL\obj\Release\net9.0\LapStore.DAL.genruntimeconfig.cache

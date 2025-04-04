@@ -13,7 +13,7 @@ namespace LapStore.DAL.Entities
         [Key]
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please enter the product's name")]
         public string Name { get; set; }
 
         [Range(0.01, double.MaxValue)]
