@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace LapStore.Core.Interfaces
+namespace LapStore.BLL.Interfaces
 {
     public interface IDbContextOptionsProvider<TContext> where TContext : DbContext
     {

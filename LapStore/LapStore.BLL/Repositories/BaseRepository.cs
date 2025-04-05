@@ -1,5 +1,6 @@
-﻿using LapStore.Core.Interfaces;
+﻿using LapStore.BLL.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LapStore.DAL.Repositories
+namespace LapStore.BLL.Repositories
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
@@ -18,24 +19,24 @@ namespace LapStore.DAL.Repositories
             _context = context;
         }
 
-        public T GetById(int id)
+
+        public async Task<T> GetByIdAsync(int? id)
         {
-            return _context.Set<T>().Find(id);
+            return await _context.Set<T>().FindAsync(id);
         }
 
-        public IEnumerable<T> GetAll()
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
-            return _context.Set<T>().ToList();
+            return await _context.Set<T>().ToListAsync();
         }
 
-        public IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
+        public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate)
         {
-            return _context.Set<T>().Where(predicate).ToList();
+            return await _context.Set<T>().Where(predicate).ToListAsync();
         }
-
-        public void Add(T entity)
+        public async Task AddAsync(T entity)
         {
-            _context.Set<T>().Add(entity);
+            await _context.Set<T>().AddAsync(entity);
             _context.SaveChanges();
         }
 

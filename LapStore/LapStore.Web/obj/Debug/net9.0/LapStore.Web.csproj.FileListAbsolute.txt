@@ -8,10 +8,8 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.W
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.Web.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.Web.pdb
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.BLL.dll
-D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.Core.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.DAL.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.BLL.pdb
-D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.Core.pdb
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.DAL.pdb
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.csproj.AssemblyReference.cache
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.GeneratedMSBuildEditorConfig.editorconfig
@@ -235,3 +233,4 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\ru\Microso
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\AutoMapper.dll

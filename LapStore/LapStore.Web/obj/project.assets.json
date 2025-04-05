@@ -1619,7 +1619,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "LapStore.Core": "1.0.0",
           "LapStore.DAL": "1.0.0"
         },
         "compile": {
@@ -1629,25 +1628,11 @@
           "bin/placeholder/LapStore.BLL.dll": {}
         }
       },
-      "LapStore.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "9.0.3"
-        },
-        "compile": {
-          "bin/placeholder/LapStore.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/LapStore.Core.dll": {}
-        }
-      },
       "LapStore.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "AutoMapper": "14.0.0",
-          "LapStore.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3"
         },
         "compile": {
@@ -4780,11 +4765,6 @@
       "path": "../LapStore.BLL/LapStore.BLL.csproj",
       "msbuildProject": "../LapStore.BLL/LapStore.BLL.csproj"
     },
-    "LapStore.Core/1.0.0": {
-      "type": "project",
-      "path": "../LapStore.Core/LapStore.Core.csproj",
-      "msbuildProject": "../LapStore.Core/LapStore.Core.csproj"
-    },
     "LapStore.DAL/1.0.0": {
       "type": "project",
       "path": "../LapStore.DAL/LapStore.DAL.csproj",
@@ -4794,7 +4774,6 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "LapStore.BLL >= 1.0.0",
-      "LapStore.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.3"
@@ -4834,9 +4813,6 @@
           "projectReferences": {
             "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj": {
               "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj"
-            },
-            "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj": {
-              "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj"
             }
           }
         }

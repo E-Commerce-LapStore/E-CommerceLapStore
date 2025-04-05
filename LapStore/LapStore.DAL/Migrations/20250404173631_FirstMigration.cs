@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace LapStore.DAL.Configurations.Migrations
+namespace LapStore.DAL.Migrations
 {
     /// <inheritdoc />
     public partial class FirstMigration : Migration

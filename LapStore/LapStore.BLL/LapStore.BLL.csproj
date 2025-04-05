@@ -7,12 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LapStore.Core\LapStore.Core.csproj" />
     <ProjectReference Include="..\LapStore.DAL\LapStore.DAL.csproj" />
   </ItemGroup>
 

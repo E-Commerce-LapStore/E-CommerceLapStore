@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace LapStore.DAL.Configurations.Migrations
+namespace LapStore.DAL.Migrations
 {
     [DbContext(typeof(LapStoreDbContext))]
     [Migration("20250404173631_FirstMigration")]

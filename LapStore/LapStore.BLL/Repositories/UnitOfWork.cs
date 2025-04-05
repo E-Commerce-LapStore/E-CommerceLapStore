@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
-using LapStore.Core.DTOs;
-using LapStore.Core.Interfaces;
+using LapStore.BLL.Interfaces;
 using LapStore.DAL.Contexts;
 using LapStore.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LapStore.DAL.Repositories
+namespace LapStore.BLL.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -30,17 +29,11 @@ namespace LapStore.DAL.Repositories
         }
 
 
-        public IBaseRepository<UserDto> users { get; private set; }
 
-        IBaseRepository<UserDto> IUnitOfWork.users => throw new NotImplementedException();
 
-        public IProductRepository products => throw new NotImplementedException();
-
-        
-
-        public int Complete()
-        {   
-            return _context.SaveChanges();
+        public async Task<int> CompleteAsync()
+        {
+            return await _context.SaveChangesAsync();
         }
 
         public void Dispose()
