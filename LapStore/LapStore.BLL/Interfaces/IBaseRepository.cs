@@ -1,21 +1,22 @@
-﻿using LapStore.Core.Consts;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LapStore.Core.Interfaces
+namespace LapStore.BLL.Interfaces
 {
     public interface IBaseRepository<T> where T : class
     {
-        T GetById(int id);
-        IEnumerable<T> GetAll();
-        IEnumerable<T> Find(Expression<Func<T, bool>> criteria);
-        void Add(T entity);
+        Task<T> GetByIdAsync(int? id);
+        Task<IEnumerable<T>> GetAllAsync();
+        Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> criteria);
+        Task AddAsync(T entity);
         void Update(T entity);
         void Delete(T entity);
         int Count();
+
+        
     }
 }

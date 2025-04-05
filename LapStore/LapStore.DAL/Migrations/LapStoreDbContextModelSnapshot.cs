@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace LapStore.DAL.Configurations.Migrations
+namespace LapStore.DAL.Migrations
 {
     [DbContext(typeof(LapStoreDbContext))]
     partial class LapStoreDbContextModelSnapshot : ModelSnapshot

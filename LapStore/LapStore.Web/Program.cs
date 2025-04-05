@@ -1,4 +1,4 @@
-using LapStore.Core.Interfaces;
+using LapStore.BLL.Interfaces;
 using LapStore.DAL.Contexts;
 using LapStore.Web.Configuration;
 using Microsoft.EntityFrameworkCore;
