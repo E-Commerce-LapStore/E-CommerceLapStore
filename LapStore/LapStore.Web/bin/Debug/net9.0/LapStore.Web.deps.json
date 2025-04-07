@@ -8,7 +8,10 @@
     ".NETCoreApp,Version=v9.0": {
       "LapStore.Web/1.0.0": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
+          "FluentAssertions": "8.2.0",
           "LapStore.BLL": "1.0.0",
+          "LapStore.DAL": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "9.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.3"
@@ -25,6 +28,18 @@
           "lib/net8.0/AutoMapper.dll": {
             "assemblyVersion": "14.0.0.0",
             "fileVersion": "14.0.0.0"
+          }
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0": {
+        "dependencies": {
+          "AutoMapper": "14.0.0",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
           }
         }
       },
@@ -60,6 +75,14 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.11.4.0",
             "fileVersion": "1.1100.424.31005"
+          }
+        }
+      },
+      "FluentAssertions/8.2.0": {
+        "runtime": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "assemblyVersion": "8.2.0.0",
+            "fileVersion": "8.2.0.0"
           }
         }
       },
@@ -1044,6 +1067,13 @@
       "path": "automapper/14.0.0",
       "hashPath": "automapper.14.0.0.nupkg.sha512"
     },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XCJ4E3oKrbRl1qY9Mr+7uyC0xZj1+bqQjmQRWTiTKiVuuXTny+7YFWHi20tPjwkMukLbicN6yGlDy5PZ4wyi1w==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512"
+    },
     "Azure.Core/1.38.0": {
       "type": "package",
       "serviceable": true,
@@ -1057,6 +1087,13 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
+    },
+    "FluentAssertions/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Gh4jkECcrR0i17ofCVqsiVz2+lxC+p5TYFPCrbZFi7eQQWGEZhvCDwvhycBKX1Kmtbd+H2CW/ugW7wdH9Br9NQ==",
+      "path": "fluentassertions/8.2.0",
+      "hashPath": "fluentassertions.8.2.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

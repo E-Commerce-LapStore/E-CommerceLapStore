@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using LapStore.BLL.Interfaces;
+﻿using LapStore.BLL.Interfaces;
 using LapStore.DAL.Contexts;
 using LapStore.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -15,21 +14,22 @@ namespace LapStore.BLL.Repositories
     {
         private readonly LapStoreDbContext _context;
 
-        public UnitOfWork(LapStoreDbContext context)// : base(context)
+        private readonly Dictionary<Type, object> _repositories = new Dictionary<Type, object>();
+        public UnitOfWork(LapStoreDbContext context)
         {
             _context = context;
         }
 
-        private readonly IMapper _mapper; //  AutoMapper
-
-        public UnitOfWork(LapStoreDbContext context, IMapper mapper)// : base(context)
+        public IBaseRepository<T> BaseRepository<T>() where T : class
         {
-            _context = context;
-            _mapper = mapper;
+            if (_repositories.ContainsKey(typeof(T)))
+            {
+                return _repositories[typeof(T)] as IBaseRepository<T>;
+            }
+            var repository = new BaseRepository<T>(_context);
+            _repositories[typeof(T)] = repository;
+            return repository;
         }
-
-
-
 
         public async Task<int> CompleteAsync()
         {
@@ -40,5 +40,7 @@ namespace LapStore.BLL.Repositories
         {
             _context.Dispose();
         }
+
+        
     }
 }

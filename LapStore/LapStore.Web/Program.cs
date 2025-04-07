@@ -1,33 +1,26 @@
 using LapStore.BLL.Interfaces;
+using LapStore.BLL.Repositories;
 using LapStore.DAL.Contexts;
-using LapStore.Web.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal;
-
+using LapStore.Web.Controllers;
 namespace LapStore.Web
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddDbContext<LapStoreDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            // Register the provider (using generic type)
-            builder.Services.AddScoped(typeof(IDbContextOptionsProvider<>), typeof(DbContextOptionsProvider<>));
-
-            // Register the DbContext using the provider
-            builder.Services.AddDbContext<LapStoreDbContext>(options =>
-            {
-                var serviceProvider = builder.Services.BuildServiceProvider();
-                var provider = serviceProvider.GetRequiredService<IDbContextOptionsProvider<LapStoreDbContext>>();
-                var contextOptions = provider.GetDbContextOptions();
-                options.UseSqlServer(contextOptions.FindExtension<SqlServerOptionsExtension>().ConnectionString,
-                    b => b.MigrationsAssembly(typeof(LapStoreDbContext).Assembly.FullName));
-            });
-
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            
 
             var app = builder.Build();
 
