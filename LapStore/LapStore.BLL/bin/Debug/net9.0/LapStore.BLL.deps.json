@@ -595,14 +595,6 @@
             "fileVersion": "1.0.0.0"
           }
         }
-      },
-      "LapStore.Core/1.0.0.0": {
-        "runtime": {
-          "LapStore.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -1006,11 +998,6 @@
     },
     "LapStore.DAL/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "LapStore.Core/1.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
