@@ -1,6 +1,5 @@
 ﻿using LapStore.BLL.Interfaces;
 using LapStore.DAL.Contexts;
-using LapStore.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

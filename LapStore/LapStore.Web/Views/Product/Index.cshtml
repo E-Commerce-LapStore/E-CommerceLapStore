@@ -1,33 +1,28 @@
-﻿@using LapStore.Web.ViewModels;
-@model List<ProductVM>
+﻿@model IEnumerable<LapStore.Web.ViewModels.ProductVM>
 
-<h2>قائمة المنتجات</h2>
-
-<p>
-    <a asp-action="Create">إضافة منتج جديد</a>
-</p>
+<h2>Products</h2>
 
 <table class="table">
     <thead>
         <tr>
-            <th>الاسم</th>
-            <th>الوصف</th>
-            <th>السعر</th>
-            <th></th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Weight</th>
+            <th>Category Id</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var product in Model)
         {
             <tr>
-                <td>@item.Name</td>
-                <td>@item.Description</td>
-                <td>@item.Price</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">تعديل</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">تفاصيل</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">حذف</a>
-                </td>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>@product.Weight</td>
+                <td>@product.CategoryId</td>
             </tr>
         }
     </tbody>

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<LapStore.Web.ViewModels.CategoryVM>
+
+<h2>Categories</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Parent Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Id</td>
+                <td>@category.Name</td>
+                <td>@category.Description</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(category.ImageUrl))
+                    {
+                        <img src="@category.ImageUrl" alt="@category.Name" style="width: 50px; height: 50px;" />
+                    }
+                </td>
+                <td>@category.ParentCategoryId</td>
+            </tr>
+        }
+    </tbody>
+</table>
