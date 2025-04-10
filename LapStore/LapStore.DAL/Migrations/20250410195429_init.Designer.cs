@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LapStore.DAL.Migrations
 {
     [DbContext(typeof(LapStoreDbContext))]
-    [Migration("20250404173631_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20250410195429_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -120,7 +120,7 @@ namespace LapStore.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ParentCategoryId")
+                    b.Property<int?>("ParentCategoryId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -351,8 +351,7 @@ namespace LapStore.DAL.Migrations
                     b.HasOne("LapStore.DAL.Entities.Category", "parentCategory")
                         .WithMany("childCategories")
                         .HasForeignKey("ParentCategoryId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("parentCategory");
                 });

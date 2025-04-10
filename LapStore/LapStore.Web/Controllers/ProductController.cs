@@ -1,7 +1,9 @@
 ﻿using LapStore.BLL.Interfaces;
+using LapStore.BLL.Repositories;
 using LapStore.DAL.Entities;
 using LapStore.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -16,38 +18,47 @@ namespace LapStore.Web.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<IActionResult> Index()
+
+        public IActionResult Add()
         {
-            var products = await _unitOfWork.BaseRepository<Product>().GetAllAsync();
-            var productVMs = new List<ProductVM>();
-            foreach (var product in products)
-            {
-                productVMs.Add(new ProductVM(product));
-            }
-            return View(productVMs);
+            return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(ProductVM productVM)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Add(ProductVM productVM)
         {
             if (ModelState.IsValid)
             {
-                var product = new Product
-                {
-                    Name = productVM.Name,
-                    Description = productVM.Description,
-                    Price = productVM.Price
-                };
-                _unitOfWork.BaseRepository<Product>().AddAsync(product);
+                var product = ProductVM.FromProductVM(productVM);
+                await _unitOfWork.BaseRepository<Product>().AddAsync(product);
                 await _unitOfWork.CompleteAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(productVM);
         }
-
-        public IActionResult GetView()
+        public async Task<IActionResult> Details(int? id)
         {
-            return View("MyView");
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _unitOfWork.BaseRepository<Product>().GetByIdAsync(id);
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+            var productVM = ProductVM.FromProduct(product);
+
+            return View(productVM);
+        }
+        public async Task<IActionResult> Index()
+        {
+            var products = await _unitOfWork.BaseRepository<Product>().GetAllAsync();
+            var productVMs = products.Select(ProductVM.FromProduct).ToList();
+            return View(productVMs);
         }
     }
 }

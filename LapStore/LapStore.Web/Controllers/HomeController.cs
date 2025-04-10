@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using LapStore.Web.Models;
+using LapStore.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LapStore.Web.Controllers
@@ -15,6 +16,9 @@ namespace LapStore.Web.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Title"] = "Home Page";
+            ViewBag.Name = "Your Store";
+
             return View();
         }
 
