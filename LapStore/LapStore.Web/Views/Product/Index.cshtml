@@ -1,5 +1,9 @@
 ﻿@model IEnumerable<LapStore.Web.ViewModels.ProductVM>
 
+@{
+    ViewData["Title"] = "Products Page";
+}
+
 <h2>Products</h2>
 
 <table class="table">
@@ -11,6 +15,7 @@
             <th>Price</th>
             <th>Weight</th>
             <th>Category Id</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -23,7 +28,20 @@
                 <td>@product.Price</td>
                 <td>@product.Weight</td>
                 <td>@product.CategoryId</td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-primary">Edit</a>
+
+                    <form asp-action="Delete" asp-route-id="@product.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+
             </tr>
         }
     </tbody>
 </table>
+
+<div>
+    <a asp-action="Add" class="btn btn-success">Add New Product</a>
+</div>
