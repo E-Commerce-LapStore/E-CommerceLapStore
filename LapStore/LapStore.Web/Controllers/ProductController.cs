@@ -17,8 +17,16 @@ namespace LapStore.Web.Controllers
         {
             _unitOfWork = unitOfWork;
         }
+        #region GetAll
+        public async Task<IActionResult> Index()
+        {
+            var products = await _unitOfWork.BaseRepository<Product>().GetAllAsync();
+            var productVMs = products.Select(ProductVM.FromProduct).ToList();
+            return View(productVMs);
+        }
+        #endregion
 
-
+        #region Add
         public IActionResult Add()
         {
             return View();
@@ -37,6 +45,9 @@ namespace LapStore.Web.Controllers
             }
             return View(productVM);
         }
+        #endregion
+
+        #region GetById
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -54,11 +65,77 @@ namespace LapStore.Web.Controllers
 
             return View(productVM);
         }
-        public async Task<IActionResult> Index()
+        #endregion
+
+        #region Edit
+        public async Task<IActionResult> Edit(int? id)
         {
-            var products = await _unitOfWork.BaseRepository<Product>().GetAllAsync();
-            var productVMs = products.Select(ProductVM.FromProduct).ToList();
-            return View(productVMs);
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _unitOfWork.BaseRepository<Product>().GetByIdAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            var productVM = ProductVM.FromProduct(product);
+            return View(productVM);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, ProductVM productVM)
+        {
+            if (id != productVM.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                var product = ProductVM.FromProductVM(productVM);
+                _unitOfWork.BaseRepository<Product>().Update(product);
+                await _unitOfWork.CompleteAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(productVM);
+        }
+        #endregion
+
+        #region Delete
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _unitOfWork.BaseRepository<Product>().GetByIdAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            var productVM = ProductVM.FromProduct(product);
+            return View(productVM);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var product = await _unitOfWork.BaseRepository<Product>().GetByIdAsync(id);
+            if (product != null)
+            {
+                _unitOfWork.BaseRepository<Product>().Delete(product);
+                await _unitOfWork.CompleteAsync();
+            }
+            return RedirectToAction(nameof(Index));
+        }
+        #endregion
+
     }
 }

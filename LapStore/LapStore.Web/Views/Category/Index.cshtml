@@ -1,5 +1,9 @@
 ﻿@model IEnumerable<LapStore.Web.ViewModels.CategoryVM>
 
+@{
+    ViewData["Title"] = "Categories Page";
+}
+
 <h2>Categories</h2>
 
 <table class="table">
@@ -10,6 +14,7 @@
             <th>Description</th>
             <th>Image</th>
             <th>Parent Category</th>
+            <th>Actions</th> 
         </tr>
     </thead>
     <tbody>
@@ -26,7 +31,17 @@
                     }
                 </td>
                 <td>@category.ParentCategoryId</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@category.Id" class="btn btn-primary">Edit</a>
+                    <form asp-action="Delete" asp-route-id="@category.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
             </tr>
         }
     </tbody>
 </table>
+
+<div>
+    <a asp-action="Add" class="btn btn-success">Add New Category</a>
+</div>

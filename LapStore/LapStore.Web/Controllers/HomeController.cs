@@ -16,9 +16,6 @@ namespace LapStore.Web.Controllers
 
         public IActionResult Index()
         {
-            ViewData["Title"] = "Home Page";
-            ViewBag.Name = "LapStore";
-
             return View();
         }
 
