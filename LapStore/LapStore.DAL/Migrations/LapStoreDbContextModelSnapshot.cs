@@ -117,7 +117,7 @@ namespace LapStore.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ParentCategoryId")
+                    b.Property<int?>("ParentCategoryId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -348,8 +348,7 @@ namespace LapStore.DAL.Migrations
                     b.HasOne("LapStore.DAL.Entities.Category", "parentCategory")
                         .WithMany("childCategories")
                         .HasForeignKey("ParentCategoryId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("parentCategory");
                 });

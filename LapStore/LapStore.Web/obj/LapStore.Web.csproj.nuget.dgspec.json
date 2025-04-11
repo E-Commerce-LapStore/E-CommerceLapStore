@@ -190,9 +190,6 @@
             "projectReferences": {
               "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj": {
                 "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj"
-              },
-              "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
-                "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj"
               }
             }
           }
@@ -213,20 +210,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
-            "FluentAssertions": {
-              "target": "Package",
-              "version": "[8.2.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.3, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.3, )"

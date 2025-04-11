@@ -21,7 +21,7 @@ namespace LapStore.DAL.Entities
         public string? ImageUrl { get; set; }
 
         [ForeignKey("parentCategory")]
-        public int ParentCategoryId { get; set; }
+        public int? ParentCategoryId { get; set; }
 
         // Navigation Properties
         public virtual Category? parentCategory { get; set; }
