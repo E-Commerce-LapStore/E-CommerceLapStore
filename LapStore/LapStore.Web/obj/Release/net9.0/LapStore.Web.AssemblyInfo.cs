@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("a054e7e3-4465-451b-a512-87aa4ce0b4f9")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("LapStore.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22326f65a0db4339cfb0dc1ecc75549ac9a82e80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f06293d59012ff737394df9b2480ddf9a71949c")]
 [assembly: System.Reflection.AssemblyProductAttribute("LapStore.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LapStore.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

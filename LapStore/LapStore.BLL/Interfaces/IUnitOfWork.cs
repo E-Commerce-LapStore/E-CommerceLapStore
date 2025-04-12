@@ -1,5 +1,4 @@
-﻿using LapStore.DAL.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using LapStore.BLL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

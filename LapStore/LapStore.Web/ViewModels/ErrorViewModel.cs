@@ -1,4 +1,4 @@
-namespace LapStore.Web.Models
+namespace LapStore.Web.ViewModels
 {
     public class ErrorViewModel
     {
