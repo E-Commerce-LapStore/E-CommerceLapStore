@@ -4,6 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>a054e7e3-4465-451b-a512-87aa4ce0b4f9</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,10 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LapStore.BLL\LapStore.BLL.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Configuration\" />
   </ItemGroup>
 
 </Project>
