@@ -1,4 +1,9 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\LapStore",
+    "\\LapStore\\LapStore.Web"
+  ],
+  "SelectedNode": "\\LapStore\\LapStore.Web\\LapStore.Web.csproj.user",
   "PreviewInSolutionExplorer": false
 }
