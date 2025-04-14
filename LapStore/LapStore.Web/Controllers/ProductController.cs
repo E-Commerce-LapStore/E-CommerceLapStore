@@ -1,11 +1,7 @@
-﻿using LapStore.BLL.Interfaces;
-using LapStore.BLL.Repositories;
-using LapStore.DAL.Entities;
+﻿using LapStore.DAL;
+using LapStore.DAL.Data.Entities;
 using LapStore.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Protocols.OpenIdConnect;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace LapStore.Web.Controllers
 {
@@ -20,7 +16,7 @@ namespace LapStore.Web.Controllers
         #region GetAll
         public async Task<IActionResult> Index()
         {
-            var products = await _unitOfWork.BaseRepository<Product>().GetAllAsync();
+            var products = await _unitOfWork.GenericRepository<Product>().GetAllAsync();
             var productVMs = products.Select(ProductVM.FromProduct).ToList();
             return View(productVMs);
         }
@@ -39,7 +35,7 @@ namespace LapStore.Web.Controllers
             if (ModelState.IsValid)
             {
                 var product = ProductVM.FromProductVM(productVM);
-                await _unitOfWork.BaseRepository<Product>().AddAsync(product);
+                await _unitOfWork.GenericRepository<Product>().AddAsync(product);
                 await _unitOfWork.CompleteAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -55,7 +51,7 @@ namespace LapStore.Web.Controllers
                 return NotFound();
             }
 
-            var product = await _unitOfWork.BaseRepository<Product>().GetByIdAsync(id);
+            var product = await _unitOfWork.GenericRepository<Product>().GetByIdAsync(id);
 
             if (product == null)
             {
@@ -75,7 +71,7 @@ namespace LapStore.Web.Controllers
                 return NotFound();
             }
 
-            var product = await _unitOfWork.BaseRepository<Product>().GetByIdAsync(id);
+            var product = await _unitOfWork.GenericRepository<Product>().GetByIdAsync(id);
             if (product == null)
             {
                 return NotFound();
@@ -97,7 +93,7 @@ namespace LapStore.Web.Controllers
             if (ModelState.IsValid)
             {
                 var product = ProductVM.FromProductVM(productVM);
-                _unitOfWork.BaseRepository<Product>().Update(product);
+                _unitOfWork.GenericRepository<Product>().Update(product);
                 await _unitOfWork.CompleteAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -113,7 +109,7 @@ namespace LapStore.Web.Controllers
                 return NotFound();
             }
 
-            var product = await _unitOfWork.BaseRepository<Product>().GetByIdAsync(id);
+            var product = await _unitOfWork.GenericRepository<Product>().GetByIdAsync(id);
             if (product == null)
             {
                 return NotFound();
@@ -127,10 +123,10 @@ namespace LapStore.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var product = await _unitOfWork.BaseRepository<Product>().GetByIdAsync(id);
+            var product = await _unitOfWork.GenericRepository<Product>().GetByIdAsync(id);
             if (product != null)
             {
-                _unitOfWork.BaseRepository<Product>().Delete(product);
+                _unitOfWork.GenericRepository<Product>().Delete(product);
                 await _unitOfWork.CompleteAsync();
             }
             return RedirectToAction(nameof(Index));

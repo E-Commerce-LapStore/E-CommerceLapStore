@@ -1,5 +1,5 @@
-﻿using LapStore.BLL.Interfaces;
-using LapStore.DAL.Entities;
+﻿using LapStore.DAL;
+using LapStore.DAL.Data.Entities;
 using LapStore.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,7 +26,7 @@ namespace LapStore.Web.Controllers
             if (ModelState.IsValid)
             {
                 var category = CategoryVM.FromCategoryVM(categoryVM);
-                await _unitOfWork.BaseRepository<Category>().AddAsync(category);
+                await _unitOfWork.GenericRepository<Category>().AddAsync(category);
                 await _unitOfWork.CompleteAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -40,7 +40,7 @@ namespace LapStore.Web.Controllers
                 return NotFound();
             }
 
-            var category = await _unitOfWork.BaseRepository<Category>().GetByIdAsync(id);
+            var category = await _unitOfWork.GenericRepository<Category>().GetByIdAsync(id);
 
             if (category == null)
             {
@@ -53,7 +53,7 @@ namespace LapStore.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var categories = await _unitOfWork.BaseRepository<Category>().GetAllAsync();
+            var categories = await _unitOfWork.GenericRepository<Category>().GetAllAsync();
             var categoryVMs = categories.Select(CategoryVM.FromCategory).ToList();
             return View(categoryVMs);
         }
@@ -65,7 +65,7 @@ namespace LapStore.Web.Controllers
                 return NotFound();
             }
 
-            var category = await _unitOfWork.BaseRepository<Category>().GetByIdAsync(id);
+            var category = await _unitOfWork.GenericRepository<Category>().GetByIdAsync(id);
             if (category == null)
             {
                 return NotFound();
@@ -87,7 +87,7 @@ namespace LapStore.Web.Controllers
             if (ModelState.IsValid)
             {
                 var category = CategoryVM.FromCategoryVM(categoryVM);
-                _unitOfWork.BaseRepository<Category>().Update(category);
+                _unitOfWork.GenericRepository<Category>().Update(category);
                 await _unitOfWork.CompleteAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -98,10 +98,10 @@ namespace LapStore.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
-            var category = await _unitOfWork.BaseRepository<Category>().GetByIdAsync(id);
+            var category = await _unitOfWork.GenericRepository<Category>().GetByIdAsync(id);
             if (category != null)
             {
-                _unitOfWork.BaseRepository<Category>().Delete(category);
+                _unitOfWork.GenericRepository<Category>().Delete(category);
                 await _unitOfWork.CompleteAsync();
             }
             return RedirectToAction(nameof(Index));

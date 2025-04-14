@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Runtime.InteropServices;
+﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace LapStore.DAL.Entities
+namespace LapStore.DAL.Data.Entities
 {
     [Index("ZipCode", "City", "Governorate", "Country")]
     public class Address
@@ -30,7 +23,7 @@ namespace LapStore.DAL.Entities
 
         [Required(ErrorMessage = "Please enter the country")]
         public string Country { get; set; }
-         
+
 
         // Navigation Properties
         public virtual ICollection<User> users { get; set; }

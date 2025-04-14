@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq.Expressions;
 
-namespace LapStore.BLL.Interfaces
+namespace LapStore.DAL.Repositories
 {
-    public interface IBaseRepository<T> where T : class
+    public interface IGenericRepository<T> where T : class
     {
         Task<T> GetByIdAsync(int? id);
         Task<IEnumerable<T>> GetAllAsync();
@@ -17,6 +12,6 @@ namespace LapStore.BLL.Interfaces
         void Delete(T entity);
         int Count();
 
-        
+
     }
 }

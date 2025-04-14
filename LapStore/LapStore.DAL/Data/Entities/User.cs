@@ -1,13 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LapStore.DAL.Entities
+namespace LapStore.DAL.Data.Entities
 {
 
     public class User
@@ -25,7 +19,7 @@ namespace LapStore.DAL.Entities
 
         [Required(ErrorMessage = "Please select your gender")]
         public UserGender Gender { get; set; }
-        
+
         [Required(ErrorMessage = "Please enter your first name")]
         public string FirstName { get; set; }
 
@@ -59,7 +53,7 @@ namespace LapStore.DAL.Entities
                 DateTime currentDate = DateTime.Today;
                 int age = currentDate.Year - BirthDate.Year;
 
-                if (BirthDate.Month > currentDate.Month || (BirthDate.Month == currentDate.Month && BirthDate.Day > currentDate.Day))
+                if (BirthDate.Month > currentDate.Month || BirthDate.Month == currentDate.Month && BirthDate.Day > currentDate.Day)
                 {
                     age--;
                 }
@@ -86,5 +80,5 @@ namespace LapStore.DAL.Entities
 
     }
 
-    
+
 }

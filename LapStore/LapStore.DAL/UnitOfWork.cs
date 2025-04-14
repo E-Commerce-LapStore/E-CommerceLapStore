@@ -1,13 +1,7 @@
-﻿using LapStore.BLL.Interfaces;
-using LapStore.DAL.Contexts;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LapStore.DAL.Repositories;
+using LapStore.DAL.Data.Contexts;
 
-namespace LapStore.BLL.Repositories
+namespace LapStore.DAL
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -19,13 +13,13 @@ namespace LapStore.BLL.Repositories
             _context = context;
         }
 
-        public IBaseRepository<T> BaseRepository<T>() where T : class
+        public IGenericRepository<T> GenericRepository<T>() where T : class
         {
             if (_repositories.ContainsKey(typeof(T)))
             {
-                return _repositories[typeof(T)] as IBaseRepository<T>;
+                return _repositories[typeof(T)] as IGenericRepository<T>;
             }
-            var repository = new BaseRepository<T>(_context);
+            var repository = new GenericRepository<T>(_context);
             _repositories[typeof(T)] = repository;
             return repository;
         }

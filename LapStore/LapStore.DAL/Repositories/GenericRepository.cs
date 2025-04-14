@@ -1,21 +1,14 @@
-﻿using LapStore.BLL.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LapStore.BLL.Repositories
+namespace LapStore.DAL.Repositories
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected readonly DbContext _context;
         private DbSet<T> _dbSet;
 
-        public BaseRepository(DbContext context)
+        public GenericRepository(DbContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();

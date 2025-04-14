@@ -1,5 +1,4 @@
-﻿using LapStore.DAL.Entities;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using LapStore.DAL.Data.Entities;
 
 namespace LapStore.Web.ViewModels
 {

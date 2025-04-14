@@ -1,14 +1,7 @@
-﻿using Azure.Identity;
-using LapStore.DAL.Entities;
+﻿using LapStore.DAL.Data.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LapStore.DAL.Contexts
+namespace LapStore.DAL.Data.Contexts
 {
     public class LapStoreDbContext : DbContext
     {
@@ -134,8 +127,8 @@ namespace LapStore.DAL.Contexts
 
             base.OnModelCreating(modelBuilder);
         }
-        
-            
-        
+
+
+
     }
 }

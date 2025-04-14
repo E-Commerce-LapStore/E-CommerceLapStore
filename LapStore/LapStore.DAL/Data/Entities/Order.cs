@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LapStore.DAL.Entities
+namespace LapStore.DAL.Data.Entities
 {
     public enum OrderStatus { None, Pending, Processing, Shipped, Delivered, Cancelled }
     public class Order
