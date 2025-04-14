@@ -1,9 +1,7 @@
-using LapStore.BLL.Interfaces;
-using LapStore.BLL.Repositories;
-using LapStore.DAL.Contexts;
+using LapStore.DAL;
+using LapStore.DAL.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal;
-using LapStore.Web.Controllers;
+
 namespace LapStore.Web
 {
     public class Program
@@ -37,6 +35,7 @@ namespace LapStore.Web
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
+
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

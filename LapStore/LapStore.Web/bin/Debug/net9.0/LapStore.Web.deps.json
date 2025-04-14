@@ -10,7 +10,8 @@
         "dependencies": {
           "LapStore.BLL": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
-          "Microsoft.EntityFrameworkCore.Tools": "9.0.3"
+          "Microsoft.EntityFrameworkCore.Tools": "9.0.3",
+          "Rick.Docs.Samples.RouteInfo": "1.0.0.8"
         },
         "runtime": {
           "LapStore.Web.dll": {}
@@ -749,6 +750,14 @@
           }
         }
       },
+      "Rick.Docs.Samples.RouteInfo/1.0.0.8": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Docs.Samples.RouteInfo.dll": {
+            "assemblyVersion": "1.0.0.8",
+            "fileVersion": "1.0.0.8"
+          }
+        }
+      },
       "System.ClientModel/1.0.0": {
         "dependencies": {
           "System.Memory.Data": "1.0.2",
@@ -1357,6 +1366,13 @@
       "sha512": "sha512-YqueG52R/Xej4VVbKuRIodjiAhV0HR/XVbLbNrJhCZnzjnSjgMJ/dCdV0akQQxavX6hp/LC6rqLGLcXeQYU7XA==",
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
+    },
+    "Rick.Docs.Samples.RouteInfo/1.0.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vEBI0EVUCM1cMl0ZqQsmXyoZlDykT48ZscxQi7zH8xgfO896jsDqYPTw9BSzMDlQ6iPh5GtsftKmXnZpi4R1bg==",
+      "path": "rick.docs.samples.routeinfo/1.0.0.8",
+      "hashPath": "rick.docs.samples.routeinfo.1.0.0.8.nupkg.sha512"
     },
     "System.ClientModel/1.0.0": {
       "type": "package",
