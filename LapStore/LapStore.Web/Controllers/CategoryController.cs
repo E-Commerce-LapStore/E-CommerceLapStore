@@ -1,4 +1,5 @@
-﻿using LapStore.DAL;
+﻿using LapStore.BLL.Interfaces;
+using LapStore.DAL;
 using LapStore.DAL.Data.Entities;
 using LapStore.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -8,10 +9,12 @@ namespace LapStore.Web.Controllers
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IFileService _fileService;
 
-        public CategoryController(IUnitOfWork unitOfWork)
+        public CategoryController(IUnitOfWork unitOfWork, IFileService fileService)
         {
             _unitOfWork = unitOfWork;
+            _fileService = fileService;
         }
 
         public IActionResult Add()
@@ -25,6 +28,17 @@ namespace LapStore.Web.Controllers
         {
             if (ModelState.IsValid)
             {
+                var path = "";
+                if (categoryVM.File.Length > 0)
+                {
+                    path = await _fileService.Upload(categoryVM.File, "/Imgs/Categories/");
+                    if (path == "Problem")
+                    {
+                        return BadRequest();
+                    }
+                }
+                categoryVM.ImageUrl = path;
+
                 var category = CategoryVM.FromCategoryVM(categoryVM);
                 await _unitOfWork.GenericRepository<Category>().AddAsync(category);
                 await _unitOfWork.CompleteAsync();
@@ -94,9 +108,27 @@ namespace LapStore.Web.Controllers
             return View(categoryVM);
         }
 
-        [HttpPost]
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var category = await _unitOfWork.GenericRepository<Category>().GetByIdAsync(id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            var categoryVM = CategoryVM.FromCategory(category);
+            return View(categoryVM);
+        }
+
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var category = await _unitOfWork.GenericRepository<Category>().GetByIdAsync(id);
             if (category != null)

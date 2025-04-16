@@ -1,4 +1,6 @@
 ﻿using LapStore.DAL.Data.Entities;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace LapStore.Web.ViewModels
 {
@@ -8,7 +10,11 @@ namespace LapStore.Web.ViewModels
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+
+        [Range(0.01,Double.MaxValue, ErrorMessage= "Min value equals 0.01")]
         public decimal Price { get; set; }
+
+        [Range(0.01, Double.MaxValue, ErrorMessage = "Min value equals 0.01")]
         public decimal Weight { get; set; }
         public int CategoryId { get; set; }
         #endregion

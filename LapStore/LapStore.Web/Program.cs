@@ -1,3 +1,5 @@
+using LapStore.BLL.Interfaces;
+using LapStore.BLL.Services;
 using LapStore.DAL;
 using LapStore.DAL.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
@@ -17,8 +19,9 @@ namespace LapStore.Web
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            // Create one instance for the same request
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            
+            builder.Services.AddScoped<IFileService, FileService>();
 
             var app = builder.Build();
 

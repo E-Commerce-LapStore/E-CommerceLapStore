@@ -32,9 +32,7 @@
                 <td>
                     <a asp-action="Details" asp-route-id="@product.Id" class="btn btn-info">Details</a>
                     <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-primary">Edit</a>
-                    <form asp-action="Delete" asp-route-id="@product.Id" method="post" style="display:inline;">
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
+                    <a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger">Delete</a>
                 </td>
 
             </tr>
