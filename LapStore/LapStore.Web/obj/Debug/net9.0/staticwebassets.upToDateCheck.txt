@@ -62,6 +62,7 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\wwwroot\lib\bootstrap\css\b
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\Imgs\Categories\90ad5d93084343e993199e7f3694b9bf.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\css\bootstrap.css
 wwwroot\lib\bootstrap\css\bootstrap.css.map

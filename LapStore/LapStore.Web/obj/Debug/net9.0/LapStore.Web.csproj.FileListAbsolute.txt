@@ -11,6 +11,7 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.W
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\AutoMapper.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Azure.Core.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Azure.Identity.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Castle.Core.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Humanizer.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Build.Locator.dll
@@ -24,6 +25,7 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Proxies.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll

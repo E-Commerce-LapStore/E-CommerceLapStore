@@ -6,7 +6,7 @@ namespace LapStore.DAL.Repositories
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected readonly DbContext _context;
-        private DbSet<T> _dbSet;
+        protected readonly DbSet<T> _dbSet;
 
         public GenericRepository(DbContext context)
         {
@@ -38,7 +38,7 @@ namespace LapStore.DAL.Repositories
         {
             _dbSet.Update(entity);
         }
-        public void Delete(T entity)
+        public virtual void Delete(T entity)
         {
             _dbSet.Remove(entity);
         }

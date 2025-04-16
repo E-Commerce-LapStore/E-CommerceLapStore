@@ -29,7 +29,7 @@ namespace LapStore.Web.Controllers
             if (ModelState.IsValid)
             {
                 var path = "";
-                if (categoryVM.File.Length > 0)
+                if (categoryVM.File != null)
                 {
                     path = await _fileService.Upload(categoryVM.File, "/Imgs/Categories/");
                     if (path == "Problem")
@@ -71,7 +71,7 @@ namespace LapStore.Web.Controllers
             var categoryVMs = categories.Select(CategoryVM.FromCategory).ToList();
             return View(categoryVMs);
         }
-
+        
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -133,7 +133,7 @@ namespace LapStore.Web.Controllers
             var category = await _unitOfWork.GenericRepository<Category>().GetByIdAsync(id);
             if (category != null)
             {
-                _unitOfWork.GenericRepository<Category>().Delete(category);
+                _unitOfWork.CategoryRepository.Delete(category);
                 await _unitOfWork.CompleteAsync();
             }
             return RedirectToAction(nameof(Index));
