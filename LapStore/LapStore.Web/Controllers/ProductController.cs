@@ -23,6 +23,7 @@ namespace LapStore.Web.Controllers
         #endregion
 
         #region Add
+        [HttpGet]
         public IActionResult Add()
         {
             return View();

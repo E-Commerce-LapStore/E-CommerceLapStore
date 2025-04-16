@@ -47,6 +47,7 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Docs.Samples.RouteInfo.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\System.ClientModel.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\System.CodeDom.dll
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\System.Composition.AttributedModel.dll
@@ -148,6 +149,7 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.W
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.AssemblyInfoInputs.cache
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.AssemblyInfo.cs
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.csproj.CoreCompileInputs.cache
+D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.MvcApplicationPartsAssemblyInfo.cs
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.MvcApplicationPartsAssemblyInfo.cache
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.RazorAssemblyInfo.cache
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.RazorAssemblyInfo.cs
@@ -235,5 +237,3 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\refint\Lap
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.pdb
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.genruntimeconfig.cache
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\ref\LapStore.Web.dll
-D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Docs.Samples.RouteInfo.dll
-D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Web\obj\Debug\net9.0\LapStore.Web.MvcApplicationPartsAssemblyInfo.cs

@@ -1,4 +1,5 @@
 ﻿using LapStore.DAL.Data.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LapStore.Web.ViewModels
 {
@@ -9,6 +10,9 @@ namespace LapStore.Web.ViewModels
         public string Name { get; set; }
         public string? Description { get; set; }
         public string? ImageUrl { get; set; }
+
+        [NotMapped]
+        public IFormFile? File { get; set; }
         public int? ParentCategoryId { get; set; }
         #endregion
 
