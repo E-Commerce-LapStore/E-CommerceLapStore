@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{21D8391B-5E1E-412D-AE08-92D4FBFFF197}|LapStore.DAL\\LapStore.DAL.csproj|d:\\depi\\e-commerce_laptopstore\\lapstore\\lapstore.dal\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D8391B-5E1E-412D-AE08-92D4FBFFF197}|LapStore.DAL\\LapStore.DAL.csproj|solutionrelative:lapstore.dal\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\depi\\e-commerce_laptopstore\\lapstore\\lapstore.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9D34CF0-519D-4AC7-B594-2C6C22ED9D6F}|LapStore.BLL\\LapStore.BLL.csproj|d:\\depi\\e-commerce_laptopstore\\lapstore\\lapstore.bll\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9D34CF0-519D-4AC7-B594-2C6C22ED9D6F}|LapStore.BLL\\LapStore.BLL.csproj|solutionrelative:lapstore.bll\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9D34CF0-519D-4AC7-B594-2C6C22ED9D6F}|LapStore.BLL\\LapStore.BLL.csproj|d:\\depi\\e-commerce_laptopstore\\lapstore\\lapstore.bll\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9D34CF0-519D-4AC7-B594-2C6C22ED9D6F}|LapStore.BLL\\LapStore.BLL.csproj|solutionrelative:lapstore.bll\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,58 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Repositories\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "LapStore.DAL\\Repositories\\CategoryRepository.cs",
-              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Repositories\\CategoryRepository.cs",
-              "RelativeToolTip": "LapStore.DAL\\Repositories\\CategoryRepository.cs",
-              "ViewState": "AgIAABAAAAAwMzMzMzMywBsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:26:04.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "LapStore.Web\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "LapStore.Web\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAHkAAACAMzMzMzMvwIcAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:18:31.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FileService.cs",
-              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\Services\\FileService.cs",
-              "RelativeDocumentMoniker": "LapStore.BLL\\Services\\FileService.cs",
-              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\Services\\FileService.cs",
-              "RelativeToolTip": "LapStore.BLL\\Services\\FileService.cs",
-              "ViewState": "AgIAAAUAAAAsMzMzMzM7wCwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:15:31.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IFileService.cs",
-              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\Interfaces\\IFileService.cs",
-              "RelativeDocumentMoniker": "LapStore.BLL\\Interfaces\\IFileService.cs",
-              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\Interfaces\\IFileService.cs",
-              "RelativeToolTip": "LapStore.BLL\\Interfaces\\IFileService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:13:41.805Z",
-              "EditorCaption": ""
             }
           ]
         }

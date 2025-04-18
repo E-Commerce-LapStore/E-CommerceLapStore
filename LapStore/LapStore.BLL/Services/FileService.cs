@@ -29,7 +29,7 @@ namespace LapStore.BLL.Services
                     {
                         await file.CopyToAsync(fileStream);
                         fileStream.Flush();
-                        return $"{location}/{fileName}";
+                        return $"{location}{fileName}";
                     }
                 }
                 catch
@@ -37,16 +37,30 @@ namespace LapStore.BLL.Services
                     return "Problem";
                 }
         }
+
         public bool DeletePhysicalFile(string path)
         {
-            var directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", path);
-            if (!Directory.Exists(directoryPath))
+            try
             {
-                File.Delete(directoryPath);
-                return true;
-            }
-            else
+                // Remove the leading '/' if it exists
+                if (path.StartsWith("/"))
+                {
+                    path = path.Substring(1);
+                }
+
+                var fullPath = Path.Combine(_webHostEnvironment.WebRootPath, path);
+
+                if (File.Exists(fullPath))
+                {
+                    File.Delete(fullPath);
+                    return true;
+                }
                 return false;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
