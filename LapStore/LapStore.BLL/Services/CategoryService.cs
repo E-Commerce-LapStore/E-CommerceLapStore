@@ -83,7 +83,5 @@ namespace LapStore.BLL.Services
         {
             return await _categoryRepository.IsCategoryNameExistAsync(categoryName);
         }
-
-
     }
 } 
