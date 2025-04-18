@@ -58,8 +58,7 @@
               "RelativeToolTip": "LapStore.Web\\Views\\Product\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-18T21:30:43.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T21:30:43.068Z"
             },
             {
               "$type": "Document",
@@ -69,7 +68,7 @@
               "RelativeDocumentMoniker": "LapStore.Web\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Controllers\\ProductController.cs",
               "RelativeToolTip": "LapStore.Web\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAALwAAAAAaGZmZmb+v7YAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T21:25:44.593Z",
               "EditorCaption": ""
@@ -84,8 +83,7 @@
               "RelativeToolTip": "LapStore.DAL\\Data\\Entities\\Address.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAqwBUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T21:13:54.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T21:13:54.516Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "LapStore.Web\\Views\\Category\\Add.cshtml",
               "ViewState": "AgIAABwAAAAAAAAAAAAAACMAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-18T21:12:37.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T21:12:37.271Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "LapStore.Web\\Controllers\\CategoryController.cs",
               "ViewState": "AgIAAEEAAAAAAgAAAAAIwFAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T20:39:02.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T20:39:02.303Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "LapStore.BLL\\Services\\CategoryService.cs",
               "ViewState": "AgIAAB0AAAAAlpmZmZn5v1QAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T20:38:43.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T20:38:43.647Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "LapStore.BLL\\Interfaces\\ICategoryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T20:38:40.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T20:38:40.748Z"
             }
           ]
         }
