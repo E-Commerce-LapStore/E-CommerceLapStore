@@ -2,6 +2,7 @@
 using LapStore.DAL.Data.Entities;
 using LapStore.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LapStore.Web.Controllers
 {
@@ -16,8 +17,10 @@ namespace LapStore.Web.Controllers
             _fileService = fileService;
         }
 
-        public IActionResult Add()
+        public async Task<IActionResult> Add()
         {
+            var categories = await _categoryService.GetAllCategoriesAsync();
+            ViewData["categories"] = new SelectList(categories, "Id", "Name");
             return View();
         }
 
@@ -25,6 +28,8 @@ namespace LapStore.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Add(CategoryVM categoryVM)
         {
+            var categories = await _categoryService.GetAllCategoriesAsync();
+            ViewData["categories"] = new SelectList(categories, "Id", "Name");
             if (ModelState.IsValid)
             {
                 var path = "";
