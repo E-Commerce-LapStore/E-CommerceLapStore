@@ -2,6 +2,8 @@
 using LapStore.DAL.Data.Entities;
 using LapStore.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace LapStore.Web.Controllers
 {
@@ -16,16 +18,22 @@ namespace LapStore.Web.Controllers
         #region GetAll
         public async Task<IActionResult> Index()
         {
-            var products = await _unitOfWork.GenericRepository<Product>().GetAllAsync();
-            var productVMs = products.Select(ProductVM.FromProduct).ToList();
+            var products = await _unitOfWork.GenericRepository<Product>().GetAllAsync(include: p => p.Include(x => x.Category));
+            var productVMs = products.Select(p => {
+                var vm = ProductVM.FromProduct(p);
+                vm.CategoryName = p.Category?.Name;
+                return vm;
+            }).ToList();
             return View(productVMs);
         }
         #endregion
 
         #region Add
         [HttpGet]
-        public IActionResult Add()
+        public async Task<IActionResult> Add()
         {
+            var categories = await _unitOfWork.GenericRepository<Category>().GetAllAsync();
+            ViewBag.Categories = new SelectList(categories, "Id", "Name");
             return View();
         }
 
@@ -40,6 +48,8 @@ namespace LapStore.Web.Controllers
                 await _unitOfWork.CompleteAsync();
                 return RedirectToAction(nameof(Index));
             }
+            var categories = await _unitOfWork.GenericRepository<Category>().GetAllAsync();
+            ViewBag.Categories = new SelectList(categories, "Id", "Name");
             return View(productVM);
         }
         #endregion
@@ -52,14 +62,14 @@ namespace LapStore.Web.Controllers
                 return NotFound();
             }
 
-            var product = await _unitOfWork.GenericRepository<Product>().GetByIdAsync(id);
+            var product = await _unitOfWork.GenericRepository<Product>().GetByIdAsync(id, include: p => p.Include(x => x.Category));
 
             if (product == null)
             {
                 return NotFound();
             }
             var productVM = ProductVM.FromProduct(product);
-
+            productVM.CategoryName = product.Category?.Name;
             return View(productVM);
         }
         #endregion
@@ -78,6 +88,9 @@ namespace LapStore.Web.Controllers
                 return NotFound();
             }
 
+            var categories = await _unitOfWork.GenericRepository<Category>().GetAllAsync();
+            ViewBag.Categories = new SelectList(categories, "Id", "Name", product.CategoryId);
+            
             var productVM = ProductVM.FromProduct(product);
             return View(productVM);
         }
@@ -98,6 +111,8 @@ namespace LapStore.Web.Controllers
                 await _unitOfWork.CompleteAsync();
                 return RedirectToAction(nameof(Index));
             }
+            var categories = await _unitOfWork.GenericRepository<Category>().GetAllAsync();
+            ViewBag.Categories = new SelectList(categories, "Id", "Name", productVM.CategoryId);
             return View(productVM);
         }
         #endregion
@@ -110,13 +125,14 @@ namespace LapStore.Web.Controllers
                 return NotFound();
             }
 
-            var product = await _unitOfWork.GenericRepository<Product>().GetByIdAsync(id);
+            var product = await _unitOfWork.GenericRepository<Product>().GetByIdAsync(id, include: p => p.Include(x => x.Category));
             if (product == null)
             {
                 return NotFound();
             }
 
             var productVM = ProductVM.FromProduct(product);
+            productVM.CategoryName = product.Category?.Name;
             return View(productVM);
         }
 

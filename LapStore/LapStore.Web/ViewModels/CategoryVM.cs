@@ -1,4 +1,6 @@
 ﻿using LapStore.DAL.Data.Entities;
+using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LapStore.Web.ViewModels
@@ -7,7 +9,11 @@ namespace LapStore.Web.ViewModels
     {
         #region Properties
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "Name is required")]
+        [Remote("IsCategoryNameExist", "Category", ErrorMessage = "This Category Name already exists")]
         public string Name { get; set; }
+        
         public string? Description { get; set; }
         public string? ImageUrl { get; set; }
 
