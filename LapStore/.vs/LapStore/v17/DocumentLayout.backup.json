@@ -36,6 +36,7 @@
               "$type": "Document",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Views\\Product\\Index.cshtml",
@@ -86,6 +87,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 0,
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 0,
 >>>>>>> Stashed changes
