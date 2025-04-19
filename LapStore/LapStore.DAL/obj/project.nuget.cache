@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "o3QkC67EshI=",
+=======
+  "dgSpecHash": "lb1hKdLXxdY=",
+>>>>>>> Stashed changes
   "success": true,
   "projectFilePath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
   "expectedPackageFiles": [
