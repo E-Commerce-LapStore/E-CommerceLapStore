@@ -32,6 +32,18 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+              "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj": {
+                "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj"
+              },
+>>>>>>> Stashed changes
+=======
+              "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj": {
+                "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj"
+              },
+>>>>>>> Stashed changes
               "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
                 "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj"
               }
@@ -53,12 +65,18 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "dependencies": {
             "Microsoft.AspNetCore.Hosting": {
               "target": "Package",
               "version": "[2.3.0, )"
             }
           },
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
           "imports": [
             "net461",
             "net462",
@@ -71,9 +89,15 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -82,6 +106,8 @@
         }
       }
     },
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -90,6 +116,21 @@
         "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
         "packagesPath": "C:\\Users\\waelb\\.nuget\\packages\\",
         "outputPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\obj\\",
+=======
+=======
+>>>>>>> Stashed changes
+    "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj",
+        "projectName": "LapStore.Core",
+        "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj",
+        "packagesPath": "C:\\Users\\waelb\\.nuget\\packages\\",
+        "outputPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\obj\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\ProgramFiles(x86)\\MicrosoftVisualStudio\\Shared\\NuGetPackages"
@@ -127,6 +168,8 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -153,6 +196,10 @@
               "version": "[9.0.4, )"
             }
           },
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
           "imports": [
             "net461",
             "net462",
@@ -165,9 +212,87 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+=======
+=======
+>>>>>>> Stashed changes
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.105/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
+        "projectName": "LapStore.DAL",
+        "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
+        "packagesPath": "C:\\Users\\waelb\\.nuget\\packages\\",
+        "outputPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\ProgramFiles(x86)\\MicrosoftVisualStudio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\waelb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj": {
+                "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Core\\LapStore.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
