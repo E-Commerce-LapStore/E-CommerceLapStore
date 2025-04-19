@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\depi\\e-commerce_laptopstore\\lapstore\\lapstore.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\depi\\e-commerce_laptopstore\\lapstore\\lapstore.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,72 +38,20 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "LapStore.Web\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "LapStore.Web\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-18T21:30:43.068Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "LapStore.Web\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "LapStore.Web\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T21:25:44.593Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "LapStore.Web\\appsettings.json",
+              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\appsettings.json",
+              "RelativeToolTip": "LapStore.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-19T12:13:58.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Address.cs",
-              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Data\\Entities\\Address.cs",
-              "RelativeDocumentMoniker": "LapStore.DAL\\Data\\Entities\\Address.cs",
-              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Data\\Entities\\Address.cs",
-              "RelativeToolTip": "LapStore.DAL\\Data\\Entities\\Address.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwBUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T21:13:54.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Views\\Category\\Add.cshtml",
-              "RelativeDocumentMoniker": "LapStore.Web\\Views\\Category\\Add.cshtml",
-              "ToolTip": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Views\\Category\\Add.cshtml",
-              "RelativeToolTip": "LapStore.Web\\Views\\Category\\Add.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAACMAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-18T21:12:37.271Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-=======
-              "DocumentIndex": 0,
->>>>>>> Stashed changes
-=======
-              "DocumentIndex": 0,
->>>>>>> Stashed changes
-=======
-              "DocumentIndex": 0,
->>>>>>> Stashed changes
-=======
-              "DocumentIndex": 0,
->>>>>>> Stashed changes
+              "DocumentIndex": 1,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "LapStore.Web\\Controllers\\CategoryController.cs",
@@ -111,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\Services\\CategoryService.cs",
               "RelativeDocumentMoniker": "LapStore.BLL\\Services\\CategoryService.cs",
@@ -123,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\Interfaces\\ICategoryService.cs",
               "RelativeDocumentMoniker": "LapStore.BLL\\Interfaces\\ICategoryService.cs",
