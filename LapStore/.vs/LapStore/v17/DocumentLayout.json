@@ -4,6 +4,7 @@
   "Documents": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\depi\\e-commerce_laptopstore\\lapstore\\lapstore.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,6 +35,10 @@
       "AbsoluteMoniker": "D:0:0:{21D8391B-5E1E-412D-AE08-92D4FBFFF197}|LapStore.DAL\\LapStore.DAL.csproj|d:\\depi\\e-commerce_laptopstore\\lapstore\\lapstore.dal\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21D8391B-5E1E-412D-AE08-92D4FBFFF197}|LapStore.DAL\\LapStore.DAL.csproj|solutionrelative:lapstore.dal\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 >>>>>>> Stashed changes
+=======
+      "AbsoluteMoniker": "D:0:0:{21D8391B-5E1E-412D-AE08-92D4FBFFF197}|LapStore.DAL\\LapStore.DAL.csproj|d:\\depi\\e-commerce_laptopstore\\lapstore\\lapstore.dal\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D8391B-5E1E-412D-AE08-92D4FBFFF197}|LapStore.DAL\\LapStore.DAL.csproj|solutionrelative:lapstore.dal\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +49,11 @@
         {
           "DockedWidth": 200,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "SelectedChildIndex": 3,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> Stashed changes
 =======
           "SelectedChildIndex": 2,
 >>>>>>> Stashed changes
@@ -59,6 +68,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
@@ -148,6 +158,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T20:38:40.748Z",
 =======
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 0,
               "Title": "CartItem.cs",
               "DocumentMoniker": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\Entities\\CartItem.cs",
@@ -157,6 +169,9 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T23:37:10.168Z",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "EditorCaption": ""
             }

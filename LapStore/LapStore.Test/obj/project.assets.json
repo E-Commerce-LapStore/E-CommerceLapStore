@@ -3,6 +3,7 @@
   "targets": {
     "net9.0": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AutoMapper/14.0.0": {
         "type": "package",
         "dependencies": {
@@ -66,6 +67,8 @@
       },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "Castle.Core/5.1.1": {
         "type": "package",
         "dependencies": {
@@ -104,6 +107,7 @@
           }
         }
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "Microsoft.AspNetCore.Hosting/2.3.0": {
         "type": "package",
@@ -271,6 +275,8 @@
       },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "Microsoft.CodeCoverage/17.9.0": {
         "type": "package",
         "compile": {
@@ -284,6 +290,7 @@
           "build/netstandard2.0/Microsoft.CodeCoverage.targets": {}
         }
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
@@ -355,6 +362,8 @@
       },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "Microsoft.EntityFrameworkCore/9.0.4": {
         "type": "package",
         "dependencies": {
@@ -411,6 +420,7 @@
           }
         }
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "Microsoft.EntityFrameworkCore.Proxies/9.0.4": {
         "type": "package",
@@ -474,6 +484,8 @@
       },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "Microsoft.Extensions.Caching.Abstractions/9.0.4": {
         "type": "package",
         "dependencies": {
@@ -516,6 +528,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
@@ -601,6 +614,8 @@
       },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "Microsoft.Extensions.DependencyInjection/9.0.4": {
         "type": "package",
         "dependencies": {
@@ -636,6 +651,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "Microsoft.Extensions.Diagnostics.Abstractions/8.0.1": {
         "type": "package",
@@ -738,6 +754,8 @@
       },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "Microsoft.Extensions.Logging/9.0.4": {
         "type": "package",
         "dependencies": {
@@ -779,6 +797,7 @@
         }
       },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Microsoft.Extensions.Logging.Debug/8.0.1": {
         "type": "package",
         "dependencies": {
@@ -813,6 +832,8 @@
           }
         }
       },
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "Microsoft.Extensions.Options/9.0.4": {
@@ -851,6 +872,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "Microsoft.Identity.Client/4.61.3": {
         "type": "package",
@@ -1005,6 +1027,8 @@
       },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "Microsoft.NET.Test.Sdk/17.9.0": {
         "type": "package",
         "dependencies": {
@@ -1025,6 +1049,7 @@
           "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
         }
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
@@ -1057,6 +1082,8 @@
           }
         }
       },
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "Microsoft.TestPlatform.ObjectModel/17.9.0": {
@@ -1309,6 +1336,7 @@
         }
       },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
@@ -1333,6 +1361,8 @@
       },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -1346,6 +1376,7 @@
           }
         }
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "System.Buffers/4.6.0": {
         "type": "package",
@@ -1411,6 +1442,8 @@
       },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "System.Diagnostics.EventLog/6.0.0": {
         "type": "package",
         "compile": {
@@ -1438,6 +1471,7 @@
         }
       },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "System.Drawing.Common/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1446,15 +1480,21 @@
         "compile": {
           "lib/net6.0/_._": {
 =======
+=======
+>>>>>>> Stashed changes
       "System.Reflection.Metadata/1.6.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             "related": ".xml"
           }
         },
         "runtime": {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           "lib/net6.0/System.Drawing.Common.dll": {
             "related": ".xml"
@@ -1830,6 +1870,11 @@
             "related": ".xml"
           }
 >>>>>>> Stashed changes
+=======
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
+>>>>>>> Stashed changes
         }
       },
       "xunit/2.6.6": {
@@ -1933,8 +1978,13 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "LapStore.DAL": "1.0.0",
           "Microsoft.AspNetCore.Hosting": "2.3.0"
+=======
+          "LapStore.Core": "1.0.0",
+          "LapStore.DAL": "1.0.0"
+>>>>>>> Stashed changes
 =======
           "LapStore.Core": "1.0.0",
           "LapStore.DAL": "1.0.0"
@@ -1946,11 +1996,14 @@
         "runtime": {
           "bin/placeholder/LapStore.BLL.dll": {}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
 =======
+=======
+>>>>>>> Stashed changes
         }
       },
       "LapStore.Core/1.0.0": {
@@ -1962,6 +2015,9 @@
         "runtime": {
           "bin/placeholder/LapStore.Core.dll": {}
         }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       },
       "LapStore.DAL/1.0.0": {
@@ -1969,9 +2025,13 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "AutoMapper": "14.0.0",
           "Microsoft.EntityFrameworkCore.Proxies": "9.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4"
+=======
+          "LapStore.Core": "1.0.0"
+>>>>>>> Stashed changes
 =======
           "LapStore.Core": "1.0.0"
 >>>>>>> Stashed changes
@@ -1982,6 +2042,7 @@
         "runtime": {
           "bin/placeholder/LapStore.DAL.dll": {}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -1989,10 +2050,14 @@
 =======
         }
 >>>>>>> Stashed changes
+=======
+        }
+>>>>>>> Stashed changes
       }
     }
   },
   "libraries": {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "AutoMapper/14.0.0": {
       "sha512": "OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
@@ -2047,6 +2112,8 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     "Castle.Core/5.1.1": {
@@ -2164,6 +2231,7 @@
         "lib/netstandard2.1/FakeItEasy.xml"
       ]
     },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "Microsoft.AspNetCore.Hosting/2.3.0": {
       "sha512": "JI/AVsh5OIZu0l2LpuQVUEYKHyLgeXV9uPiGf/IfF3r5sXj/Zcb2tpyxdVMM7y91+V8AUk/ZfwmEkf7pivT8xQ==",
@@ -2296,6 +2364,8 @@
     },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     "Microsoft.CodeCoverage/17.9.0": {
       "sha512": "RGD37ZSrratfScYXm7M0HjvxMxZyWZL4jm+XgMZbkIY1UPgjUpbNA/t+WTGj/rC/0Hm9A3IrH3ywbKZkOCnoZA==",
       "type": "package",
@@ -2362,6 +2432,7 @@
         "microsoft.codecoverage.nuspec"
       ]
     },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
@@ -2510,6 +2581,8 @@
     },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     "Microsoft.EntityFrameworkCore/9.0.4": {
       "sha512": "+5IAX0aicQYCRfN4pAjad+JPwdEYoVEM3Z1Cl8/EiEv3FVHQHdd8TJQpQIslQDDQS/UsUMb0MsOXwqOh+TJtRw==",
       "type": "package",
@@ -2571,6 +2644,7 @@
       ]
     },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "Microsoft.EntityFrameworkCore.Proxies/9.0.4": {
       "sha512": "qGJSwYDO13wy4DeOPnwGY8RC8nLq7pAh441wqm8zIlvXm4vHWX6ujNHcgfEUI2DDMyUePVX9xJLEq7xo82Yvgg==",
       "type": "package",
@@ -2616,6 +2690,8 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     "Microsoft.Extensions.Caching.Abstractions/9.0.4": {
@@ -2674,6 +2750,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "Microsoft.Extensions.Configuration/8.0.0": {
       "sha512": "0J/9YNXTMWSZP2p2+nvl8p71zpSwokZXZuJW+VjdErkegAnFdO1XlqtA62SJtgVYHdKu3uPxJHcMR/r35HwFBA==",
@@ -2795,6 +2872,8 @@
     },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     "Microsoft.Extensions.DependencyInjection/9.0.4": {
       "sha512": "f2MTUaS2EQ3lX4325ytPAISZqgBfXmY0WvgD80ji6Z20AoDNiCESxsqo6mFRwHJD/jfVKRw9FsW6+86gNre3ug==",
       "type": "package",
@@ -2855,6 +2934,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "Microsoft.Extensions.Diagnostics.Abstractions/8.0.1": {
       "sha512": "elH2vmwNmsXuKmUeMQ4YW9ldXiF+gSGDgg1vORksob5POnpaI6caj1Hu8zaYbEuibhqCoWg0YRWDazBY3zjBfg==",
@@ -3007,6 +3087,8 @@
     },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     "Microsoft.Extensions.Logging/9.0.4": {
       "sha512": "xW6QPYsqhbuWBO9/1oA43g/XPKbohJx+7G8FLQgQXIriYvY7s+gxr2wjQJfRoPO900dvvv2vVH7wZovG+M1m6w==",
       "type": "package",
@@ -3109,6 +3191,7 @@
       ]
     },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "Microsoft.Extensions.Logging.Debug/8.0.1": {
       "sha512": "B8hqNuYudC2RB+L/DI33uO4rf5by41fZVdcVL2oZj0UyoAZqnwTwYHp1KafoH4nkl1/23piNeybFFASaV2HkFg==",
       "type": "package",
@@ -3158,6 +3241,8 @@
         "microsoft.extensions.objectpool.nuspec"
       ]
     },
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     "Microsoft.Extensions.Options/9.0.4": {
@@ -3233,6 +3318,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "Microsoft.Identity.Client/4.61.3": {
       "sha512": "naJo/Qm35Caaoxp5utcw+R8eU8ZtLz2ALh8S+gkekOYQ1oazfCQMWVT4NJ/FnHzdIJlm8dMz0oMpMGCabx5odA==",
@@ -3424,6 +3510,8 @@
     },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     "Microsoft.NET.Test.Sdk/17.9.0": {
       "sha512": "7GUNAUbJYn644jzwLm5BD3a2p9C1dmP8Hr6fDPDxgItQk9hBs1Svdxzz07KQ/UphMSmgza9AbijBJGmw5D658A==",
       "type": "package",
@@ -3447,6 +3535,7 @@
         "microsoft.net.test.sdk.nuspec"
       ]
     },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
@@ -3496,6 +3585,8 @@
         "microsoft.sqlserver.server.nuspec"
       ]
     },
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     "Microsoft.TestPlatform.ObjectModel/17.9.0": {
@@ -3669,6 +3760,7 @@
       ]
     },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "sha512": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "type": "package",
@@ -3700,6 +3792,8 @@
     },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -3727,6 +3821,7 @@
         "packageIcon.png"
       ]
     },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "System.Buffers/4.6.0": {
       "sha512": "lN6tZi7Q46zFzAbRYXTIvfXcyvQQgxnY7Xm6C6xQ9784dEL1amjM6S6Iw4ZpsvesAKnRVsM4scrDQaDqSClkjA==",
@@ -3822,6 +3917,8 @@
     },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     "System.Diagnostics.EventLog/6.0.0": {
       "sha512": "lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
       "type": "package",
@@ -3853,6 +3950,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "System.Drawing.Common/6.0.0": {
       "sha512": "NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
@@ -3949,16 +4047,22 @@
       "type": "package",
       "path": "system.memory/4.5.4",
 =======
+=======
+>>>>>>> Stashed changes
     "System.Reflection.Metadata/1.6.0": {
       "sha512": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "type": "package",
       "path": "system.reflection.metadata/1.6.0",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         "lib/net461/System.Memory.dll",
         "lib/net461/System.Memory.xml",
@@ -4330,6 +4434,8 @@
         "system.security.cryptography.cng.5.0.0.nupkg.sha512",
         "system.security.cryptography.cng.nuspec",
 =======
+=======
+>>>>>>> Stashed changes
         "lib/netstandard1.1/System.Reflection.Metadata.dll",
         "lib/netstandard1.1/System.Reflection.Metadata.xml",
         "lib/netstandard2.0/System.Reflection.Metadata.dll",
@@ -4338,11 +4444,15 @@
         "lib/portable-net45+win8/System.Reflection.Metadata.xml",
         "system.reflection.metadata.1.6.0.nupkg.sha512",
         "system.reflection.metadata.nuspec",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
     },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "System.Security.Cryptography.ProtectedData/6.0.0": {
       "sha512": "rp1gMNEZpvx9vP0JW0oHLxlf8oSiQgtno77Y4PLUBjSiDYoD77Y8uXHr1Ea5XG4/pIKhqAdxZ8v8OTUtqo9PeQ==",
@@ -4738,6 +4848,8 @@
     },
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     "xunit/2.6.6": {
       "sha512": "MAbOOMtZIKyn2lrAmMlvhX0BhDOX/smyrTB+8WTXnSKkrmTGBS2fm8g1PZtHBPj91Dc5DJA7fY+/81TJ/yUFZw==",
       "type": "package",
@@ -4896,12 +5008,18 @@
       "msbuildProject": "../LapStore.BLL/LapStore.BLL.csproj"
     },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     "LapStore.Core/1.0.0": {
       "type": "project",
       "path": "../LapStore.Core/LapStore.Core.csproj",
       "msbuildProject": "../LapStore.Core/LapStore.Core.csproj"
     },
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     "LapStore.DAL/1.0.0": {
       "type": "project",
