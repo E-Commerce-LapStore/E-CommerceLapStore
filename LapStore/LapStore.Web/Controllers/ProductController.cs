@@ -10,7 +10,7 @@ namespace LapStore.Web.Controllers
     {
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
-
+        //pla pla pla
         public ProductController(IProductService productService, ICategoryService categoryService)
         {
             _productService = productService;
