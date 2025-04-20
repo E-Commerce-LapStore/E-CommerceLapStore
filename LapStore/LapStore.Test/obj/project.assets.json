@@ -4841,11 +4841,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Test\\LapStore.Test.csproj",
+      "projectUniqueName": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Test\\LapStore.Test.csproj",
       "projectName": "LapStore.Test",
-      "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Test\\LapStore.Test.csproj",
+      "projectPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Test\\LapStore.Test.csproj",
       "packagesPath": "C:\\Users\\waelb\\.nuget\\packages\\",
-      "outputPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Test\\obj\\",
+      "outputPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\ProgramFiles(x86)\\MicrosoftVisualStudio\\Shared\\NuGetPackages"
@@ -4866,14 +4866,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj": {
-              "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj"
+            "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj": {
+              "projectPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj"
             },
-            "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
-              "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj"
+            "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
+              "projectPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj"
             },
-            "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\LapStore.Web.csproj": {
-              "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\LapStore.Web.csproj"
+            "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\LapStore.Web.csproj": {
+              "projectPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\LapStore.Web.csproj"
             }
           }
         }

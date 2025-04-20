@@ -3790,11 +3790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj",
+      "projectUniqueName": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj",
       "projectName": "LapStore.BLL",
-      "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj",
+      "projectPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj",
       "packagesPath": "C:\\Users\\waelb\\.nuget\\packages\\",
-      "outputPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.BLL\\obj\\",
+      "outputPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\ProgramFiles(x86)\\MicrosoftVisualStudio\\Shared\\NuGetPackages"
@@ -3815,8 +3815,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
-              "projectPath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj"
+            "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
+              "projectPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj"
             }
           }
         }
