@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qbdxchhdRZI=",
+  "dgSpecHash": "rbbHUNH0ak0=",
   "success": true,
-  "projectFilePath": "D:\\DEPI\\E-Commerce_LaptopStore\\LapStore\\LapStore.Web\\LapStore.Web.csproj",
+  "projectFilePath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\LapStore.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\waelb\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\waelb\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
