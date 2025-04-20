@@ -1,4 +1,322 @@
-﻿@{
+﻿@model HomeVM
+
+@{
     ViewData["Title"] = "Home Page";
 }
-        <h1>You are welcome in your LapStore</h1>
+
+<!-- Category Banners -->
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var category in Model.Categories.Take(3))
+        {
+            <div class="col-md-4">
+                <div class="category-banner" style="background-color: #e31837; border-radius: 10px; overflow: hidden; position: relative;">
+                    <a asp-controller="Category" asp-action="Details" asp-route-id="@category.Id" class="text-decoration-none">
+                        <div class="p-4 text-white">
+                            <h3 class="mb-2">@category.Name Collection</h3>
+                            <p class="mb-3">SHOP NOW</p>
+                        </div>
+                        @if (!string.IsNullOrEmpty(category.ImageUrl))
+                        {
+                            <img src="@category.ImageUrl" alt="@category.Name" class="img-fluid" style="position: absolute; right: 0; bottom: 0; max-width: 50%; object-fit: cover;">
+                        }
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- New Products Section -->
+<section class="mt-5">
+    <div class="container">
+        <h2 class="mb-4">NEW PRODUCTS</h2>
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Laptops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Smartphones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var product in Model.NewProducts)
+            {
+                <div class="col-md-3">
+                    <div class="product-card mb-4">
+                        <div class="product-image">
+                            @if (!string.IsNullOrEmpty(product.MainImageUrl))
+                            {
+                                <img src="@product.MainImageUrl" alt="@product.Name" class="img-fluid">
+                            }
+                            @if (product.Price < 1000) // Example condition for "NEW" badge
+                            {
+                                <div class="product-label">
+                                    <span class="new">NEW</span>
+                                </div>
+                            }
+                        </div>
+                        <div class="product-body">
+                            <p class="product-category">@product.CategoryName</p>
+                            <h3 class="product-name">
+                                <a href="#">@product.Name</a>
+                            </h3>
+                            <h4 class="product-price">
+                                $@product.Price.ToString("N2")
+                                @if (product.Price > 1000) // Example condition for old price
+                                {
+                                    <del class="product-old-price">$@((product.Price * 1.2m).ToString("N2"))</del>
+                                }
+                            </h4>
+                            <div class="product-rating">
+                                @for (int i = 0; i < 5; i++)
+                                {
+                                    <i class="fa fa-star"></i>
+                                }
+                            </div>
+                            <div class="product-btns">
+                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
+                                <button class="quick-view"><i class="fa fa-eye"></i></button>
+                                <button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Hot Deal Section -->
+<section class="hot-deal mt-5 py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="~/img/laptop-deal.png" alt="Hot Deal" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <div class="hot-deal-content">
+                    <h2 class="mb-4">HOT DEAL THIS WEEK</h2>
+                    <p class="mb-4">NEW COLLECTION UP TO 50% OFF</p>
+                    <div class="countdown mb-4">
+                        <div class="countdown-item">
+                            <div class="countdown-number">02</div>
+                            <div class="countdown-text">Days</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number">10</div>
+                            <div class="countdown-text">Hours</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number">34</div>
+                            <div class="countdown-text">Mins</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number">60</div>
+                            <div class="countdown-text">Secs</div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Top Selling Section -->
+<section class="mt-5">
+    <div class="container">
+        <h2 class="mb-4">TOP SELLING</h2>
+        <div class="row">
+            @foreach (var product in Model.TopSellingProducts)
+            {
+                <div class="col-md-3">
+                    <div class="product-card mb-4">
+                        <div class="product-image">
+                            @if (!string.IsNullOrEmpty(product.MainImageUrl))
+                            {
+                                <img src="@product.MainImageUrl" alt="@product.Name" class="img-fluid">
+                            }
+                        </div>
+                        <div class="product-body">
+                            <p class="product-category">@product.CategoryName</p>
+                            <h3 class="product-name">
+                                <a href="#">@product.Name</a>
+                            </h3>
+                            <h4 class="product-price">
+                                $@product.Price.ToString("N2")
+                                @if (product.Price > 1000) // Example condition for old price
+                                {
+                                    <del class="product-old-price">$@((product.Price * 1.2m).ToString("N2"))</del>
+                                }
+                            </h4>
+                            <div class="product-rating">
+                                @for (int i = 0; i < 5; i++)
+                                {
+                                    <i class="fa fa-star"></i>
+                                }
+                            </div>
+                            <div class="product-btns">
+                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
+                                <button class="quick-view"><i class="fa fa-eye"></i></button>
+                                <button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter mt-5 py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h3>Sign Up for the NEWSLETTER</h3>
+                <form class="newsletter-form mt-4">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter Your Email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Styles {
+    <style>
+        .category-banner {
+            height: 200px;
+            transition: transform 0.3s;
+        }
+
+        .category-banner:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            transition: box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .product-label {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .product-label .new {
+            background: #e31837;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .product-body {
+            text-align: center;
+        }
+
+        .product-category {
+            color: #8d99ae;
+        }
+
+        .product-name {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .product-name a {
+            color: #2b2d42;
+            text-decoration: none;
+        }
+
+        .product-price {
+            color: #e31837;
+            font-size: 1.2rem;
+        }
+
+        .product-old-price {
+            color: #8d99ae;
+            margin-left: 10px;
+            font-size: 0.9rem;
+        }
+
+        .product-rating {
+            color: #ffd700;
+            margin: 10px 0;
+        }
+
+        .product-btns {
+            margin-top: 15px;
+        }
+
+        .product-btns button {
+            border: none;
+            background: none;
+            padding: 5px;
+            margin: 0 5px;
+            color: #8d99ae;
+            transition: color 0.3s;
+        }
+
+        .product-btns button:hover {
+            color: #e31837;
+        }
+
+        .countdown {
+            display: flex;
+            gap: 20px;
+        }
+
+        .countdown-item {
+            text-align: center;
+            background: #e31837;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            min-width: 60px;
+        }
+
+        .countdown-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .countdown-text {
+            font-size: 0.8rem;
+        }
+
+        .newsletter-form .form-control {
+            height: 45px;
+        }
+
+        .newsletter-form .btn {
+            height: 45px;
+            padding: 0 30px;
+        }
+    </style>
+}
