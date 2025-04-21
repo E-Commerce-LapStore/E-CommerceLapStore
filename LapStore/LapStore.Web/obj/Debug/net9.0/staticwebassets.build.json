@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vkAevq35qvL3CVcOyhhSwvI4yblzxqWaFIK9eJqrTIM=",
+  "Hash": "MBkkz4R3nPgcld2W/sP0MfZxvBKIYH9nsvGlqDLXrT4=",
   "Source": "LapStore.Web",
   "BasePath": "_content/LapStore.Web",
   "Mode": "Default",
@@ -5433,6 +5433,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imgs\\Products\\3b8412ad2dcd4ac08e6ab21b9ec801ad.png"
+    },
+    {
+      "Identity": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\Imgs\\Products\\bddcb02b9c544ee3a383be2247a15a3c.png",
+      "SourceId": "LapStore.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\",
+      "BasePath": "_content/LapStore.Web",
+      "RelativePath": "Imgs/Products/bddcb02b9c544ee3a383be2247a15a3c#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rriuibaral",
+      "Integrity": "h3jdxV1uxxIydT77Hr5Nu3ROnPI+pYZfedWASKmxodM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imgs\\Products\\bddcb02b9c544ee3a383be2247a15a3c.png"
     },
     {
       "Identity": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\Imgs\\Products\\db0ddd31ea184994ad2271fef257d048.png",
@@ -15949,6 +15970,88 @@
       ]
     },
     {
+      "Route": "Imgs/Products/bddcb02b9c544ee3a383be2247a15a3c.png",
+      "AssetFile": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\Imgs\\Products\\bddcb02b9c544ee3a383be2247a15a3c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "234903"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h3jdxV1uxxIydT77Hr5Nu3ROnPI+pYZfedWASKmxodM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 12:11:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h3jdxV1uxxIydT77Hr5Nu3ROnPI+pYZfedWASKmxodM="
+        }
+      ]
+    },
+    {
+      "Route": "Imgs/Products/bddcb02b9c544ee3a383be2247a15a3c.rriuibaral.png",
+      "AssetFile": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\Imgs\\Products\\bddcb02b9c544ee3a383be2247a15a3c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "234903"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h3jdxV1uxxIydT77Hr5Nu3ROnPI+pYZfedWASKmxodM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 12:11:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rriuibaral"
+        },
+        {
+          "Name": "label",
+          "Value": "Imgs/Products/bddcb02b9c544ee3a383be2247a15a3c.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h3jdxV1uxxIydT77Hr5Nu3ROnPI+pYZfedWASKmxodM="
+        }
+      ]
+    },
+    {
       "Route": "Imgs/Products/db0ddd31ea184994ad2271fef257d048.f4xhu752yv.png",
       "AssetFile": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\Imgs\\Products\\db0ddd31ea184994ad2271fef257d048.png",
       "Selectors": [],
@@ -15971,7 +16074,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 02:02:53 GMT"
+          "Value": "Sun, 20 Apr 2025 22:21:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16016,7 +16119,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 02:02:53 GMT"
+          "Value": "Sun, 20 Apr 2025 22:21:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17247,7 +17350,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17300,7 +17403,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17337,7 +17440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17384,7 +17487,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17445,7 +17548,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17490,7 +17593,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17545,7 +17648,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17606,7 +17709,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17651,7 +17754,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17706,7 +17809,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17759,7 +17862,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17796,7 +17899,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 13:10:51 GMT"
+          "Value": "Mon, 21 Apr 2025 12:01:41 GMT"
         },
         {
           "Name": "Cache-Control",

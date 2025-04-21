@@ -252,6 +252,7 @@ wwwroot\Imgs\Categories\afcd4a872459427eac8a3dca733010f8.png
 wwwroot\Imgs\Categories\ccf91daeb90f41b5936728be382d199f.png
 wwwroot\Imgs\Products\05e079d69e8444b5ac6ec7b5d7774d18.png
 wwwroot\Imgs\Products\3b8412ad2dcd4ac08e6ab21b9ec801ad.png
+wwwroot\Imgs\Products\bddcb02b9c544ee3a383be2247a15a3c.png
 wwwroot\Imgs\Products\db0ddd31ea184994ad2271fef257d048.png
 wwwroot\js\jquery.zoom.min.js
 wwwroot\js\main.js

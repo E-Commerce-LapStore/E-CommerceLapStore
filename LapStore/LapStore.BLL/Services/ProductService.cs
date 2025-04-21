@@ -12,12 +12,14 @@ namespace LapStore.BLL.Services
         private readonly IProductRepository _productRepository;
         private readonly IFileService _fileService;
         private readonly IUnitOfWork _unitOfWork;
+        private List<string> _uploadedFiles;
 
         public ProductService(IProductRepository productRepository, IFileService fileService, IUnitOfWork unitOfWork)
         {
             _productRepository = productRepository;
             _fileService = fileService;
             _unitOfWork = unitOfWork;
+            _uploadedFiles = new List<string>();
         }
 
         public async Task<Product> GetProductByNameAsync(string name)
@@ -44,6 +46,9 @@ namespace LapStore.BLL.Services
         {
             try
             {
+                await _unitOfWork.BeginTransactionAsync();
+                _uploadedFiles.Clear();
+
                 // First add the product to get its ID
                 await _productRepository.AddAsync(product);
                 await _unitOfWork.CompleteAsync();
@@ -56,6 +61,7 @@ namespace LapStore.BLL.Services
                     var mainImageUrl = await _fileService.Upload(mainImageFile, "/Imgs/Products/");
                     if (mainImageUrl != "Problem")
                     {
+                        _uploadedFiles.Add(mainImageUrl);
                         product.productImages.Add(new ProductImage
                         {
                             ProductId = product.Id,
@@ -73,6 +79,7 @@ namespace LapStore.BLL.Services
                         var imageUrl = await _fileService.Upload(imageFile, "/Imgs/Products/");
                         if (imageUrl != "Problem")
                         {
+                            _uploadedFiles.Add(imageUrl);
                             product.productImages.Add(new ProductImage
                             {
                                 ProductId = product.Id,
@@ -84,10 +91,21 @@ namespace LapStore.BLL.Services
                 }
 
                 await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CommitTransactionAsync();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception($"Error adding product: {ex.Message}", ex);
+                // Clean up uploaded files if transaction fails
+                foreach (var file in _uploadedFiles)
+                {
+                    _fileService.DeletePhysicalFile(file);
+                }
+                await _unitOfWork.RollbackTransactionAsync();
+                throw;
+            }
+            finally
+            {
+                _uploadedFiles.Clear();
             }
         }
 
@@ -95,6 +113,10 @@ namespace LapStore.BLL.Services
         {
             try
             {
+                await _unitOfWork.BeginTransactionAsync();
+                _uploadedFiles.Clear();
+                var filesToDelete = new List<string>();
+
                 var existingProduct = await _productRepository.GetByIdAsync(product.Id);
                 if (existingProduct == null)
                     throw new Exception("Product not found");
@@ -114,10 +136,7 @@ namespace LapStore.BLL.Services
                         var imageToDelete = existingProduct.productImages?.FirstOrDefault(pi => pi.URL == imageUrl);
                         if (imageToDelete != null)
                         {
-                            // First delete the physical file
-                            bool fileDeleted = _fileService.DeletePhysicalFile(imageUrl);
-                            
-                            // Then remove from database regardless of file deletion result
+                            filesToDelete.Add(imageUrl);
                             existingProduct.productImages.Remove(imageToDelete);
                             _productRepository.RemoveProductImage(imageToDelete);
                         }
@@ -131,7 +150,7 @@ namespace LapStore.BLL.Services
                     var existingMainImage = existingProduct.productImages?.FirstOrDefault(pi => pi.IsMain);
                     if (existingMainImage != null)
                     {
-                        bool fileDeleted = _fileService.DeletePhysicalFile(existingMainImage.URL);
+                        filesToDelete.Add(existingMainImage.URL);
                         existingProduct.productImages.Remove(existingMainImage);
                         _productRepository.RemoveProductImage(existingMainImage);
                     }
@@ -140,6 +159,7 @@ namespace LapStore.BLL.Services
                     var mainImageUrl = await _fileService.Upload(mainImageFile, "/Imgs/Products/");
                     if (mainImageUrl != "Problem")
                     {
+                        _uploadedFiles.Add(mainImageUrl);
                         if (existingProduct.productImages == null)
                             existingProduct.productImages = new List<ProductImage>();
 
@@ -163,6 +183,7 @@ namespace LapStore.BLL.Services
                         var imageUrl = await _fileService.Upload(imageFile, "/Imgs/Products/");
                         if (imageUrl != "Problem")
                         {
+                            _uploadedFiles.Add(imageUrl);
                             existingProduct.productImages.Add(new ProductImage
                             {
                                 ProductId = existingProduct.Id,
@@ -175,10 +196,27 @@ namespace LapStore.BLL.Services
 
                 _productRepository.Update(existingProduct);
                 await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CommitTransactionAsync();
+
+                // Delete files only after successful transaction
+                foreach (var file in filesToDelete)
+                {
+                    _fileService.DeletePhysicalFile(file);
+                }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception($"Error updating product: {ex.Message}", ex);
+                // Clean up uploaded files if transaction fails
+                foreach (var file in _uploadedFiles)
+                {
+                    _fileService.DeletePhysicalFile(file);
+                }
+                await _unitOfWork.RollbackTransactionAsync();
+                throw;
+            }
+            finally
+            {
+                _uploadedFiles.Clear();
             }
         }
 
@@ -186,6 +224,9 @@ namespace LapStore.BLL.Services
         {
             try
             {
+                await _unitOfWork.BeginTransactionAsync();
+                var filesToDelete = new List<string>();
+
                 // Check if the product has any related records
                 if ((product.cartItems ?? Enumerable.Empty<CartItem>()).Any() ||
                     (product.orderItems ?? Enumerable.Empty<OrderItem>()).Any() ||
@@ -201,11 +242,7 @@ namespace LapStore.BLL.Services
                     {
                         if (!string.IsNullOrEmpty(image.URL))
                         {
-                            bool fileDeleted = _fileService.DeletePhysicalFile(image.URL);
-                            if (!fileDeleted)
-                            {
-                                System.Diagnostics.Debug.WriteLine($"Warning: Could not delete file {image.URL}");
-                            }
+                            filesToDelete.Add(image.URL);
                         }
                         // Remove the image entity using the repository
                         _productRepository.RemoveProductImage(image);
@@ -215,10 +252,18 @@ namespace LapStore.BLL.Services
                 // Then delete the product
                 _productRepository.Delete(product);
                 await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CommitTransactionAsync();
+
+                // Delete files only after successful transaction
+                foreach (var file in filesToDelete)
+                {
+                    _fileService.DeletePhysicalFile(file);
+                }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception($"Error deleting product: {ex.Message}", ex);
+                await _unitOfWork.RollbackTransactionAsync();
+                throw;
             }
         }
 
