@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LapStore.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f39a6b7822122eab180a596527d6529b68276c1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5428ad090260ab34724fae8a7f4d35b58bd9012d")]
 [assembly: System.Reflection.AssemblyProductAttribute("LapStore.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LapStore.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
