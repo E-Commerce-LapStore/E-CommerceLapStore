@@ -8,5 +8,10 @@ namespace LapStore.DAL
         ICategoryRepository CategoryRepository { get; }
         IProductRepository ProductRepository { get; }
         Task<int> CompleteAsync();
+        
+        // Transaction methods
+        Task BeginTransactionAsync();
+        Task CommitTransactionAsync();
+        Task RollbackTransactionAsync();
     }
 }

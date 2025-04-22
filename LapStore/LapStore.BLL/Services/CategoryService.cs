@@ -36,20 +36,42 @@ namespace LapStore.BLL.Services
 
         public async Task AddCategoryAsync(Category category)
         {
-            await _categoryRepository.AddAsync(category);
-            await _unitOfWork.CompleteAsync();
+            try
+            {
+                await _unitOfWork.BeginTransactionAsync();
+                await _categoryRepository.AddAsync(category);
+                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CommitTransactionAsync();
+            }
+            catch (Exception)
+            {
+                await _unitOfWork.RollbackTransactionAsync();
+                throw;
+            }
         }
 
         public async Task UpdateCategoryAsync(Category category)
         {
-            _categoryRepository.Update(category);
-            await _unitOfWork.CompleteAsync();
+            try
+            {
+                await _unitOfWork.BeginTransactionAsync();
+                _categoryRepository.Update(category);
+                await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CommitTransactionAsync();
+            }
+            catch (Exception)
+            {
+                await _unitOfWork.RollbackTransactionAsync();
+                throw;
+            }
         }
 
         public async Task DeleteCategory(Category category)
         {
             try
             {
+                await _unitOfWork.BeginTransactionAsync();
+
                 // Check if the category has any products
                 if ((category.products ?? Enumerable.Empty<Product>()).Any())
                 {
@@ -71,13 +93,14 @@ namespace LapStore.BLL.Services
                 // Then delete from database
                 _categoryRepository.Delete(category);
                 await _unitOfWork.CompleteAsync();
+                await _unitOfWork.CommitTransactionAsync();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception($"Error deleting category: {ex.Message}", ex);
+                await _unitOfWork.RollbackTransactionAsync();
+                throw;
             }
         }
-
 
         public async Task<bool> IsCategoryNameExistAsync(string categoryName)
         {

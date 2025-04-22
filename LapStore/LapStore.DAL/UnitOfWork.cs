@@ -1,11 +1,13 @@
 ﻿using LapStore.DAL.Repositories;
 using LapStore.DAL.Data.Contexts;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace LapStore.DAL
 {
     public class UnitOfWork : IUnitOfWork
     {
         private readonly LapStoreDbContext _context;
+        private IDbContextTransaction _transaction;
 
         private readonly Dictionary<Type, object> _repositories = new Dictionary<Type, object>();
         public ICategoryRepository CategoryRepository { get; private set; }
@@ -27,16 +29,53 @@ namespace LapStore.DAL
             _repositories[typeof(T)] = repository;
             return repository;
         }
+
         public async Task<int> CompleteAsync()
         {
             return await _context.SaveChangesAsync();
         }
 
-        public void Dispose()
+        public async Task BeginTransactionAsync()
         {
-            _context.Dispose();
+            _transaction = await _context.Database.BeginTransactionAsync();
         }
 
-        
+        public async Task CommitTransactionAsync()
+        {
+            try
+            {
+                await _transaction?.CommitAsync();
+            }
+            finally
+            {
+                if (_transaction != null)
+                {
+                    await _transaction.DisposeAsync();
+                    _transaction = null;
+                }
+            }
+        }
+
+        public async Task RollbackTransactionAsync()
+        {
+            try
+            {
+                await _transaction?.RollbackAsync();
+            }
+            finally
+            {
+                if (_transaction != null)
+                {
+                    await _transaction.DisposeAsync();
+                    _transaction = null;
+                }
+            }
+        }
+
+        public void Dispose()
+        {
+            _transaction?.Dispose();
+            _context.Dispose();
+        }
     }
 }
