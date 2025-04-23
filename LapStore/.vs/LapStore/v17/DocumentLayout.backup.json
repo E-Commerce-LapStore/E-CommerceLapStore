@@ -1,7 +1,48 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\E-CommerceLapStore\\LapStore\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D34CF0-519D-4AC7-B594-2C6C22ED9D6F}|LapStore.BLL\\LapStore.BLL.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.bll\\services\\loggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9D34CF0-519D-4AC7-B594-2C6C22ED9D6F}|LapStore.BLL\\LapStore.BLL.csproj|solutionrelative:lapstore.bll\\services\\loggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\viewmodels\\addressvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\viewmodels\\addressvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\viewmodels\\uservm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\viewmodels\\uservm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\viewmodels\\changepasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\viewmodels\\changepasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21D8391B-5E1E-412D-AE08-92D4FBFFF197}|LapStore.DAL\\LapStore.DAL.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.dal\\data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D8391B-5E1E-412D-AE08-92D4FBFFF197}|LapStore.DAL\\LapStore.DAL.csproj|solutionrelative:lapstore.dal\\data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21D8391B-5E1E-412D-AE08-92D4FBFFF197}|LapStore.DAL\\LapStore.DAL.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.dal\\data\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D8391B-5E1E-412D-AE08-92D4FBFFF197}|LapStore.DAL\\LapStore.DAL.csproj|solutionrelative:lapstore.dal\\data\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +59,136 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LapStore.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "LapStore.Web\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAE4AAAAAZ2ZmZmYkwFgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T23:49:56.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LapStore.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LapStore.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T23:49:47.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoggingService.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\Services\\LoggingService.cs",
+              "RelativeDocumentMoniker": "LapStore.BLL\\Services\\LoggingService.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\Services\\LoggingService.cs",
+              "RelativeToolTip": "LapStore.BLL\\Services\\LoggingService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T22:59:34.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "LapStore.Web\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "LapStore.Web\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAG8AAACAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T22:29:59.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "LapStore.Web\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Controllers\\UserController.cs",
+              "RelativeToolTip": "LapStore.Web\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAMBAAAAaGZmZmYSwBYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T22:26:52.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChangePasswordVM.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\ViewModels\\ChangePasswordVM.cs",
+              "RelativeDocumentMoniker": "LapStore.Web\\ViewModels\\ChangePasswordVM.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\ViewModels\\ChangePasswordVM.cs",
+              "RelativeToolTip": "LapStore.Web\\ViewModels\\ChangePasswordVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T22:20:47.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Address.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\Data\\Entities\\Address.cs",
+              "RelativeDocumentMoniker": "LapStore.DAL\\Data\\Entities\\Address.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\Data\\Entities\\Address.cs",
+              "RelativeToolTip": "LapStore.DAL\\Data\\Entities\\Address.cs",
+              "ViewState": "AgIAAAcAAABAmZmZmZklwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T22:17:00.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddressVM.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\ViewModels\\AddressVM.cs",
+              "RelativeDocumentMoniker": "LapStore.Web\\ViewModels\\AddressVM.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\ViewModels\\AddressVM.cs",
+              "RelativeToolTip": "LapStore.Web\\ViewModels\\AddressVM.cs",
+              "ViewState": "AgIAACEAAADg//////83wC8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T21:25:53.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserVM.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\ViewModels\\UserVM.cs",
+              "RelativeDocumentMoniker": "LapStore.Web\\ViewModels\\UserVM.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\ViewModels\\UserVM.cs",
+              "RelativeToolTip": "LapStore.Web\\ViewModels\\UserVM.cs",
+              "ViewState": "AgIAAEQAAAAA//////8PwAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T08:53:51.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\Data\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "LapStore.DAL\\Data\\Entities\\User.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\Data\\Entities\\User.cs",
+              "RelativeToolTip": "LapStore.DAL\\Data\\Entities\\User.cs",
+              "ViewState": "AgIAADwAAAAAamZmZmb2v0gAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T08:47:41.243Z",
+              "EditorCaption": ""
             }
           ]
         }

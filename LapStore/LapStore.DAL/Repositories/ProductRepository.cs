@@ -11,11 +11,9 @@ namespace LapStore.DAL.Repositories
 {
     public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
-        private readonly LapStoreDbContext _context;
 
         public ProductRepository(LapStoreDbContext context) : base(context)
         {
-            _context = context;
         }
 
         public async Task<IEnumerable<Product>> GetProductsByCategoryAsync(int categoryId)
