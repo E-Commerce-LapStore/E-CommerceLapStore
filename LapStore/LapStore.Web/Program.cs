@@ -1,60 +1,64 @@
-using LapStore.BLL.Interfaces;
+using LapStore.BLL.DependencyInjections;
 using LapStore.BLL.Services;
-using LapStore.DAL;
-using LapStore.DAL.Data.Contexts;
-using LapStore.DAL.Repositories;
-using Microsoft.EntityFrameworkCore;
+using LapStore.BLL.Services.Interfaces;
+using LapStore.DAL.Data;
+using Microsoft.Extensions.Logging;
 
 namespace LapStore.Web
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Register DbContext
-            builder.Services.AddDbContext<LapStoreDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            #region Register DependencyInjection
+            // Add configuration services first
+            builder.Services.AddConfigurationDependencyInjection(builder.Configuration);
 
-            // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            // Add other services
+            builder.Services.AddServiceDependencyInjection()
+                          .AddRepositoryDependencyInjection()
+                          .AddGeneralDependencyInjection(builder.Configuration)
+                          .AddIdentityDependencyInjection()
+                          .AddScoped<IEmailService, EmailService>();
+            // Add security headers
+            builder.Services.AddHsts(options =>
+            {
+                options.Preload = true;
+                options.IncludeSubDomains = true;
+                options.MaxAge = TimeSpan.FromDays(365);
+            });
+            #endregion
 
-            // Register repositories
-            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-            builder.Services.AddScoped<IProductRepository, ProductRepository>();
-
-            // Create one instance for the same request
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<IFileService, FileService>();
-            builder.Services.AddScoped<ICategoryService, CategoryService>();
-            builder.Services.AddScoped<IProductService, ProductService>();
-
+            #region Middleware
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
+
+            // Configure security headers
+            app.UseHsts();
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseRouting();
 
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+            // Add security headers
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
+                context.Response.Headers.Add("X-Frame-Options", "DENY");
+                context.Response.Headers.Add("X-XSS-Protection", "1; mode=block");
+                context.Response.Headers.Add("Referrer-Policy", "strict-origin-when-cross-origin");
+                context.Response.Headers.Add("Content-Security-Policy", 
+                    "default-src 'self'; " +
+                    "script-src 'self' 'unsafe-inline' 'unsafe-eval'; " +
+                    "style-src 'self' 'unsafe-inline'; " +
+                    "img-src 'self' data: https:; " +
+                    "font-src 'self'; " +
+                    "frame-ancestors 'none';");
+                await next();
+            });
 
-            //app.UseCors();
-            app.UseAuthentication();
-            app.UseAuthorization();
-            app.MapStaticAssets();
-            app.Run();
+            app.AddApplicationBuilderDependencyInjection();
+            await app.RunAsync();
+            #endregion
         }
     }
 }

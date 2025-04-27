@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using LapStore.Web.ViewModels;
+using LapStore.BLL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using LapStore.BLL.Interfaces;
 using System.Linq;

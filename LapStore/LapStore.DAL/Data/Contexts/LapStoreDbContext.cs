@@ -1,9 +1,11 @@
 ﻿using LapStore.DAL.Data.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace LapStore.DAL.Data.Contexts
 {
-    public class LapStoreDbContext : DbContext
+    public class LapStoreDbContext : IdentityDbContext<User, IdentityRole<int>, int>
     {
         public LapStoreDbContext(DbContextOptions<LapStoreDbContext> options) : base(options)
         {
@@ -11,7 +13,14 @@ namespace LapStore.DAL.Data.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseLazyLoadingProxies();
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseLazyLoadingProxies();
+                
+                // Disable database creation warnings
+                optionsBuilder.ConfigureWarnings(warnings => 
+                    warnings.Ignore(Microsoft.EntityFrameworkCore.Diagnostics.CoreEventId.ManyServiceProvidersCreatedWarning));
+            }
         }
 
         public DbSet<Address> addresses { get; set; }
@@ -27,6 +36,27 @@ namespace LapStore.DAL.Data.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Configure decimal precision for all price and weight columns
+            modelBuilder.Entity<CartItem>()
+                .Property(ci => ci.UnitPrice)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Order>()
+                .Property(o => o.TotalAmount)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<OrderItem>()
+                .Property(oi => oi.UnitPrice)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Price)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Weight)
+                .HasColumnType("decimal(8,3)");
+
             // Define primary keys explicitly
             modelBuilder.Entity<Address>().HasKey(a => a.Id);
             modelBuilder.Entity<Cart>().HasKey(c => c.Id);
@@ -35,7 +65,6 @@ namespace LapStore.DAL.Data.Contexts
             modelBuilder.Entity<Product>().HasKey(p => p.Id);
             modelBuilder.Entity<ProductImage>().HasKey(pi => pi.Id);
             modelBuilder.Entity<User>().HasKey(u => u.Id);
-
 
             // Composite Key Configurations
             modelBuilder.Entity<CartItem>()
@@ -47,7 +76,6 @@ namespace LapStore.DAL.Data.Contexts
             modelBuilder.Entity<Review>()
                 .HasKey(r => new { r.UserId, r.ProductId });
 
-
             // Example with Cart and User (One to One)
             modelBuilder.Entity<Cart>()
                 .HasOne(c => c.user)
@@ -56,9 +84,10 @@ namespace LapStore.DAL.Data.Contexts
 
             // Example with Address and User (One to One)
             modelBuilder.Entity<User>()
-            .HasOne(u => u.address)
-            .WithMany(a => a.users)
-            .HasForeignKey(u => u.AddressId);
+                .HasOne(u => u.address)
+                .WithMany(a => a.users)
+                .HasForeignKey(u => u.AddressId)
+                .OnDelete(DeleteBehavior.Restrict);  // Added explicit delete behavior
 
             // Example with Category and ParentCategory (Self-Referencing)
             modelBuilder.Entity<Category>()
@@ -114,26 +143,20 @@ namespace LapStore.DAL.Data.Contexts
                 .WithMany(u => u.userReviews)
                 .HasForeignKey(r => r.UserId);
 
-
             // Enforce 'Restrict' delete behavior for all foreign key relationships
             foreach (var relationship in modelBuilder.Model.GetEntityTypes()
                 .SelectMany(e => e.GetForeignKeys()))
             {
-                relationship.DeleteBehavior = DeleteBehavior.Restrict; // Prevent deletion if related entities exist
+                relationship.DeleteBehavior = DeleteBehavior.Restrict;
             }
-            // Indexers
 
+            // Indexers
             modelBuilder.Entity<User>().HasIndex(u => new { u.UserName, u.Email, u.PhoneNumber })
                 .IsUnique();
 
             modelBuilder.Entity<User>().HasIndex(u => new { u.FirstName, u.LastName });
 
-            //modelBuilder.Entity<User>().ToTable("users", u => u.ExcludeFromMigrations());
-
             base.OnModelCreating(modelBuilder);
         }
-
-
-
     }
 }

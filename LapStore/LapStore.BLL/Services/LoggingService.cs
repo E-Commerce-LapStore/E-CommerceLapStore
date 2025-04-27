@@ -1,16 +1,9 @@
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
+using LapStore.BLL.Interfaces;
 
 namespace LapStore.BLL.Services
 {
-    public interface ILoggingService
-    {
-        void LogError(string message, Exception ex, params object[] args);
-        void LogWarning(string message, params object[] args);
-        void LogInformation(string message, params object[] args);
-        void LogDebug(string message, params object[] args);
-        void LogPerformance(string operationName, long elapsedMilliseconds);
-    }
 
     public class LoggingService : ILoggingService
     {

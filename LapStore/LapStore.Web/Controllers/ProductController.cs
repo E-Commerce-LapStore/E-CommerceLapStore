@@ -1,6 +1,6 @@
 ﻿using LapStore.BLL.Interfaces;
 using LapStore.DAL.Data.Entities;
-using LapStore.Web.ViewModels;
+using LapStore.BLL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -10,7 +10,6 @@ namespace LapStore.Web.Controllers
     {
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
-        //pla pla pla
         public ProductController(IProductService productService, ICategoryService categoryService)
         {
             _productService = productService;

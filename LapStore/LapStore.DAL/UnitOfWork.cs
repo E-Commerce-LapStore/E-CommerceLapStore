@@ -77,5 +77,7 @@ namespace LapStore.DAL
             _transaction?.Dispose();
             _context.Dispose();
         }
+
+        public LapStoreDbContext Context => _context;
     }
 }

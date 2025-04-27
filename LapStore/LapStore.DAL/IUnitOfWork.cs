@@ -1,4 +1,5 @@
-﻿using LapStore.DAL.Repositories;
+﻿using LapStore.DAL.Data.Contexts;
+using LapStore.DAL.Repositories;
 
 namespace LapStore.DAL
 {
@@ -13,5 +14,6 @@ namespace LapStore.DAL
         Task BeginTransactionAsync();
         Task CommitTransactionAsync();
         Task RollbackTransactionAsync();
+        LapStoreDbContext Context {  get; }
     }
 }

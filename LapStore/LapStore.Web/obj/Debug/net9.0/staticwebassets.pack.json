@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\css\\nouislider.min.css"
     },
     {
+      "Id": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
       "Id": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\slick-theme.css",
       "PackagePath": "staticwebassets\\css\\slick-theme.css"
     },

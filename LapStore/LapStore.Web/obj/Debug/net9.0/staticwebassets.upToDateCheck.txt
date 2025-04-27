@@ -212,6 +212,7 @@ D:\E-CommerceLapStore\LapStore\LapStore.Web\wwwroot\lib\bootstrap\css\bootstrap-
 D:\E-CommerceLapStore\LapStore\LapStore.Web\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
 D:\E-CommerceLapStore\LapStore\LapStore.Web\wwwroot\lib\bootstrap\css\bootstrap-grid.rtl.css.map
 D:\E-CommerceLapStore\LapStore\LapStore.Web\wwwroot\lib\jquery\jquery.js
+D:\E-CommerceLapStore\LapStore\LapStore.Web\wwwroot\css\site.css
 D:\E-CommerceLapStore\LapStore\LapStore.Web\wwwroot\lib\jquery\jquery.min.js
 D:\E-CommerceLapStore\LapStore\LapStore.Web\wwwroot\css\slick.css
 D:\E-CommerceLapStore\LapStore\LapStore.Web\wwwroot\lib\jquery-validate\localization\messages_sr_lat.js
@@ -233,6 +234,7 @@ D:\E-CommerceLapStore\LapStore\LapStore.Web\wwwroot\lib\jquery-validate\localiza
 D:\E-CommerceLapStore\LapStore\LapStore.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js
 wwwroot\css\font-awesome.min.css
 wwwroot\css\nouislider.min.css
+wwwroot\css\site.css
 wwwroot\css\slick.css
 wwwroot\css\slick-theme.css
 wwwroot\css\style.css
