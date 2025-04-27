@@ -15,6 +15,7 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.BLL\obj\Debug\net9.0\refint\Lap
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.BLL\obj\Debug\net9.0\LapStore.BLL.pdb
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.BLL\obj\Debug\net9.0\ref\LapStore.BLL.dll
 D:\E-CommerceLapStore\LapStore\LapStore.BLL\bin\Debug\net9.0\LapStore.BLL.deps.json
+D:\E-CommerceLapStore\LapStore\LapStore.BLL\bin\Debug\net9.0\LapStore.BLL.runtimeconfig.json
 D:\E-CommerceLapStore\LapStore\LapStore.BLL\bin\Debug\net9.0\LapStore.BLL.dll
 D:\E-CommerceLapStore\LapStore\LapStore.BLL\bin\Debug\net9.0\LapStore.BLL.pdb
 D:\E-CommerceLapStore\LapStore\LapStore.BLL\bin\Debug\net9.0\LapStore.DAL.dll
@@ -29,4 +30,5 @@ D:\E-CommerceLapStore\LapStore\LapStore.BLL\obj\Debug\net9.0\LapStore.737553AE.U
 D:\E-CommerceLapStore\LapStore\LapStore.BLL\obj\Debug\net9.0\LapStore.BLL.dll
 D:\E-CommerceLapStore\LapStore\LapStore.BLL\obj\Debug\net9.0\refint\LapStore.BLL.dll
 D:\E-CommerceLapStore\LapStore\LapStore.BLL\obj\Debug\net9.0\LapStore.BLL.pdb
+D:\E-CommerceLapStore\LapStore\LapStore.BLL\obj\Debug\net9.0\LapStore.BLL.genruntimeconfig.cache
 D:\E-CommerceLapStore\LapStore\LapStore.BLL\obj\Debug\net9.0\ref\LapStore.BLL.dll

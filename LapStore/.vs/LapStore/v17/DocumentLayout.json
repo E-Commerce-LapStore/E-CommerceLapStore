@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\E-CommerceLapStore\\LapStore\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +31,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "LapStore.Web\\appsettings.json",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\appsettings.json",
+              "RelativeToolTip": "LapStore.Web\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-27T17:58:02.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "LapStore.Web\\appsettings.Development.json",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\appsettings.Development.json",
+              "RelativeToolTip": "LapStore.Web\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-27T17:57:58.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "LapStore.Web\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "LapStore.Web\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwFgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:25:29.671Z",
+              "EditorCaption": ""
             }
           ]
         }

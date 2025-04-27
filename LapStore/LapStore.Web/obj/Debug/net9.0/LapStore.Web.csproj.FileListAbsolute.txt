@@ -423,8 +423,14 @@ D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\LapStore.Web.pdb
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\AutoMapper.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Azure.Core.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Azure.Identity.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Castle.Core.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Elasticsearch.Net.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Humanizer.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\MailKit.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Build.Locator.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
@@ -446,6 +452,8 @@ D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Extension
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
@@ -460,7 +468,9 @@ D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.IdentityM
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\MimeKit.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Nest.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\Microsoft.Docs.Samples.RouteInfo.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\System.ClientModel.dll
 D:\E-CommerceLapStore\LapStore\LapStore.Web\bin\Debug\net9.0\System.CodeDom.dll
@@ -573,6 +583,7 @@ D:\E-CommerceLapStore\LapStore\LapStore.Web\obj\Debug\net9.0\scopedcss\bundle\La
 D:\E-CommerceLapStore\LapStore\LapStore.Web\obj\Debug\net9.0\scopedcss\projectbundle\LapStore.Web.bundle.scp.css
 D:\E-CommerceLapStore\LapStore\LapStore.Web\obj\Debug\net9.0\compressed\dgjyr74x5t-isc7u9n7qi.gz
 D:\E-CommerceLapStore\LapStore\LapStore.Web\obj\Debug\net9.0\compressed\cru37weois-w70hof1eyv.gz
+D:\E-CommerceLapStore\LapStore\LapStore.Web\obj\Debug\net9.0\compressed\xhpwoiuc2a-88g6dzzhi3.gz
 D:\E-CommerceLapStore\LapStore\LapStore.Web\obj\Debug\net9.0\compressed\95z29aslnw-7wa2vx8f2r.gz
 D:\E-CommerceLapStore\LapStore\LapStore.Web\obj\Debug\net9.0\compressed\xpsh2zh3il-krratgaar5.gz
 D:\E-CommerceLapStore\LapStore\LapStore.Web\obj\Debug\net9.0\compressed\j6vlgtpcpj-ctpc3f3afy.gz

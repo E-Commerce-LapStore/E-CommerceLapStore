@@ -1,6 +1,6 @@
 ﻿using LapStore.BLL.Interfaces;
 using LapStore.DAL.Data.Entities;
-using LapStore.Web.ViewModels;
+using LapStore.BLL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 

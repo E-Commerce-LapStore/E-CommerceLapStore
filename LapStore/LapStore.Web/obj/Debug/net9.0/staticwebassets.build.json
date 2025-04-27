@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DkhxUJXe1uCYmKuB+w9pU5x/oMkSZP4jbg5gSaf0/iw=",
+  "Hash": "jVZ1WYE+727HbUwRGFKttGl0FJIvAqO+VHnArzWUmi8=",
   "Source": "LapStore.Web",
   "BasePath": "_content/LapStore.Web",
   "Mode": "Default",
@@ -4553,6 +4553,27 @@
       "OriginalItemSpec": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\lib\\jquery\\jquery.js"
     },
     {
+      "Identity": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\obj\\Debug\\net9.0\\compressed\\xhpwoiuc2a-88g6dzzhi3.gz",
+      "SourceId": "LapStore.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/LapStore.Web",
+      "RelativePath": "css/site#[.{fingerprint=88g6dzzhi3}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\site.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "mr5onlq00b",
+      "Integrity": "zkHOyJf21YfJUnKGEXskaWvn0It1UKBTuMU9yMXuWLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\site.css"
+    },
+    {
       "Identity": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\obj\\Debug\\net9.0\\compressed\\xkdwyyr3vo-m9qm4tazc0.gz",
       "SourceId": "LapStore.Web",
       "SourceType": "Discovered",
@@ -5034,6 +5055,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\nouislider.min.css"
+    },
+    {
+      "Identity": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\site.css",
+      "SourceId": "LapStore.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\",
+      "BasePath": "_content/LapStore.Web",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "88g6dzzhi3",
+      "Integrity": "WF+6q9+NNODf+3LMqBUA7posLBmDpEUz2yqJsdi1J4o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
       "Identity": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\slick.css",
@@ -12900,6 +12942,304 @@
       ]
     },
     {
+      "Route": "css/site.88g6dzzhi3.css",
+      "AssetFile": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\obj\\Debug\\net9.0\\compressed\\xhpwoiuc2a-88g6dzzhi3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002386634845"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "418"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zkHOyJf21YfJUnKGEXskaWvn0It1UKBTuMU9yMXuWLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 02:52:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"WF+6q9+NNODf+3LMqBUA7posLBmDpEUz2yqJsdi1J4o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "88g6dzzhi3"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WF+6q9+NNODf+3LMqBUA7posLBmDpEUz2yqJsdi1J4o="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.88g6dzzhi3.css",
+      "AssetFile": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1033"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WF+6q9+NNODf+3LMqBUA7posLBmDpEUz2yqJsdi1J4o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 02:52:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "88g6dzzhi3"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WF+6q9+NNODf+3LMqBUA7posLBmDpEUz2yqJsdi1J4o="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.88g6dzzhi3.css.gz",
+      "AssetFile": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\obj\\Debug\\net9.0\\compressed\\xhpwoiuc2a-88g6dzzhi3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "418"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zkHOyJf21YfJUnKGEXskaWvn0It1UKBTuMU9yMXuWLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 02:52:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "88g6dzzhi3"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zkHOyJf21YfJUnKGEXskaWvn0It1UKBTuMU9yMXuWLk="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\obj\\Debug\\net9.0\\compressed\\xhpwoiuc2a-88g6dzzhi3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002386634845"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "418"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zkHOyJf21YfJUnKGEXskaWvn0It1UKBTuMU9yMXuWLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 02:52:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"WF+6q9+NNODf+3LMqBUA7posLBmDpEUz2yqJsdi1J4o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WF+6q9+NNODf+3LMqBUA7posLBmDpEUz2yqJsdi1J4o="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1033"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WF+6q9+NNODf+3LMqBUA7posLBmDpEUz2yqJsdi1J4o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 02:52:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WF+6q9+NNODf+3LMqBUA7posLBmDpEUz2yqJsdi1J4o="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\obj\\Debug\\net9.0\\compressed\\xhpwoiuc2a-88g6dzzhi3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "418"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zkHOyJf21YfJUnKGEXskaWvn0It1UKBTuMU9yMXuWLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 02:52:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zkHOyJf21YfJUnKGEXskaWvn0It1UKBTuMU9yMXuWLk="
+        }
+      ]
+    },
+    {
       "Route": "css/slick.css",
       "AssetFile": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\obj\\Debug\\net9.0\\compressed\\xpsh2zh3il-krratgaar5.gz",
       "Selectors": [
@@ -17350,7 +17690,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17403,7 +17743,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17440,7 +17780,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17487,7 +17827,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17548,7 +17888,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17593,7 +17933,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17648,7 +17988,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17709,7 +18049,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17754,7 +18094,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17809,7 +18149,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17862,7 +18202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17899,7 +18239,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:36:09 GMT"
+          "Value": "Sun, 27 Apr 2025 18:59:00 GMT"
         },
         {
           "Name": "Cache-Control",

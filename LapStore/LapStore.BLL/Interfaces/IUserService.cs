@@ -12,6 +12,7 @@ namespace LapStore.BLL.Interfaces
         Task<User?> GetUserWithOrdersAsync(int userId);
         Task<User?> GetUserWithCartAsync(int userId);
         Task<bool> CreateUserAsync(User user);
+        Task<bool> CreateUserWithAddressAsync(User user, Address address);
         Task<bool> UpdateUserAsync(User user);
         Task<bool> DeleteUserAsync(int id);
         Task<bool> IsEmailExistAsync(string email, int? userId = null);
@@ -19,5 +20,6 @@ namespace LapStore.BLL.Interfaces
         Task<bool> ChangePasswordAsync(int userId, string currentPassword, string newPassword);
         Task<bool> UpdateUserRoleAsync(int userId, UserRole newRole);
         Task<bool> UpdateUserAddressAsync(int userId, int addressId);
+        Task<User?> AuthenticateAsync(string userName, string password);
     }
 } 

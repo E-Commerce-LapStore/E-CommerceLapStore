@@ -1,5 +1,5 @@
 using LapStore.BLL.Interfaces;
-using LapStore.Web.ViewModels;
+using LapStore.BLL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using LapStore.BLL.Services;
