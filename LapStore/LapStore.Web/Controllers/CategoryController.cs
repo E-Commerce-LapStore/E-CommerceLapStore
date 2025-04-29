@@ -191,12 +191,10 @@ namespace LapStore.Web.Controllers
             }
         }
 
-        public async Task<IActionResult> IsCategoryNameExist(string name)
+        public async Task<IActionResult> IsCategoryNameExist(string name, int? id)
         {
-            var result = await _categoryService.IsCategoryNameExistAsync(name);
-            if (result)
-                return Json(false);
-            return Json(true);
+            var result = await _categoryService.IsCategoryNameExistAsync(name, id);
+            return Json(!result);
         }
     }
 }

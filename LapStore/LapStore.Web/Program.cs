@@ -3,6 +3,8 @@ using LapStore.BLL.Services;
 using LapStore.BLL.Services.Interfaces;
 using LapStore.DAL.Data;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 
 namespace LapStore.Web
 {
@@ -22,6 +24,7 @@ namespace LapStore.Web
                           .AddGeneralDependencyInjection(builder.Configuration)
                           .AddIdentityDependencyInjection()
                           .AddScoped<IEmailService, EmailService>();
+
             // Add security headers
             builder.Services.AddHsts(options =>
             {
@@ -33,7 +36,6 @@ namespace LapStore.Web
 
             #region Middleware
             var app = builder.Build();
-
 
             // Configure security headers
             app.UseHsts();
@@ -56,7 +58,29 @@ namespace LapStore.Web
                 await next();
             });
 
-            app.AddApplicationBuilderDependencyInjection();
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+            }
+
+            app.UseStaticFiles();
+            app.UseRouting();
+
+            // Add authentication and authorization middleware
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
+
             await app.RunAsync();
             #endregion
         }

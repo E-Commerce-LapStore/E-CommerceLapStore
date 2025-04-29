@@ -1,82 +1,97 @@
 @model UserVM
 @{
-    ViewData["Title"] = "Profile";
+    ViewData["Title"] = "My Profile";
 }
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-8 offset-md-2">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="text-center">User Profile</h3>
-                </div>
-                <div class="card-body">
-                    @if (TempData["Success"] != null)
-                    {
-                        <div class="alert alert-success">
-                            @TempData["Success"]
-                        </div>
-                    }
+<link rel="stylesheet" href="~/css/account.css" />
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <dl class="row">
-                                <dt class="col-sm-4">Username:</dt>
-                                <dd class="col-sm-8">@Model.UserName</dd>
-
-                                <dt class="col-sm-4">Email:</dt>
-                                <dd class="col-sm-8">@Model.Email</dd>
-
-                                <dt class="col-sm-4">Name:</dt>
-                                <dd class="col-sm-8">@Model.FirstName @Model.LastName</dd>
-
-                                <dt class="col-sm-4">Gender:</dt>
-                                <dd class="col-sm-8">@Model.Gender</dd>
-                            </dl>
-                        </div>
-                        <div class="col-md-6">
-                            <dl class="row">
-                                <dt class="col-sm-4">Birth Date:</dt>
-                                <dd class="col-sm-8">@Model.BirthDate.ToShortDateString()</dd>
-
-                                <dt class="col-sm-4">Age:</dt>
-                                <dd class="col-sm-8">@Model.Age</dd>
-
-                                <dt class="col-sm-4">Role:</dt>
-                                <dd class="col-sm-8">@Model.Role</dd>
-
-                                <dt class="col-sm-4">Phone:</dt>
-                                <dd class="col-sm-8">@(Model.PhoneNumber ?? "Not provided")</dd>
-                            </dl>
-                        </div>
+<div class="account-container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="account-card">
+                    <div class="card-header">
+                        <h3 class="text-center">My Profile</h3>
                     </div>
+                    <div class="card-body">
+                        @if (TempData["Success"] != null)
+                        {
+                            <div class="alert alert-success mb-4">
+                                @TempData["Success"]
+                            </div>
+                        }
 
-                    @if (Model.Address != null)
-                    {
-                        <div class="mt-4">
-                            <h4>Address</h4>
-                            <dl class="row">
-                                <dt class="col-sm-4">Street:</dt>
-                                <dd class="col-sm-8">@Model.Address.Street</dd>
-
-                                <dt class="col-sm-4">City:</dt>
-                                <dd class="col-sm-8">@Model.Address.City</dd>
-
-                                <dt class="col-sm-4">State:</dt>
-                                <dd class="col-sm-8">@Model.Address.Governorate</dd>
-
-                                <dt class="col-sm-4">Postal Code:</dt>
-                                <dd class="col-sm-8">@Model.Address.ZipCode</dd>
-
-                                <dt class="col-sm-4">Country:</dt>
-                                <dd class="col-sm-8">@Model.Address.Country</dd>
-                            </dl>
+                        <h4 class="section-title">Personal Information</h4>
+                        <div class="profile-details">
+                            <div class="detail-row">
+                                <div class="detail-label">First Name</div>
+                                <div class="detail-value">@Model.FirstName</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Last Name</div>
+                                <div class="detail-value">@Model.LastName</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Gender</div>
+                                <div class="detail-value">@Model.Gender</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Age</div>
+                                <div class="detail-value">@Model.Age years</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Birth Date</div>
+                                <div class="detail-value">@Model.BirthDate.ToShortDateString()</div>
+                            </div>
                         </div>
-                    }
 
-                    <div class="mt-4">
-                        <a asp-action="EditProfile" class="btn btn-primary">Edit Profile</a>
-                        <a asp-action="ChangePassword" class="btn btn-secondary">Change Password</a>
+                        <h4 class="section-title">Account Information</h4>
+                        <div class="profile-details">
+                            <div class="detail-row">
+                                <div class="detail-label">Username</div>
+                                <div class="detail-value">@Model.UserName</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Email</div>
+                                <div class="detail-value">@Model.Email</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Phone Number</div>
+                                <div class="detail-value">@(Model.PhoneNumber ?? "Not provided")</div>
+                            </div>
+                        </div>
+
+                        @if (Model.Address != null)
+                        {
+                            <h4 class="section-title">Address Information</h4>
+                            <div class="profile-details">
+                                <div class="detail-row">
+                                    <div class="detail-label">Street Address</div>
+                                    <div class="detail-value">@Model.Address.Street</div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="detail-label">City</div>
+                                    <div class="detail-value">@Model.Address.City</div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="detail-label">State/Province</div>
+                                    <div class="detail-value">@Model.Address.Governorate</div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="detail-label">Postal Code</div>
+                                    <div class="detail-value">@Model.Address.ZipCode</div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="detail-label">Country</div>
+                                    <div class="detail-value">@Model.Address.Country</div>
+                                </div>
+                            </div>
+                        }
+
+                        <div class="form-group mt-4 text-center">
+                            <a asp-action="EditProfile" class="btn btn-primary">Edit Profile</a>
+                            <a asp-action="ChangePassword" class="btn btn-secondary">Change Password</a>
+                        </div>
                     </div>
                 </div>
             </div>

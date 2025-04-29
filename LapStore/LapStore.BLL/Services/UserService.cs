@@ -128,13 +128,30 @@ namespace LapStore.BLL.Services
         {
             try
             {
-                _userRepository.Update(user);
+                var existingUser = await _userRepository.GetByIdAsync(user.Id);
+                if (existingUser == null)
+                    return false;
+
+                // Preserve the existing password hash
+                user.PasswordHash = existingUser.PasswordHash;
+                
+                // Update other user properties
+                existingUser.UserName = user.UserName;
+                existingUser.Role = user.Role;
+                existingUser.Gender = user.Gender;
+                existingUser.FirstName = user.FirstName;
+                existingUser.LastName = user.LastName;
+                existingUser.BirthDate = user.BirthDate;
+                existingUser.Email = user.Email;
+                existingUser.PhoneNumber = user.PhoneNumber;
+                existingUser.AddressId = user.AddressId;
+
+                await _userRepository.UpdateAsync(existingUser);
                 await _unitOfWork.CompleteAsync();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                _loggingService.LogError("Error updating user: {UserId}", ex, user.Id);
                 return false;
             }
         }

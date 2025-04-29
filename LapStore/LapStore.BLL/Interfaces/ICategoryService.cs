@@ -14,6 +14,6 @@ namespace LapStore.BLL.Interfaces
         Task AddCategoryAsync(Category category);
         Task UpdateCategoryAsync(Category category);
         Task DeleteCategory(Category category);
-        Task<bool> IsCategoryNameExistAsync(string categoryName);
+        Task<bool> IsCategoryNameExistAsync(string categoryName, int? categoryId = null);
     }
 } 

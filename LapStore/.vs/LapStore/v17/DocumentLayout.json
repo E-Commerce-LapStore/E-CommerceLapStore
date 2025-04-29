@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\E-CommerceLapStore\\LapStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "LapStore.Web\\appsettings.json",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\appsettings.json",
-              "RelativeToolTip": "LapStore.Web\\appsettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-27T17:58:02.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "LapStore.Web\\appsettings.Development.json",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\appsettings.Development.json",
-              "RelativeToolTip": "LapStore.Web\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-27T17:57:58.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "LapStore.Web\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "LapStore.Web\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAmwFgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:25:29.671Z",
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "LapStore.Web\\wwwroot\\css\\style.css",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "LapStore.Web\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAAMcBAAAALDMzMzMbwM8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-29T21:43:53.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LapStore.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LapStore.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEIAAAAANDMzMzMbwE0AAACVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T19:41:24.881Z",
               "EditorCaption": ""
             }
           ]
