@@ -10,6 +10,7 @@ using LapStore.DAL.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using LapStore.DAL.Data.Entities;
 using LapStore.DAL.Repositories;
+using Microsoft.AspNetCore.Http;
 
 namespace LapStore.BLL.DependencyInjections
 {
@@ -51,6 +52,7 @@ namespace LapStore.BLL.DependencyInjections
                 options.AccessDeniedPath = "/Account/AccessDenied";
                 options.SlidingExpiration = true;
                 options.Cookie.Name = "LapStore.Cookie";
+                options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
             });
 
             // Add authentication with the default scheme

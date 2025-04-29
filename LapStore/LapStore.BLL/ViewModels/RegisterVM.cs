@@ -60,6 +60,12 @@ namespace LapStore.BLL.ViewModels
         [DisplayFormat(NullDisplayText = "Not specified")]
         public UserGender Gender { get; set; }
 
+        [Required(ErrorMessage = "{0} is required")]
+        [Phone(ErrorMessage = "Invalid {0}")]
+        [RegularExpression(@"^\+?[1-9]\d{1,14}$", ErrorMessage = "Please enter a valid {0} with the country code")]
+        [DisplayName("Phone Number")]
+        public string PhoneNumber { get; set; }
+
         // Address Fields
         [Required(ErrorMessage = "{0} is required")]
         [StringLength(100, ErrorMessage = "{0} cannot exceed {1} characters")]
@@ -86,5 +92,7 @@ namespace LapStore.BLL.ViewModels
         [StringLength(50, ErrorMessage = "{0} cannot exceed {1} characters")]
         [DisplayFormat(NullDisplayText = "Not specified")]
         public string Country { get; set; }
+
+        
     }
 } 

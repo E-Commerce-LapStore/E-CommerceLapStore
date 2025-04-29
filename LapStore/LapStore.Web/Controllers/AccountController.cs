@@ -87,7 +87,7 @@ namespace LapStore.Web.Controllers
 
             return View(model);
         }
-
+        #region Register Action
         [HttpGet]
         public IActionResult Register()
         {
@@ -185,11 +185,14 @@ namespace LapStore.Web.Controllers
             return View(model);
         }
 
+        #endregion
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            await HttpContext.SignOutAsync(IdentityConstants.ApplicationScheme);
+            await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
             return RedirectToAction("Index", "Home");
         }
 
@@ -199,8 +202,8 @@ namespace LapStore.Web.Controllers
         {
             try
             {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var user = await _userManager.FindByIdAsync(userId);
+                var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+                var user = await _userService.GetUserWithAddressAsync(userId);
                 if (user == null)
                 {
                     return NotFound();
@@ -223,14 +226,14 @@ namespace LapStore.Web.Controllers
             try
             {
                 var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
-                var user = await _userService.GetUserByIdAsync(userId);
+                var user = await _userService.GetUserWithAddressAsync(userId);
                 if (user == null)
                 {
                     return NotFound();
                 }
 
-                var userVM = UserVM.FromUser(user);
-                return View(userVM);
+                var userEditVM = UserEditVM.FromUser(user);
+                return View(userEditVM);
             }
             catch (Exception ex)
             {
@@ -242,19 +245,26 @@ namespace LapStore.Web.Controllers
         [HttpPost]
         [Authorize]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditProfile(UserVM userVM)
+        public async Task<IActionResult> EditProfile(UserEditVM userEditVM)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
                     var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
-                    if (userId != userVM.Id)
+                    if (userId != userEditVM.Id)
                     {
                         return Unauthorized();
                     }
 
-                    var result = await _userService.UpdateUserAsync(UserVM.FromUserVM(userVM));
+                    var user = await _userService.GetUserWithAddressAsync(userEditVM.Id);
+                    if (user == null)
+                    {
+                        return NotFound();
+                    }
+
+                    UserEditVM.UpdateUserFromEditVM(userEditVM, user);
+                    var result = await _userService.UpdateUserAsync(user);
                     if (result)
                     {
                         TempData["Success"] = "Profile updated successfully";
@@ -265,12 +275,12 @@ namespace LapStore.Web.Controllers
                 }
                 catch (Exception ex)
                 {
-                    _loggingService.LogError("Error updating user profile: {UserId}", ex, userVM.Id);
+                    _loggingService.LogError("Error updating user profile: {UserId}", ex, userEditVM.Id);
                     ModelState.AddModelError("", "An error occurred while updating your profile.");
                 }
             }
 
-            return View(userVM);
+            return View(userEditVM);
         }
 
         [HttpGet]
@@ -296,19 +306,33 @@ namespace LapStore.Web.Controllers
                         return Unauthorized();
                     }
 
-                    var result = await _userService.ChangePasswordAsync(
-                        model.UserId,
-                        model.CurrentPassword,
-                        model.NewPassword
-                    );
+                    var user = await _userManager.FindByIdAsync(userId.ToString());
+                    if (user == null)
+                    {
+                        ModelState.AddModelError("", "User not found.");
+                        return View(model);
+                    }
 
-                    if (result)
+                    // Verify the current password
+                    var isCurrentPasswordValid = await _userManager.CheckPasswordAsync(user, model.CurrentPassword);
+                    if (!isCurrentPasswordValid)
+                    {
+                        ModelState.AddModelError("CurrentPassword", "The current password is incorrect.");
+                        return View(model);
+                    }
+
+                    // Change the password
+                    var result = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+                    if (result.Succeeded)
                     {
                         TempData["Success"] = "Password changed successfully";
                         return RedirectToAction(nameof(Profile));
                     }
 
-                    ModelState.AddModelError("", "Failed to change password. Please check your current password.");
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
                 }
                 catch (Exception ex)
                 {

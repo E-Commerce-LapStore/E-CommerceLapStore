@@ -94,7 +94,6 @@ namespace LapStore.BLL.ViewModels
             {
                 Id = userVM.Id,
                 UserName = userVM.UserName,
-                PasswordHash = string.Empty, // Don't expose password hash
                 Role = userVM.Role,
                 Gender = userVM.Gender,
                 FirstName = userVM.FirstName,

@@ -13,7 +13,7 @@ namespace LapStore.BLL.ViewModels
         public int Id { get; set; }
 
         [Required(ErrorMessage = "{0} is required")]
-        [Remote("IsCategoryNameExist", "Category", ErrorMessage = "This {0} already exists")]
+        [Remote("IsCategoryNameExist", "Category", ErrorMessage = "This {0} already exists", AdditionalFields = nameof(Id))]
         [DisplayName("Category Name")]
         public string Name { get; set; }
         

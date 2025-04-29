@@ -3,44 +3,48 @@
     ViewData["Title"] = "Login";
 }
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="text-center">Login</h3>
-                </div>
-                <div class="card-body">
-                    <form asp-action="Login" method="post">
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        
-                        <div class="form-group mb-3">
-                            <label asp-for="UserName" class="control-label"></label>
-                            <input asp-for="UserName" class="form-control" />
-                            <span asp-validation-for="UserName" class="text-danger"></span>
-                        </div>
+<link rel="stylesheet" href="~/css/account.css" />
 
-                        <div class="form-group mb-3">
-                            <label asp-for="Password" class="control-label"></label>
-                            <input asp-for="Password" class="form-control" />
-                            <span asp-validation-for="Password" class="text-danger"></span>
-                        </div>
-
-                        <div class="form-group mb-3">
-                            <div class="form-check">
-                                <input asp-for="RememberMe" class="form-check-input" />
-                                <label asp-for="RememberMe" class="form-check-label"></label>
+<div class="account-container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="account-card">
+                    <div class="card-header">
+                        <h3 class="text-center">Welcome Back</h3>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Login" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            
+                            <div class="form-group mb-4">
+                                <label asp-for="UserName">Username</label>
+                                <input asp-for="UserName" class="form-control" placeholder="Enter your username" />
+                                <span asp-validation-for="UserName" class="text-danger"></span>
                             </div>
-                        </div>
 
-                        <div class="form-group mb-3">
-                            <button type="submit" class="btn btn-primary w-100">Login</button>
-                        </div>
+                            <div class="form-group mb-4">
+                                <label asp-for="Password">Password</label>
+                                <input asp-for="Password" class="form-control" placeholder="Enter your password" />
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
 
-                        <div class="text-center">
-                            <p>Don't have an account? <a asp-action="Register">Register here</a></p>
-                        </div>
-                    </form>
+                            <div class="form-group mb-4">
+                                <div class="form-check">
+                                    <input asp-for="RememberMe" class="form-check-input" />
+                                    <label asp-for="RememberMe" class="form-check-label">Remember me</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                            </div>
+
+                            <div class="account-links">
+                                <p class="mb-0">Don't have an account? <a asp-action="Register">Create Account</a></p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

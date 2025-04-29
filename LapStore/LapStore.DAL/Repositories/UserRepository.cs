@@ -70,5 +70,11 @@ namespace LapStore.DAL.Repositories
                 .Include(u => u.cart)
                 .FirstOrDefaultAsync(u => u.Id == userId);
         }
+
+        public async Task UpdateAsync(User user)
+        {
+            _context.users.Update(user);
+            await Task.CompletedTask;
+        }
     }
 } 

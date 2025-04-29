@@ -11,5 +11,6 @@ namespace LapStore.DAL.Repositories
         Task<User?> GetUserWithAddressAsync(int userId);
         Task<User?> GetUserWithOrdersAsync(int userId);
         Task<User?> GetUserWithCartAsync(int userId);
+        Task UpdateAsync(User user);
     }
 } 

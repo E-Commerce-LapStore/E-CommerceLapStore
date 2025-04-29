@@ -36,34 +36,42 @@ namespace LapStore.BLL.Services
 
         public async Task AddCategoryAsync(Category category)
         {
-            try
+            var strategy = _unitOfWork.Context.Database.CreateExecutionStrategy();
+            await strategy.ExecuteAsync(async () =>
             {
-                await _unitOfWork.BeginTransactionAsync();
-                await _categoryRepository.AddAsync(category);
-                await _unitOfWork.CompleteAsync();
-                await _unitOfWork.CommitTransactionAsync();
-            }
-            catch (Exception)
-            {
-                await _unitOfWork.RollbackTransactionAsync();
-                throw;
-            }
+                try
+                {
+                    await _unitOfWork.BeginTransactionAsync();
+                    await _categoryRepository.AddAsync(category);
+                    await _unitOfWork.CompleteAsync();
+                    await _unitOfWork.CommitTransactionAsync();
+                }
+                catch (Exception)
+                {
+                    await _unitOfWork.RollbackTransactionAsync();
+                    throw;
+                }
+            });
         }
 
         public async Task UpdateCategoryAsync(Category category)
         {
-            try
+            var strategy = _unitOfWork.Context.Database.CreateExecutionStrategy();
+            await strategy.ExecuteAsync(async () =>
             {
-                await _unitOfWork.BeginTransactionAsync();
-                _categoryRepository.Update(category);
-                await _unitOfWork.CompleteAsync();
-                await _unitOfWork.CommitTransactionAsync();
-            }
-            catch (Exception)
-            {
-                await _unitOfWork.RollbackTransactionAsync();
-                throw;
-            }
+                try
+                {
+                    await _unitOfWork.BeginTransactionAsync();
+                    _categoryRepository.Update(category);
+                    await _unitOfWork.CompleteAsync();
+                    await _unitOfWork.CommitTransactionAsync();
+                }
+                catch (Exception)
+                {
+                    await _unitOfWork.RollbackTransactionAsync();
+                    throw;
+                }
+            });
         }
 
         public async Task DeleteCategory(Category category)
@@ -102,9 +110,9 @@ namespace LapStore.BLL.Services
             }
         }
 
-        public async Task<bool> IsCategoryNameExistAsync(string categoryName)
+        public async Task<bool> IsCategoryNameExistAsync(string categoryName, int? categoryId = null)
         {
-            return await _categoryRepository.IsCategoryNameExistAsync(categoryName);
+            return await _categoryRepository.IsCategoryNameExistAsync(categoryName, categoryId);
         }
     }
 } 
