@@ -1,0 +1,14 @@
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\bin\Debug\net8.0\LapStore.DAL.deps.json
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\bin\Debug\net8.0\LapStore.DAL.runtimeconfig.json
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\bin\Debug\net8.0\LapStore.DAL.dll
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\bin\Debug\net8.0\LapStore.DAL.pdb
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\obj\Debug\net8.0\LapStore.DAL.csproj.AssemblyReference.cache
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\obj\Debug\net8.0\LapStore.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\obj\Debug\net8.0\LapStore.DAL.AssemblyInfoInputs.cache
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\obj\Debug\net8.0\LapStore.DAL.AssemblyInfo.cs
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\obj\Debug\net8.0\LapStore.DAL.csproj.CoreCompileInputs.cache
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\obj\Debug\net8.0\LapStore.DAL.dll
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\obj\Debug\net8.0\refint\LapStore.DAL.dll
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\obj\Debug\net8.0\LapStore.DAL.pdb
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\obj\Debug\net8.0\LapStore.DAL.genruntimeconfig.cache
+C:\Users\waelb\Desktop\LapStore\LapStore.DAL\obj\Debug\net8.0\ref\LapStore.DAL.dll

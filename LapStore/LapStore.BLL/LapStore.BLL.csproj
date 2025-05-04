@@ -1,29 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MailKit" Version="4.11.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.3.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.4">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="MimeKit" Version="4.11.0" />
-    <PackageReference Include="NEST" Version="7.17.5" />
-  </ItemGroup>
-
-
-	<ItemGroup>
-		    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-	</ItemGroup>
-
-	<ItemGroup>
     <ProjectReference Include="..\LapStore.DAL\LapStore.DAL.csproj" />
   </ItemGroup>
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj": {}
+    "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj": {}
   },
   "projects": {
-    "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj": {
+    "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj",
         "projectName": "LapStore.BLL",
-        "projectPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj",
+        "projectPath": "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.BLL\\LapStore.BLL.csproj",
         "packagesPath": "C:\\Users\\waelb\\.nuget\\packages\\",
-        "outputPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\obj\\",
+        "outputPath": "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\ProgramFiles(x86)\\MicrosoftVisualStudio\\Shared\\NuGetPackages"
@@ -22,18 +22,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
-                "projectPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj"
+              "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
+                "projectPath": "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj"
               }
             }
           }
@@ -51,36 +51,8 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
-          "dependencies": {
-            "MailKit": {
-              "target": "Package",
-              "version": "[4.11.0, )"
-            },
-            "Microsoft.AspNetCore.Hosting": {
-              "target": "Package",
-              "version": "[2.3.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.4, )"
-            },
-            "MimeKit": {
-              "target": "Package",
-              "version": "[4.11.0, )"
-            },
-            "NEST": {
-              "target": "Package",
-              "version": "[7.17.5, )"
-            }
-          },
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -92,10 +64,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
             },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -104,14 +87,14 @@
         }
       }
     },
-    "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
+    "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
         "projectName": "LapStore.DAL",
-        "projectPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
+        "projectPath": "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
         "packagesPath": "C:\\Users\\waelb\\.nuget\\packages\\",
-        "outputPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\obj\\",
+        "outputPath": "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\ProgramFiles(x86)\\MicrosoftVisualStudio\\Shared\\NuGetPackages"
@@ -122,15 +105,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -147,22 +130,16 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
-            "AutoMapper": {
+            "Microsoft.AspNetCore.Identity": {
               "target": "Package",
-              "version": "[14.0.0, )"
+              "version": "[2.3.1, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
@@ -177,6 +154,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.9.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.9.0, )"
             }
           },
           "imports": [
@@ -190,10 +179,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
             },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "QaqbulOnJfIMvWm1zw/sfNHFWXGe0I93bZPhoSoiRuA=",
+  "Source": "LapStore.API",
+  "BasePath": "_content/LapStore.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

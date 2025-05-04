@@ -9,13 +9,12 @@ namespace LapStore.BLL.Services
     public class CategoryService : ICategoryService
     {
         private readonly ICategoryRepository _categoryRepository;
-        private readonly IFileService _fileService;
         private readonly IUnitOfWork _unitOfWork;
 
-        public CategoryService(ICategoryRepository categoryRepository, IFileService fileService, IUnitOfWork unitOfWork)
+        public CategoryService(ICategoryRepository categoryRepository, IUnitOfWork unitOfWork)
         {
             _categoryRepository = categoryRepository;
-            _fileService = fileService;
+            //_fileService = fileService;
             _unitOfWork = unitOfWork;
         }
 
@@ -86,17 +85,17 @@ namespace LapStore.BLL.Services
                     throw new InvalidOperationException("Cannot delete a category that has products. Please ensure the category is empty before attempting to delete it.");
                 }
 
-                // Delete the physical image file first if it exists
-                if (!string.IsNullOrEmpty(category.ImageUrl))
-                {
-                    bool fileDeleted = _fileService.DeletePhysicalFile(category.ImageUrl);
-                    if (!fileDeleted)
-                    {
-                        // Log warning but continue with database deletion
-                        // You might want to add proper logging here
-                        System.Diagnostics.Debug.WriteLine($"Warning: Could not delete file {category.ImageUrl}");
-                    }
-                }
+                //// Delete the physical image file first if it exists
+                //if (!string.IsNullOrEmpty(category.ImageUrl))
+                //{
+                //    bool fileDeleted = _fileService.DeletePhysicalFile(category.ImageUrl);
+                //    if (!fileDeleted)
+                //    {
+                //        // Log warning but continue with database deletion
+                //        // You might want to add proper logging here
+                //        System.Diagnostics.Debug.WriteLine($"Warning: Could not delete file {category.ImageUrl}");
+                //    }
+                //}
 
                 // Then delete from database
                 _categoryRepository.Delete(category);

@@ -1,6 +1,7 @@
 ﻿using LapStore.DAL.Repositories;
 using LapStore.DAL.Data.Contexts;
 using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.EntityFrameworkCore;
 
 namespace LapStore.DAL
 {
@@ -37,13 +38,17 @@ namespace LapStore.DAL
 
         public async Task BeginTransactionAsync()
         {
-            _transaction = await _context.Database.BeginTransactionAsync();
+            if (_transaction == null)
+            {
+                _transaction = await _context.Database.BeginTransactionAsync();
+            }
         }
 
         public async Task CommitTransactionAsync()
         {
             try
             {
+                await _context.SaveChangesAsync();
                 await _transaction?.CommitAsync();
             }
             finally

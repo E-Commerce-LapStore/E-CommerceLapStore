@@ -1,0 +1,15 @@
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\bin\Debug\net8.0\LapStore.BLL.deps.json
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\bin\Debug\net8.0\LapStore.BLL.dll
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\bin\Debug\net8.0\LapStore.BLL.pdb
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\bin\Debug\net8.0\LapStore.DAL.dll
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\bin\Debug\net8.0\LapStore.DAL.pdb
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\obj\Debug\net8.0\LapStore.BLL.csproj.AssemblyReference.cache
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\obj\Debug\net8.0\LapStore.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\obj\Debug\net8.0\LapStore.BLL.AssemblyInfoInputs.cache
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\obj\Debug\net8.0\LapStore.BLL.AssemblyInfo.cs
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\obj\Debug\net8.0\LapStore.BLL.csproj.CoreCompileInputs.cache
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\obj\Debug\net8.0\LapStore.737553AE.Up2Date
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\obj\Debug\net8.0\LapStore.BLL.dll
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\obj\Debug\net8.0\refint\LapStore.BLL.dll
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\obj\Debug\net8.0\LapStore.BLL.pdb
+C:\Users\waelb\Desktop\LapStore\LapStore.BLL\obj\Debug\net8.0\ref\LapStore.BLL.dll

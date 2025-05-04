@@ -13,18 +13,15 @@ namespace LapStore.BLL.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IUserRepository _userRepository;
         private readonly IPasswordHasher<User> _passwordHasher;
-        private readonly ILoggingService _loggingService;
 
         public UserService(
             IUnitOfWork unitOfWork,
             IUserRepository userRepository,
-            IPasswordHasher<User> passwordHasher,
-            ILoggingService loggingService)
+            IPasswordHasher<User> passwordHasher)
         {
             _unitOfWork = unitOfWork;
             _userRepository = userRepository;
             _passwordHasher = passwordHasher;
-            _loggingService = loggingService;
         }
 
         public async Task<User?> GetUserByIdAsync(int id)
@@ -73,7 +70,7 @@ namespace LapStore.BLL.Services
             }
             catch (Exception ex)
             {
-                _loggingService.LogError("Error creating user: {UserName}", ex, user.UserName);
+                //_loggingService.LogError("Error creating user: {UserName}", ex, user.UserName);
                 return false;
             }
         }
@@ -168,7 +165,7 @@ namespace LapStore.BLL.Services
             }
             catch (Exception ex)
             {
-                _loggingService.LogError("Error deleting user: {UserId}", ex, id);
+                //_loggingService.LogError("Error deleting user: {UserId}", ex, id);
                 return false;
             }
         }
@@ -200,7 +197,7 @@ namespace LapStore.BLL.Services
             }
             catch (Exception ex)
             {
-                _loggingService.LogError("Error changing password for user: {UserId}", ex, userId);
+               // _loggingService.LogError("Error changing password for user: {UserId}", ex, userId);
                 return false;
             }
         }
@@ -219,7 +216,7 @@ namespace LapStore.BLL.Services
             }
             catch (Exception ex)
             {
-                _loggingService.LogError("Error updating role for user: {UserId}", ex, userId);
+                //_loggingService.LogError("Error updating role for user: {UserId}", ex, userId);
                 return false;
             }
         }
@@ -238,7 +235,7 @@ namespace LapStore.BLL.Services
             }
             catch (Exception ex)
             {
-                _loggingService.LogError("Error updating address for user: {UserId}", ex, userId);
+                //_loggingService.LogError("Error updating address for user: {UserId}", ex, userId);
                 return false;
             }
         }
@@ -257,7 +254,7 @@ namespace LapStore.BLL.Services
             }
             catch (Exception ex)
             {
-                _loggingService.LogError("Error authenticating user: {UserName}", ex, userName);
+                //_loggingService.LogError("Error authenticating user: {UserName}", ex, userName);
                 return null;
             }
         }
