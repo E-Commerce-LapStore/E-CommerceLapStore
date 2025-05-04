@@ -2078,6 +2078,22 @@
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "LapStore.API/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Swashbuckle.AspNetCore": "6.6.2"
+        },
+        "compile": {
+          "bin/placeholder/LapStore.API.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LapStore.API.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "LapStore.BLL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -5400,6 +5416,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "LapStore.API/1.0.0": {
+      "type": "project",
+      "path": "../WebApplication1/LapStore.API.csproj",
+      "msbuildProject": "../WebApplication1/LapStore.API.csproj"
+    },
     "LapStore.BLL/1.0.0": {
       "type": "project",
       "path": "../ClassLibrary1/LapStore.BLL.csproj",
@@ -5413,8 +5434,8 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\LapStore.API.csproj",
       "FakeItEasy >= 8.1.0",
+      "LapStore.API >= 1.0.0",
       "LapStore.BLL >= 1.0.0",
       "LapStore.DAL >= 1.0.0",
       "Microsoft.EntityFrameworkCore.InMemory >= 9.0.4",
@@ -5532,16 +5553,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.105/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\LapStore.API.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\LapStore.API.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

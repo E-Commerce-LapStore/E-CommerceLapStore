@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\E-CommerceLapStore\\LapStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0E8D1506-3AE0-4450-9375-BA182A57717D}|LapStore.Test\\LapStore.Test.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.test\\lapstore.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0E8D1506-3AE0-4450-9375-BA182A57717D}|LapStore.Test\\LapStore.Test.csproj|solutionrelative:lapstore.test\\lapstore.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDB546C-9E58-4839-ACDD-FEC870C906FD}|ClassLibrary2\\LapStore.DAL.csproj|d:\\e-commercelapstore\\lapstore\\classlibrary2\\data\\contexts\\lapstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDB546C-9E58-4839-ACDD-FEC870C906FD}|ClassLibrary2\\LapStore.DAL.csproj|solutionrelative:classlibrary2\\data\\contexts\\lapstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{27A5DB8E-3096-4134-AA65-AD2E71FFDCF2}|WebApplication1\\WebApplication1.csproj|d:\\e-commercelapstore\\lapstore\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27A5DB8E-3096-4134-AA65-AD2E71FFDCF2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDB546C-9E58-4839-ACDD-FEC870C906FD}|ClassLibrary2\\LapStore.DAL.csproj|d:\\e-commercelapstore\\lapstore\\classlibrary2\\lapstore.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5BDB546C-9E58-4839-ACDD-FEC870C906FD}|ClassLibrary2\\LapStore.DAL.csproj|solutionrelative:classlibrary2\\lapstore.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27A5DB8E-3096-4134-AA65-AD2E71FFDCF2}|WebApplication1\\LapStore.API.csproj|d:\\e-commercelapstore\\lapstore\\webapplication1\\lapstore.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -21,7 +33,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,7 +45,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LapStore.Test",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Test\\LapStore.Test.csproj",
+              "RelativeDocumentMoniker": "LapStore.Test\\LapStore.Test.csproj",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Test\\LapStore.Test.csproj",
+              "RelativeToolTip": "LapStore.Test\\LapStore.Test.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-04T03:23:30.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LapStore.DAL",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\ClassLibrary2\\LapStore.DAL.csproj",
+              "RelativeDocumentMoniker": "ClassLibrary2\\LapStore.DAL.csproj",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\ClassLibrary2\\LapStore.DAL.csproj",
+              "RelativeToolTip": "ClassLibrary2\\LapStore.DAL.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-04T03:22:58.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LapStoreDbContext.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\ClassLibrary2\\Data\\Contexts\\LapStoreDbContext.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\Data\\Contexts\\LapStoreDbContext.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\ClassLibrary2\\Data\\Contexts\\LapStoreDbContext.cs",
+              "RelativeToolTip": "ClassLibrary2\\Data\\Contexts\\LapStoreDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T03:20:23.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "LapStore.API",
               "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\LapStore.API.csproj",
               "RelativeDocumentMoniker": "WebApplication1\\LapStore.API.csproj",
@@ -47,6 +98,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T03:00:30.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "D:\\ProgramFiles\\MicrosoftVisualStudio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\ProgramFiles\\MicrosoftVisualStudio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -55,19 +119,6 @@
               "ViewState": "AgIAAFUHAAAAAAAAAAAmwGAHAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-05-04T03:06:29.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T03:00:30.551Z",
               "EditorCaption": ""
             }
           ]
