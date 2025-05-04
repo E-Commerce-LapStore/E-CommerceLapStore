@@ -1,6 +1,0 @@
-D:\E-CommerceLapStore\LapStore\ClassLibrary1\obj\Debug\net8.0\LapStore.BLL.csproj.AssemblyReference.cache
-D:\E-CommerceLapStore\LapStore\ClassLibrary1\obj\Debug\net8.0\LapStore.BLL.GeneratedMSBuildEditorConfig.editorconfig
-D:\E-CommerceLapStore\LapStore\ClassLibrary1\obj\Debug\net8.0\LapStore.BLL.AssemblyInfoInputs.cache
-D:\E-CommerceLapStore\LapStore\ClassLibrary1\obj\Debug\net8.0\LapStore.BLL.AssemblyInfo.cs
-D:\E-CommerceLapStore\LapStore\ClassLibrary1\obj\Debug\net8.0\LapStore.BLL.csproj.CoreCompileInputs.cache
-D:\E-CommerceLapStore\LapStore\ClassLibrary1\obj\Debug\net8.0\LapStore.BLL.sourcelink.json
