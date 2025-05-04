@@ -6,10 +6,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\Contexts\" />
-  </ItemGroup>
-
 	<ItemGroup>
 		    <FrameworkReference Include="Microsoft.AspNetCore.App" />
 	</ItemGroup>

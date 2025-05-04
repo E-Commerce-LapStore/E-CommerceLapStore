@@ -166,10 +166,3 @@ D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Test\obj\Debug\net9.0\refint\La
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Test\obj\Debug\net9.0\LapStore.Test.pdb
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Test\obj\Debug\net9.0\LapStore.Test.genruntimeconfig.cache
 D:\DEPI\E-Commerce_LaptopStore\LapStore\LapStore.Test\obj\Debug\net9.0\ref\LapStore.Test.dll
-D:\E-CommerceLapStore\LapStore\LapStore.Test\bin\Debug\net9.0\CoverletSourceRootsMapping_LapStore.Test
-D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net9.0\LapStore.Test.csproj.AssemblyReference.cache
-D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net9.0\LapStore.Test.GeneratedMSBuildEditorConfig.editorconfig
-D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net9.0\LapStore.Test.AssemblyInfoInputs.cache
-D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net9.0\LapStore.Test.AssemblyInfo.cs
-D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net9.0\LapStore.Test.csproj.CoreCompileInputs.cache
-D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net9.0\LapStore.Test.sourcelink.json

@@ -3,12 +3,15 @@
   "WorkspaceRootPath": "D:\\E-CommerceLapStore\\LapStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEB29DCC-F770-4760-812C-1E11B611B227}|LapStore.API\\LapStore.API.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEB29DCC-F770-4760-812C-1E11B611B227}|LapStore.API\\LapStore.API.csproj|solutionrelative:lapstore.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27A5DB8E-3096-4134-AA65-AD2E71FFDCF2}|WebApplication1\\WebApplication1.csproj|d:\\e-commercelapstore\\lapstore\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27A5DB8E-3096-4134-AA65-AD2E71FFDCF2}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9D34CF0-519D-4AC7-B594-2C6C22ED9D6F}|LapStore.BLL\\LapStore.BLL.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.bll\\dependencyinjections\\generalregistrationdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9D34CF0-519D-4AC7-B594-2C6C22ED9D6F}|LapStore.BLL\\LapStore.BLL.csproj|solutionrelative:lapstore.bll\\dependencyinjections\\generalregistrationdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27A5DB8E-3096-4134-AA65-AD2E71FFDCF2}|WebApplication1\\LapStore.API.csproj|d:\\e-commercelapstore\\lapstore\\webapplication1\\lapstore.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{27A5DB8E-3096-4134-AA65-AD2E71FFDCF2}|WebApplication1\\LapStore.API.csproj|solutionrelative:webapplication1\\lapstore.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ProgramFiles\\MicrosoftVisualStudio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,27 +34,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GeneralRegistrationDependencyInjection.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\DependencyInjections\\GeneralRegistrationDependencyInjection.cs",
-              "RelativeDocumentMoniker": "LapStore.BLL\\DependencyInjections\\GeneralRegistrationDependencyInjection.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\DependencyInjections\\GeneralRegistrationDependencyInjection.cs",
-              "RelativeToolTip": "LapStore.BLL\\DependencyInjections\\GeneralRegistrationDependencyInjection.cs",
-              "ViewState": "AgIAAAUAAABAMzMzMzMbwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T01:36:09.92Z",
+              "Title": "LapStore.API",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\LapStore.API.csproj",
+              "RelativeDocumentMoniker": "WebApplication1\\LapStore.API.csproj",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\LapStore.API.csproj",
+              "RelativeToolTip": "WebApplication1\\LapStore.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-04T03:06:48.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "D:\\ProgramFiles\\MicrosoftVisualStudio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\ProgramFiles\\MicrosoftVisualStudio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "D:\\ProgramFiles\\MicrosoftVisualStudio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\ProgramFiles\\MicrosoftVisualStudio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAFUHAAAAAAAAAAAmwGAHAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-04T03:06:29.468Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\Program.cs",
-              "RelativeDocumentMoniker": "LapStore.API\\Program.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\Program.cs",
-              "RelativeToolTip": "LapStore.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAATAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T01:16:21.739Z",
+              "WhenOpened": "2025-05-04T03:00:30.551Z",
               "EditorCaption": ""
             }
           ]
