@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\E-CommerceLapStore\\LapStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{CEB29DCC-F770-4760-812C-1E11B611B227}|LapStore.API\\LapStore.API.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CEB29DCC-F770-4760-812C-1E11B611B227}|LapStore.API\\LapStore.API.csproj|solutionrelative:lapstore.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{45E9B836-76FE-4003-A015-AA2FEC259CAD}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CEB29DCC-F770-4760-812C-1E11B611B227}|LapStore.API\\LapStore.API.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB29DCC-F770-4760-812C-1E11B611B227}|LapStore.API\\LapStore.API.csproj|solutionrelative:lapstore.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "style.css",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\style.css",
-              "RelativeDocumentMoniker": "LapStore.Web\\wwwroot\\css\\style.css",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\wwwroot\\css\\style.css",
-              "RelativeToolTip": "LapStore.Web\\wwwroot\\css\\style.css",
-              "ViewState": "AgIAAMcBAAAALDMzMzMbwM8BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-29T21:43:53.186Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\appsettings.json",
+              "RelativeDocumentMoniker": "LapStore.API\\appsettings.json",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\appsettings.json",
+              "RelativeToolTip": "LapStore.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-04T01:46:58.904Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "LapStore.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "LapStore.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEIAAAAANDMzMzMbwE0AAACVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-29T19:41:24.881Z",
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "LapStore.API\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "LapStore.API\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAEMAAAAAAQAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T01:45:30.753Z",
               "EditorCaption": ""
             }
           ]

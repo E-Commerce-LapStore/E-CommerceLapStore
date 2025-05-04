@@ -16,6 +16,7 @@
     </PackageReference>
     <PackageReference Include="MimeKit" Version="4.11.0" />
     <PackageReference Include="NEST" Version="7.17.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
   </ItemGroup>
 
 
@@ -26,5 +27,9 @@
 	<ItemGroup>
     <ProjectReference Include="..\LapStore.DAL\LapStore.DAL.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Validations\" />
+	</ItemGroup>
 
 </Project>
