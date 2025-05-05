@@ -2,149 +2,107 @@ using LapStore.DAL.Data.Entities;
 using LapStore.DAL.Repositories;
 using LapStore.DAL;
 using Microsoft.AspNetCore.Identity;
-using System.Diagnostics;
 using LapStore.BLL.Interfaces;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.Extensions.Configuration;
+using LapStore.BLL.DTOs.AccountDTO;
 
 namespace LapStore.BLL.Services
 {
     public class UserService : IUserService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IGenericRepository<Address> _genericRepository;
         private readonly IUserRepository _userRepository;
-        private readonly IPasswordHasher<User> _passwordHasher;
-
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
+        private readonly IConfiguration _configuration;
+        
         public UserService(
             IUnitOfWork unitOfWork,
+            IGenericRepository<Address> genericRepository,
             IUserRepository userRepository,
-            IPasswordHasher<User> passwordHasher)
+            UserManager<User> userManager,
+            SignInManager<User> signInManager,
+            IConfiguration configuration)
         {
             _unitOfWork = unitOfWork;
+            _genericRepository = genericRepository;
             _userRepository = userRepository;
-            _passwordHasher = passwordHasher;
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _configuration = configuration;
         }
 
-        public async Task<User?> GetUserByIdAsync(int id)
+        public async Task<string> Register(RegisterDTO registerDTO)
         {
-            return await _userRepository.GetByIdAsync(id);
-        }
+            var user = RegisterDTO.FromRegisterDTO(registerDTO);
+            
+            // Set default role to Customer for new registrations
+            user.Role = UserRole.Customer;
+            
+            var result = await _userManager.CreateAsync(user, registerDTO.Password);
 
-        public async Task<User?> GetUserByEmailAsync(string email)
-        {
-            return await _userRepository.GetUserByEmailAsync(email);
-        }
-
-        public async Task<User?> GetUserByUserNameAsync(string userName)
-        {
-            return await _userRepository.GetUserByUserNameAsync(userName);
-        }
-
-        public async Task<IEnumerable<User>> GetAllUsersAsync()
-        {
-            return await _userRepository.GetAllAsync();
-        }
-
-        public async Task<User?> GetUserWithAddressAsync(int userId)
-        {
-            return await _userRepository.GetUserWithAddressAsync(userId);
-        }
-
-        public async Task<User?> GetUserWithOrdersAsync(int userId)
-        {
-            return await _userRepository.GetUserWithOrdersAsync(userId);
-        }
-
-        public async Task<User?> GetUserWithCartAsync(int userId)
-        {
-            return await _userRepository.GetUserWithCartAsync(userId);
-        }
-
-        public async Task<bool> CreateUserAsync(User user)
-        {
-            try
+            if (result.Succeeded)
             {
-                user.PasswordHash = _passwordHasher.HashPassword(user, user.PasswordHash);
-                await _userRepository.AddAsync(user);
-                await _unitOfWork.CompleteAsync();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                //_loggingService.LogError("Error creating user: {UserName}", ex, user.UserName);
-                return false;
-            }
-        }
-
-        public async Task<bool> CreateUserWithAddressAsync(User user, Address address)
-        {
-            // Validate Address
-            if (string.IsNullOrWhiteSpace(address.Street) ||
-                string.IsNullOrWhiteSpace(address.City) ||
-                string.IsNullOrWhiteSpace(address.Country) ||
-                string.IsNullOrWhiteSpace(address.Governorate) ||
-                string.IsNullOrWhiteSpace(address.ZipCode))
-            {
-                throw new ArgumentException("Address fields must not be null or empty.");
-            }
-
-            // Validate User
-            if (string.IsNullOrWhiteSpace(user.UserName) ||
-                string.IsNullOrWhiteSpace(user.Email) ||
-                string.IsNullOrWhiteSpace(user.FirstName) ||
-                string.IsNullOrWhiteSpace(user.LastName))
-            {
-                throw new ArgumentException("User fields must not be null or empty.");
-            }
-
-            var strategy = _unitOfWork.Context.Database.CreateExecutionStrategy();
-            return await strategy.ExecuteAsync(async () =>
-            {
-                await _unitOfWork.BeginTransactionAsync();
-                try
-                {
-                    var addressRepository = _unitOfWork.GenericRepository<Address>();
-                    await addressRepository.AddAsync(address);
-                    await _unitOfWork.CompleteAsync();
-
-                    user.AddressId = address.Id;
-                    user.PasswordHash = _passwordHasher.HashPassword(user, user.PasswordHash);
-                    await _userRepository.AddAsync(user);
-                    await _unitOfWork.CompleteAsync();
-                    await _unitOfWork.CommitTransactionAsync();
-                    return true;
-                }
-                catch
-                {
-                    await _unitOfWork.RollbackTransactionAsync();
-                    throw;
-                }
-            });
-        }
-
-        public async Task<bool> UpdateUserAsync(User user)
-        {
-            try
-            {
-                var existingUser = await _userRepository.GetByIdAsync(user.Id);
-                if (existingUser == null)
-                    return false;
-
-                // Preserve the existing password hash
-                user.PasswordHash = existingUser.PasswordHash;
+                // Create token with appropriate claims
+                List<Claim> claims = new List<Claim>();
                 
-                // Update other user properties
-                existingUser.UserName = user.UserName;
-                existingUser.Role = user.Role;
-                existingUser.Gender = user.Gender;
-                existingUser.FirstName = user.FirstName;
-                existingUser.LastName = user.LastName;
-                existingUser.BirthDate = user.BirthDate;
-                existingUser.Email = user.Email;
-                existingUser.PhoneNumber = user.PhoneNumber;
-                existingUser.AddressId = user.AddressId;
+                claims.Add(new Claim("Role", user.Role.ToString()));
+                claims.Add(new Claim("UserName", registerDTO.UserName));
+                claims.Add(new Claim("Email", registerDTO.Email));
+                claims.Add(new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
 
-                await _userRepository.UpdateAsync(existingUser);
-                await _unitOfWork.CompleteAsync();
+                await _userManager.AddClaimsAsync(user, claims);
+
+                return GenerateToken(claims);
+            }
+            else
+            {
+                // Log the errors for debugging
+                string errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                Console.WriteLine($"Registration failed: {errors}");
+                return null;
+            }
+        }
+
+        public async Task<string> Login(LoginDTO loginDTO)
+        {
+            var user = await _userManager.FindByNameAsync(loginDTO.UserName);
+            if (user == null)
+            {
+                return null;
+            }
+
+            var check = await _userManager.CheckPasswordAsync(user, loginDTO.Password);
+
+            if (!check) // Fixed boolean check
+            {
+                return null;
+            }
+
+            var claims = await _userManager.GetClaimsAsync(user);
+            return GenerateToken(claims);
+        }
+        public async Task<bool> LogoutAsync(string username)
+        {
+            try
+            {
+                var user = await _userManager.FindByNameAsync(username);
+                if (user == null)
+                {
+                    return false;
+                }
+
+                // Sign out the user using SignInManager
+                await _signInManager.SignOutAsync();
+
+                // Note: JWT tokens cannot be invalidated on the server-side once issued
+                // The client should discard the token
+
                 return true;
             }
             catch (Exception)
@@ -153,110 +111,148 @@ namespace LapStore.BLL.Services
             }
         }
 
-        public async Task<bool> DeleteUserAsync(int id)
+        // Get user profile information
+        public async Task<UserInfoDTO> GetUserProfileAsync(int userId)
         {
-            try
-            {
-                var user = await _userRepository.GetByIdAsync(id);
-                if (user == null) return false;
-                _userRepository.Delete(user);
-                await _unitOfWork.CompleteAsync();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                //_loggingService.LogError("Error deleting user: {UserId}", ex, id);
-                return false;
-            }
-        }
-
-        public async Task<bool> IsEmailExistAsync(string email, int? userId = null)
-        {
-            return await _userRepository.IsEmailExistAsync(email, userId);
-        }
-
-        public async Task<bool> IsUserNameExistAsync(string userName, int? userId = null)
-        {
-            return await _userRepository.IsUserNameExistAsync(userName, userId);
-        }
-
-        public async Task<bool> ChangePasswordAsync(int userId, string currentPassword, string newPassword)
-        {
-            try
-            {
-                var user = await _userRepository.GetByIdAsync(userId);
-                if (user == null) return false;
-
-                var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, currentPassword);
-                if (result == PasswordVerificationResult.Failed) return false;
-
-                user.PasswordHash = _passwordHasher.HashPassword(user, newPassword);
-                _userRepository.Update(user);
-                await _unitOfWork.CompleteAsync();
-                return true;
-            }
-            catch (Exception ex)
-            {
-               // _loggingService.LogError("Error changing password for user: {UserId}", ex, userId);
-                return false;
-            }
-        }
-
-        public async Task<bool> UpdateUserRoleAsync(int userId, UserRole newRole)
-        {
-            try
-            {
-                var user = await _userRepository.GetByIdAsync(userId);
-                if (user == null) return false;
-
-                user.Role = newRole;
-                _userRepository.Update(user);
-                await _unitOfWork.CompleteAsync();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                //_loggingService.LogError("Error updating role for user: {UserId}", ex, userId);
-                return false;
-            }
-        }
-
-        public async Task<bool> UpdateUserAddressAsync(int userId, int addressId)
-        {
-            try
-            {
-                var user = await _userRepository.GetByIdAsync(userId);
-                if (user == null) return false;
-
-                user.AddressId = addressId;
-                _userRepository.Update(user);
-                await _unitOfWork.CompleteAsync();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                //_loggingService.LogError("Error updating address for user: {UserId}", ex, userId);
-                return false;
-            }
-        }
-
-        public async Task<User?> AuthenticateAsync(string userName, string password)
-        {
-            try
-            {
-                var user = await _userRepository.GetUserByUserNameAsync(userName);
-                if (user == null) return null;
-
-                var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, password);
-                if (result == PasswordVerificationResult.Failed) return null;
-
-                return user;
-            }
-            catch (Exception ex)
-            {
-                //_loggingService.LogError("Error authenticating user: {UserName}", ex, userName);
+            var user = await _userManager.FindByIdAsync(userId.ToString());
+            if (user == null)
                 return null;
+
+            return UserInfoDTO.FromUser(user);
+        }
+
+        // Update user profile
+        public async Task<bool> UpdateUserProfileAsync(int userId, UpdateProfileDTO updateProfileDTO)
+        {
+            var user = await _userManager.FindByIdAsync(userId.ToString());
+            if (user == null)
+                return false;
+
+            // Check if username exists (except for the current user)
+            if (!string.IsNullOrEmpty(updateProfileDTO.UserName) && user.UserName != updateProfileDTO.UserName)
+            {
+                var existingUserWithUsername = await _userManager.FindByNameAsync(updateProfileDTO.UserName);
+                if (existingUserWithUsername != null)
+                    return false;
+                
+                user.UserName = updateProfileDTO.UserName;
             }
+
+            // Check if email exists (except for the current user)
+            if (!string.IsNullOrEmpty(updateProfileDTO.Email) && user.Email != updateProfileDTO.Email)
+            {
+                var existingUserWithEmail = await _userManager.FindByEmailAsync(updateProfileDTO.Email);
+                if (existingUserWithEmail != null)
+                    return false;
+                
+                user.Email = updateProfileDTO.Email;
+            }
+
+            // Update other properties
+            user = UpdateProfileDTO.FromUpdateProfileDTO(updateProfileDTO);
+
+            var result = await _userManager.UpdateAsync(user);
+            return result.Succeeded;
+        }
+
+        // Change password
+        public async Task<bool> ChangePasswordAsync(int userId, ChangePasswordDTO changePasswordDTO)
+        {
+            var user = await _userManager.FindByIdAsync(userId.ToString());
+            if (user == null)
+                return false;
+
+            var result = await _userManager.ChangePasswordAsync(
+                user, 
+                changePasswordDTO.CurrentPassword, 
+                changePasswordDTO.NewPassword
+            );
+            
+            return result.Succeeded;
+        }
+
+        // Get user address
+        public async Task<AddressInfoDTO> GetUserAddressAsync(int userId)
+        {
+            var user = await _userRepository.GetUserWithAddressAsync(userId);
+            if (user == null || user.address == null)
+                return null;
+
+            return AddressInfoDTO.FromAddress(user.address);
+        }
+
+        // Add address
+        public async Task<bool> AddAddressAsync(int userId, AddAddressDTO addressDTO)
+        {
+            try
+            {
+                var user = await _userManager.FindByIdAsync(userId.ToString());
+                if (user == null)
+                    return false;
+
+                // Create new address
+                var address = AddAddressDTO.FromAddressDTO(addressDTO);
+
+                // Add address to repository
+                await _genericRepository.AddAsync(address);
+                await _unitOfWork.CompleteAsync();
+
+                // Update user with new address ID
+                user.AddressId = address.Id;
+                var result = await _userManager.UpdateAsync(user);
+                
+                return result.Succeeded;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        // Update address
+        public async Task<bool> UpdateAddressAsync(int userId, int addressId, UpdateAddressDTO addressDTO)
+        {
+            try
+            {
+                var user = await _userRepository.GetUserWithAddressAsync(userId);
+                if (user == null || user.address == null || user.address.Id != addressId)
+                    return false;
+
+                var address = user.address;
+
+                // Update address properties
+                address = UpdateAddressDTO.FromAddressDTO(addressDTO);
+
+                // Save changes
+                 _genericRepository.Update(address);
+                await _unitOfWork.CompleteAsync();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        private string GenerateToken(IList<Claim> claims)
+        {
+            var securitykeystring = _configuration.GetSection("SecretKey").Value;
+            var securtykeyByte = Encoding.ASCII.GetBytes(securitykeystring);
+            SecurityKey securityKey = new SymmetricSecurityKey(securtykeyByte);
+            SigningCredentials signingCredentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var expire = DateTime.UtcNow.AddDays(2);
+            JwtSecurityToken jwtSecurityToken = new JwtSecurityToken(
+                claims: claims, 
+                expires: expire, 
+                signingCredentials: signingCredentials
+            );
+
+            JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
+            string token = handler.WriteToken(jwtSecurityToken);
+
+            return token;
         }
     }
 }

@@ -5765,11 +5765,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
+      "projectUniqueName": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
       "projectName": "LapStore.DAL",
-      "projectPath": "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
+      "projectPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\LapStore.DAL.csproj",
       "packagesPath": "C:\\Users\\waelb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\waelb\\Desktop\\LapStore\\LapStore.DAL\\obj\\",
+      "outputPath": "D:\\E-CommerceLapStore\\LapStore\\LapStore.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\ProgramFiles(x86)\\MicrosoftVisualStudio\\Shared\\NuGetPackages"

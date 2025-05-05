@@ -182,3 +182,10 @@ C:\Users\waelb\Desktop\LapStore\LapStore.Test\obj\Debug\net8.0\refint\LapStore.T
 C:\Users\waelb\Desktop\LapStore\LapStore.Test\obj\Debug\net8.0\LapStore.Test.pdb
 C:\Users\waelb\Desktop\LapStore\LapStore.Test\obj\Debug\net8.0\LapStore.Test.genruntimeconfig.cache
 C:\Users\waelb\Desktop\LapStore\LapStore.Test\obj\Debug\net8.0\ref\LapStore.Test.dll
+D:\E-CommerceLapStore\LapStore\LapStore.Test\bin\Debug\net8.0\.msCoverageSourceRootsMapping_LapStore.Test
+D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net8.0\LapStore.Test.csproj.AssemblyReference.cache
+D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net8.0\LapStore.Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net8.0\LapStore.Test.AssemblyInfoInputs.cache
+D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net8.0\LapStore.Test.AssemblyInfo.cs
+D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net8.0\LapStore.Test.csproj.CoreCompileInputs.cache
+D:\E-CommerceLapStore\LapStore\LapStore.Test\obj\Debug\net8.0\LapStore.Test.sourcelink.json

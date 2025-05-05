@@ -1,12 +1,20 @@
 {
   "Version": 1,
-  "Hash": "QaqbulOnJfIMvWm1zw/sfNHFWXGe0I93bZPhoSoiRuA=",
+  "Hash": "3M08OSMCQBPsJj9ID4vKmO0HUw4CgLe4PtpBoxnMGVg=",
   "Source": "LapStore.API",
   "BasePath": "_content/LapStore.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LapStore.API\\wwwroot",
+      "Source": "LapStore.API",
+      "ContentRoot": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\wwwroot\\",
+      "BasePath": "_content/LapStore.API",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [],
   "Endpoints": []
 }
