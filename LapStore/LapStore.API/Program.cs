@@ -16,11 +16,11 @@ namespace LapStore.API
             builder.Services.AddSwaggerGen();
 
 
-            builder.Services.AddServiceDependencyInjection()
+            builder.Services.AddServiceDependencyInjection(builder)
                             .AddRepositoryDependencyInjection()
-                            .AddGeneralDependencyInjection(builder.Configuration)
-                            .AddIdentityDependencyInjection();
-                            
+                            .AddDbContextDependencyInjection(builder.Configuration)
+                            .AddIdentityDependencyInjection(builder.Configuration);
+
 
 
             var app = builder.Build();
@@ -33,7 +33,7 @@ namespace LapStore.API
             }
 
             app.UseHttpsRedirection();
-
+            app.UseStaticFiles();
 
             app.UseAuthentication();
             app.UseAuthorization();

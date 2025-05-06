@@ -5,7 +5,7 @@ namespace LapStore.BLL.ViewModels
 {
     public class HomeDTO
     {
-        public IEnumerable<CategoryDTO> Categories { get; set; }
+        public IEnumerable<GetCategoryDTO> Categories { get; set; }
         public IEnumerable<ProductWriteDTO> NewProducts { get; set; }
         public IEnumerable<ProductWriteDTO> TopSellingProducts { get; set; }
     }

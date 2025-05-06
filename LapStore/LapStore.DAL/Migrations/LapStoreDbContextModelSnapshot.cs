@@ -271,7 +271,7 @@ namespace LapStore.DAL.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<int>("AddressId")
+                    b.Property<int?>("AddressId")
                         .HasColumnType("int");
 
                     b.Property<DateOnly>("BirthDate")
@@ -605,8 +605,7 @@ namespace LapStore.DAL.Migrations
                     b.HasOne("LapStore.DAL.Data.Entities.Address", "address")
                         .WithMany("users")
                         .HasForeignKey("AddressId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("address");
                 });

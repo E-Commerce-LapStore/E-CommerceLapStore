@@ -51,10 +51,11 @@ namespace LapStore.DAL.Data.Entities
             }
         }
 
-        public UserRole Role { get; set; }
+        public UserRole Role { get; set; } = UserRole.Customer;
 
+        // Modified to be nullable to allow registration without an address initially
         [ForeignKey("address")]
-        public int AddressId { get; set; }
+        public int? AddressId { get; set; }
 
         // Navigation Properties
         public virtual ICollection<Order>? orders { get; set; }

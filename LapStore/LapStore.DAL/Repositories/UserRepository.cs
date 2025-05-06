@@ -1,4 +1,3 @@
-using LapStore.DAL.Data;
 using LapStore.DAL.Data.Contexts;
 using LapStore.DAL.Data.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -7,21 +6,8 @@ namespace LapStore.DAL.Repositories
 {
     public class UserRepository : GenericRepository<User>, IUserRepository
     {
-
         public UserRepository(LapStoreDbContext context) : base(context)
         {
-        }
-
-        public async Task<User?> GetUserByEmailAsync(string email)
-        {
-            return await _context.users
-                .FirstOrDefaultAsync(u => u.Email.ToLower() == email.ToLower());
-        }
-
-        public async Task<User?> GetUserByUserNameAsync(string userName)
-        {
-            return await _context.users
-                .FirstOrDefaultAsync(u => u.UserName.ToLower() == userName.ToLower());
         }
 
         public async Task<bool> IsEmailExistAsync(string email, int? userId = null)
@@ -70,11 +56,5 @@ namespace LapStore.DAL.Repositories
                 .Include(u => u.cart)
                 .FirstOrDefaultAsync(u => u.Id == userId);
         }
-
-        public async Task UpdateAsync(User user)
-        {
-            _context.users.Update(user);
-            await Task.CompletedTask;
-        }
     }
-} 
+}

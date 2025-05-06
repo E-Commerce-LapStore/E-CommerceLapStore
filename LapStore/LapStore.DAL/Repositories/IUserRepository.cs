@@ -4,13 +4,13 @@ namespace LapStore.DAL.Repositories
 {
     public interface IUserRepository : IGenericRepository<User>
     {
-        Task<User?> GetUserByEmailAsync(string email);
-        Task<User?> GetUserByUserNameAsync(string userName);
-        Task<bool> IsEmailExistAsync(string email, int? userId = null);
-        Task<bool> IsUserNameExistAsync(string userName, int? userId = null);
+        // Keep only methods that add value beyond what Identity provides
         Task<User?> GetUserWithAddressAsync(int userId);
         Task<User?> GetUserWithOrdersAsync(int userId);
         Task<User?> GetUserWithCartAsync(int userId);
-        Task UpdateAsync(User user);
+
+        // These methods can be useful alongside Identity
+        Task<bool> IsEmailExistAsync(string email, int? userId = null);
+        Task<bool> IsUserNameExistAsync(string userName, int? userId = null);
     }
-} 
+}
