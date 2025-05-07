@@ -2,6 +2,7 @@
 using LapStore.BLL.DTOs.ProductDTO;
 using LapStore.BLL.Interfaces;
 using LapStore.DAL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace LapStore.API.Controllers
 {
@@ -39,6 +40,7 @@ namespace LapStore.API.Controllers
             return Ok(productDTO);
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] ProductWriteDTO productDTO)
         {
@@ -60,6 +62,7 @@ namespace LapStore.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = product.Id }, ProductReadDTO.FromProduct(product));
         }
 
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<ActionResult> Update(int id, [FromBody] ProductUpdateDTO productDTO)
         {
@@ -92,6 +95,7 @@ namespace LapStore.API.Controllers
             return NoContent();
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -106,6 +110,7 @@ namespace LapStore.API.Controllers
         }
 
         // Image related endpoints
+        [Authorize]
         [HttpPost("{productId}/images")]
         public async Task<IActionResult> AddImage(int productId, IFormFile file)
         {
@@ -155,6 +160,7 @@ namespace LapStore.API.Controllers
             return Ok(imagesDto);
         }
 
+        [Authorize]
         [HttpDelete("images/{imageId}")]
         public async Task<IActionResult> DeleteImage(int imageId)
         {
@@ -168,6 +174,7 @@ namespace LapStore.API.Controllers
             return NoContent();
         }
 
+        [Authorize]
         [HttpPut("{productId}/images/{imageId}/main")]
         public async Task<IActionResult> SetMainImage(int productId, int imageId)
         {

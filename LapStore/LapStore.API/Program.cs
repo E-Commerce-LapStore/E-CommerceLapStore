@@ -9,18 +9,11 @@ namespace LapStore.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-
-
             builder.Services.AddServiceDependencyInjection(builder)
                             .AddRepositoryDependencyInjection()
                             .AddDbContextDependencyInjection(builder.Configuration)
-                            .AddIdentityDependencyInjection(builder.Configuration);
-
+                            .AddIdentityDependencyInjection(builder.Configuration)
+                            .AddGeneralDependencyInjection();
 
 
             var app = builder.Build();
@@ -28,13 +21,19 @@ namespace LapStore.API
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
+                app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI();
+            }
+            else
+            {
+                app.UseHsts();
             }
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseRouting();
+            app.UseCors("AllowAll");
             app.UseAuthentication();
             app.UseAuthorization();
 

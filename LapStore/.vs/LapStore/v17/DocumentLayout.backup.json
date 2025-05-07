@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "D:\\E-CommerceLapStore\\LapStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{754A826A-2F08-48D3-A604-2D2C66B2B652}|LapStore.API\\LapStore.API.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{754A826A-2F08-48D3-A604-2D2C66B2B652}|LapStore.API\\LapStore.API.csproj|solutionrelative:lapstore.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66F39C44-590C-4FA7-B72D-EE221BCE36C3}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F39C44-590C-4FA7-B72D-EE221BCE36C3}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.bll\\dependencyinjections\\servicedependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|solutionrelative:lapstore.bll\\dependencyinjections\\servicedependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66F39C44-590C-4FA7-B72D-EE221BCE36C3}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F39C44-590C-4FA7-B72D-EE221BCE36C3}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.bll\\dependencyinjections\\identityregistrationdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|solutionrelative:lapstore.bll\\dependencyinjections\\identityregistrationdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.bll\\dependencyinjections\\dbcontextregistrationdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|solutionrelative:lapstore.bll\\dependencyinjections\\dbcontextregistrationdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.bll\\dependencyinjections\\repositorydependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|solutionrelative:lapstore.bll\\dependencyinjections\\repositorydependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{754A826A-2F08-48D3-A604-2D2C66B2B652}|LapStore.API\\LapStore.API.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{754A826A-2F08-48D3-A604-2D2C66B2B652}|LapStore.API\\LapStore.API.csproj|solutionrelative:lapstore.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.bll\\services\\categoryfilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|solutionrelative:lapstore.bll\\services\\categoryfilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.bll\\interfaces\\icategoryfilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349EDFAE-2751-4234-A881-A13D4D193E24}|LapStore.BLL\\LapStore.BLL.csproj|solutionrelative:lapstore.bll\\interfaces\\icategoryfilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66F39C44-590C-4FA7-B72D-EE221BCE36C3}|LapStore.Web\\LapStore.Web.csproj|d:\\e-commercelapstore\\lapstore\\lapstore.web\\viewmodels\\accountvm\\loginresponsevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F39C44-590C-4FA7-B72D-EE221BCE36C3}|LapStore.Web\\LapStore.Web.csproj|solutionrelative:lapstore.web\\viewmodels\\accountvm\\loginresponsevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,106 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DbContextRegistrationDependencyInjection.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\DependencyInjections\\DbContextRegistrationDependencyInjection.cs",
-              "RelativeDocumentMoniker": "LapStore.BLL\\DependencyInjections\\DbContextRegistrationDependencyInjection.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\DependencyInjections\\DbContextRegistrationDependencyInjection.cs",
-              "RelativeToolTip": "LapStore.BLL\\DependencyInjections\\DbContextRegistrationDependencyInjection.cs",
-              "ViewState": "AgIAAAgAAAAAMzMzMzMbwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Program.cs",
+              "RelativeDocumentMoniker": "LapStore.Web\\Program.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Program.cs",
+              "RelativeToolTip": "LapStore.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T01:06:40.085Z",
+              "WhenOpened": "2025-05-07T06:40:41.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IdentityRegistrationDependencyInjection.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\DependencyInjections\\IdentityRegistrationDependencyInjection.cs",
-              "RelativeDocumentMoniker": "LapStore.BLL\\DependencyInjections\\IdentityRegistrationDependencyInjection.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\DependencyInjections\\IdentityRegistrationDependencyInjection.cs",
-              "RelativeToolTip": "LapStore.BLL\\DependencyInjections\\IdentityRegistrationDependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Title": "LoginResponseVM.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\ViewModels\\AccountVM\\LoginResponseVM.cs",
+              "RelativeDocumentMoniker": "LapStore.Web\\ViewModels\\AccountVM\\LoginResponseVM.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\ViewModels\\AccountVM\\LoginResponseVM.cs",
+              "RelativeToolTip": "LapStore.Web\\ViewModels\\AccountVM\\LoginResponseVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T01:06:19.089Z",
+              "WhenOpened": "2025-05-07T06:31:19.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\Program.cs",
-              "RelativeDocumentMoniker": "LapStore.API\\Program.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\Program.cs",
-              "RelativeToolTip": "LapStore.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAlAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "LapStore.Web\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.Web\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "LapStore.Web\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACcAAACAmZmZmZkpwDUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T00:06:29.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServiceDependencyInjection.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\DependencyInjections\\ServiceDependencyInjection.cs",
-              "RelativeDocumentMoniker": "LapStore.BLL\\DependencyInjections\\ServiceDependencyInjection.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\DependencyInjections\\ServiceDependencyInjection.cs",
-              "RelativeToolTip": "LapStore.BLL\\DependencyInjections\\ServiceDependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T23:58:43.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RepositoryDependencyInjection.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\DependencyInjections\\RepositoryDependencyInjection.cs",
-              "RelativeDocumentMoniker": "LapStore.BLL\\DependencyInjections\\RepositoryDependencyInjection.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\DependencyInjections\\RepositoryDependencyInjection.cs",
-              "RelativeToolTip": "LapStore.BLL\\DependencyInjections\\RepositoryDependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T23:58:39.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "LapStore.API\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.API\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "LapStore.API\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T23:58:58.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CategoryFileHandler.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\Services\\CategoryFileHandler.cs",
-              "RelativeDocumentMoniker": "LapStore.BLL\\Services\\CategoryFileHandler.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\Services\\CategoryFileHandler.cs",
-              "RelativeToolTip": "LapStore.BLL\\Services\\CategoryFileHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T23:59:25.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICategoryFileHandler.cs",
-              "DocumentMoniker": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\Interfaces\\ICategoryFileHandler.cs",
-              "RelativeDocumentMoniker": "LapStore.BLL\\Interfaces\\ICategoryFileHandler.cs",
-              "ToolTip": "D:\\E-CommerceLapStore\\LapStore\\LapStore.BLL\\Interfaces\\ICategoryFileHandler.cs",
-              "RelativeToolTip": "LapStore.BLL\\Interfaces\\ICategoryFileHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T00:01:31.441Z",
+              "WhenOpened": "2025-05-07T06:23:11.323Z",
               "EditorCaption": ""
             }
           ]
