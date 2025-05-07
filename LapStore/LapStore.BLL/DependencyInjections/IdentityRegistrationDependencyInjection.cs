@@ -1,5 +1,6 @@
 ﻿using LapStore.DAL.Data.Contexts;
 using LapStore.DAL.Data.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -40,27 +41,17 @@ namespace LapStore.BLL.DependencyInjections
                 options.AccessDeniedPath = "/Account/AccessDenied";
                 options.SlidingExpiration = true;
             });
-
-            services.AddAuthentication(option =>
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
             {
-                option.DefaultAuthenticateScheme = "mahmoud";
-                option.DefaultChallengeScheme = "mahmoud";
-            }).AddJwtBearer("mahmoud", options =>
-            {
-                var securitykeystring = configuration.GetSection("SecretKey").Value;
-                var securtykeyByte = Encoding.ASCII.GetBytes(securitykeystring);
-                var securityKey = new SymmetricSecurityKey(securtykeyByte);
-
-                options.TokenValidationParameters = new TokenValidationParameters()
+                options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    IssuerSigningKey = securityKey,
-                    //ValidAudience = "url" ,
-                    //ValidIssuer = "url",
-                    ValidateIssuer = false,
-                    ValidateAudience = false
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration.GetSection("SecretKey").Value))
                 };
             });
-
             return services;
         }
     }

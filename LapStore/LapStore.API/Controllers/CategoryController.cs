@@ -1,6 +1,7 @@
 ﻿using LapStore.BLL.DTOs;
 using LapStore.BLL.Interfaces;
 using LapStore.BLL.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LapStore.API.Controllers
@@ -56,9 +57,11 @@ namespace LapStore.API.Controllers
         }
 
         // POST: api/Categories
+        [Authorize]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<GetCategoryDTO>> CreateCategory([FromForm] AddCategoryDTO categoryDto, IFormFile file)
         {
             if (!ModelState.IsValid)
@@ -95,9 +98,11 @@ namespace LapStore.API.Controllers
         }
 
         // PUT: api/Categories/5
+        [Authorize]
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> UpdateCategory(int id, [FromForm] UpdateCategoryDTO categoryDto, IFormFile file)
         {
@@ -141,8 +146,10 @@ namespace LapStore.API.Controllers
         }
 
         // DELETE: api/Categories/5
+        [Authorize]
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> DeleteCategory(int id)
